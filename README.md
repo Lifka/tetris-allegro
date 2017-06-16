@@ -6,7 +6,6 @@
 
 
 ### Authors
-[javierizquierdovera@gmail.com](mailto:javierizquierdovera@gmail.com)
 
 - [Javier Izquierdo Vera](https://github.com/Lifka/) - [javierizquierdovera@gmail.com](mailto:javierizquierdovera@gmail.com)
 - [Miguel Medina Ballesteros](https://github.com/Maximetinu/) - [maximetinu@gmail.com](mailto:maximetinu@gmail.com)
