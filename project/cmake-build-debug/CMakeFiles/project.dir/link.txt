@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/project.dir/main.cpp.o CMakeFiles/project.dir/Model/Piece.cpp.o CMakeFiles/project.dir/Model/PieceType.cpp.o CMakeFiles/project.dir/Model/Rotation.cpp.o  -o project 

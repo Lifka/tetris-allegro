@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lifka/Desktop/tetris/project/Model/Piece.cpp
+Piece.h
+/home/lifka/Desktop/tetris/project/Model/Piece.h
+
+/home/lifka/Desktop/tetris/project/Model/Piece.h
+
+/home/lifka/Desktop/tetris/project/Model/PieceType.cpp
+
+/home/lifka/Desktop/tetris/project/Model/Rotation.cpp
+
+/home/lifka/Desktop/tetris/project/main.cpp
+iostream
+-
+Model/Piece.h
+/home/lifka/Desktop/tetris/project/Model/Piece.h
+
