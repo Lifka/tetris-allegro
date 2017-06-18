@@ -12,8 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7084057f-f4b5-45b7-a697-6c4c0fb33da6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Class Diagram1.jpg" afterPath="$PROJECT_DIR$/../Class Diagram1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../tetris.vpp" afterPath="$PROJECT_DIR$/../tetris.vpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -462,7 +460,7 @@
       <workItem from="1497736260970" duration="1593000" />
       <workItem from="1497738001545" duration="128000" />
       <workItem from="1497738155543" duration="3991000" />
-      <workItem from="1497743042775" duration="9295000" />
+      <workItem from="1497743042775" duration="9348000" />
     </task>
     <task id="LOCAL-00001" summary="Model implement">
       <created>1497754984512</created>
@@ -478,11 +476,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497755221656</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Class diagram corrections">
+      <created>1497755253528</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1497755253528</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15007000" />
+    <option name="totallyTimeSpent" value="15060000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
