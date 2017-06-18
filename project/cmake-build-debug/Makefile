@@ -123,6 +123,87 @@ project/fast:
 	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/build
 .PHONY : project/fast
 
+Model/Board.o: Model/Board.cpp.o
+
+.PHONY : Model/Board.o
+
+# target to build an object file
+Model/Board.cpp.o:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Board.cpp.o
+.PHONY : Model/Board.cpp.o
+
+Model/Board.i: Model/Board.cpp.i
+
+.PHONY : Model/Board.i
+
+# target to preprocess a source file
+Model/Board.cpp.i:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Board.cpp.i
+.PHONY : Model/Board.cpp.i
+
+Model/Board.s: Model/Board.cpp.s
+
+.PHONY : Model/Board.s
+
+# target to generate assembly for a file
+Model/Board.cpp.s:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Board.cpp.s
+.PHONY : Model/Board.cpp.s
+
+Model/Factory.o: Model/Factory.cpp.o
+
+.PHONY : Model/Factory.o
+
+# target to build an object file
+Model/Factory.cpp.o:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Factory.cpp.o
+.PHONY : Model/Factory.cpp.o
+
+Model/Factory.i: Model/Factory.cpp.i
+
+.PHONY : Model/Factory.i
+
+# target to preprocess a source file
+Model/Factory.cpp.i:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Factory.cpp.i
+.PHONY : Model/Factory.cpp.i
+
+Model/Factory.s: Model/Factory.cpp.s
+
+.PHONY : Model/Factory.s
+
+# target to generate assembly for a file
+Model/Factory.cpp.s:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Factory.cpp.s
+.PHONY : Model/Factory.cpp.s
+
+Model/Options.o: Model/Options.cpp.o
+
+.PHONY : Model/Options.o
+
+# target to build an object file
+Model/Options.cpp.o:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Options.cpp.o
+.PHONY : Model/Options.cpp.o
+
+Model/Options.i: Model/Options.cpp.i
+
+.PHONY : Model/Options.i
+
+# target to preprocess a source file
+Model/Options.cpp.i:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Options.cpp.i
+.PHONY : Model/Options.cpp.i
+
+Model/Options.s: Model/Options.cpp.s
+
+.PHONY : Model/Options.s
+
+# target to generate assembly for a file
+Model/Options.cpp.s:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Options.cpp.s
+.PHONY : Model/Options.cpp.s
+
 Model/Piece.o: Model/Piece.cpp.o
 
 .PHONY : Model/Piece.o
@@ -150,59 +231,32 @@ Model/Piece.cpp.s:
 	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Piece.cpp.s
 .PHONY : Model/Piece.cpp.s
 
-Model/PieceType.o: Model/PieceType.cpp.o
+Model/Point2D.o: Model/Point2D.cpp.o
 
-.PHONY : Model/PieceType.o
-
-# target to build an object file
-Model/PieceType.cpp.o:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/PieceType.cpp.o
-.PHONY : Model/PieceType.cpp.o
-
-Model/PieceType.i: Model/PieceType.cpp.i
-
-.PHONY : Model/PieceType.i
-
-# target to preprocess a source file
-Model/PieceType.cpp.i:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/PieceType.cpp.i
-.PHONY : Model/PieceType.cpp.i
-
-Model/PieceType.s: Model/PieceType.cpp.s
-
-.PHONY : Model/PieceType.s
-
-# target to generate assembly for a file
-Model/PieceType.cpp.s:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/PieceType.cpp.s
-.PHONY : Model/PieceType.cpp.s
-
-Model/Rotation.o: Model/Rotation.cpp.o
-
-.PHONY : Model/Rotation.o
+.PHONY : Model/Point2D.o
 
 # target to build an object file
-Model/Rotation.cpp.o:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Rotation.cpp.o
-.PHONY : Model/Rotation.cpp.o
+Model/Point2D.cpp.o:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Point2D.cpp.o
+.PHONY : Model/Point2D.cpp.o
 
-Model/Rotation.i: Model/Rotation.cpp.i
+Model/Point2D.i: Model/Point2D.cpp.i
 
-.PHONY : Model/Rotation.i
+.PHONY : Model/Point2D.i
 
 # target to preprocess a source file
-Model/Rotation.cpp.i:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Rotation.cpp.i
-.PHONY : Model/Rotation.cpp.i
+Model/Point2D.cpp.i:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Point2D.cpp.i
+.PHONY : Model/Point2D.cpp.i
 
-Model/Rotation.s: Model/Rotation.cpp.s
+Model/Point2D.s: Model/Point2D.cpp.s
 
-.PHONY : Model/Rotation.s
+.PHONY : Model/Point2D.s
 
 # target to generate assembly for a file
-Model/Rotation.cpp.s:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Rotation.cpp.s
-.PHONY : Model/Rotation.cpp.s
+Model/Point2D.cpp.s:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Point2D.cpp.s
+.PHONY : Model/Point2D.cpp.s
 
 main.o: main.cpp.o
 
@@ -240,15 +294,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... project"
+	@echo "... Model/Board.o"
+	@echo "... Model/Board.i"
+	@echo "... Model/Board.s"
+	@echo "... Model/Factory.o"
+	@echo "... Model/Factory.i"
+	@echo "... Model/Factory.s"
+	@echo "... Model/Options.o"
+	@echo "... Model/Options.i"
+	@echo "... Model/Options.s"
 	@echo "... Model/Piece.o"
 	@echo "... Model/Piece.i"
 	@echo "... Model/Piece.s"
-	@echo "... Model/PieceType.o"
-	@echo "... Model/PieceType.i"
-	@echo "... Model/PieceType.s"
-	@echo "... Model/Rotation.o"
-	@echo "... Model/Rotation.i"
-	@echo "... Model/Rotation.s"
+	@echo "... Model/Point2D.o"
+	@echo "... Model/Point2D.i"
+	@echo "... Model/Point2D.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

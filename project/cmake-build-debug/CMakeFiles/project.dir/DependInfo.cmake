@@ -4,9 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/lifka/Desktop/tetris/project/Model/Board.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/Board.cpp.o"
+  "/home/lifka/Desktop/tetris/project/Model/Factory.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/Factory.cpp.o"
+  "/home/lifka/Desktop/tetris/project/Model/Options.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/Options.cpp.o"
   "/home/lifka/Desktop/tetris/project/Model/Piece.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/Piece.cpp.o"
-  "/home/lifka/Desktop/tetris/project/Model/PieceType.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/PieceType.cpp.o"
-  "/home/lifka/Desktop/tetris/project/Model/Rotation.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/Rotation.cpp.o"
+  "/home/lifka/Desktop/tetris/project/Model/Point2D.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/Point2D.cpp.o"
   "/home/lifka/Desktop/tetris/project/main.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

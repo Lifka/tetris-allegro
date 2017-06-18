@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/project.dir/main.cpp.o"
   "CMakeFiles/project.dir/Model/Piece.cpp.o"
-  "CMakeFiles/project.dir/Model/PieceType.cpp.o"
-  "CMakeFiles/project.dir/Model/Rotation.cpp.o"
+  "CMakeFiles/project.dir/Model/Point2D.cpp.o"
+  "CMakeFiles/project.dir/Model/Factory.cpp.o"
+  "CMakeFiles/project.dir/Model/Board.cpp.o"
+  "CMakeFiles/project.dir/Model/Options.cpp.o"
   "project.pdb"
   "project"
 )

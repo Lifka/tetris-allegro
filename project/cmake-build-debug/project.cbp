@@ -82,16 +82,43 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Board.cpp">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Board.h">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Factory.cpp">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Factory.h">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/FactoryMethod.h">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Options.cpp">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Options.h">
+			<Option target="project"/>
+		</Unit>
 		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Piece.cpp">
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Piece.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/lifka/Desktop/tetris/project/Model/PieceType.cpp">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/PieceType.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Rotation.cpp">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Point2D.cpp">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Point2D.h">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Rotation.h">
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="/home/lifka/Desktop/tetris/project/main.cpp">

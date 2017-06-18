@@ -28,28 +28,28 @@ The CXX compiler identification is GNU, found in "/home/lifka/Desktop/tetris/pro
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_019f4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_019f4.dir/build.make CMakeFiles/cmTC_019f4.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_6975e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6975e.dir/build.make CMakeFiles/cmTC_6975e.dir/build
 make[1]: se entra en el directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_019f4.dir/testCCompiler.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_019f4.dir/testCCompiler.c.o   -c /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_019f4
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_019f4.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_019f4.dir/testCCompiler.c.o  -o cmTC_019f4 
+Building C object CMakeFiles/cmTC_6975e.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_6975e.dir/testCCompiler.c.o   -c /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_6975e
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6975e.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_6975e.dir/testCCompiler.c.o  -o cmTC_6975e 
 make[1]: se sale del directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d4485/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d4485.dir/build.make CMakeFiles/cmTC_d4485.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_96751/fast"
+/usr/bin/make -f CMakeFiles/cmTC_96751.dir/build.make CMakeFiles/cmTC_96751.dir/build
 make[1]: se entra en el directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d4485.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_d4485.dir/CMakeCCompilerABI.c.o   -c /opt/clion/bin/cmake/share/cmake-3.7/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_d4485
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4485.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTC_d4485.dir/CMakeCCompilerABI.c.o  -o cmTC_d4485  
+Building C object CMakeFiles/cmTC_96751.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_96751.dir/CMakeCCompilerABI.c.o   -c /opt/clion/bin/cmake/share/cmake-3.7/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_96751
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96751.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_96751.dir/CMakeCCompilerABI.c.o  -o cmTC_96751  
 Usando especificaciones internas.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/lto-wrapper
@@ -59,9 +59,9 @@ Modelo de hilos: posix
 gcc versión 7.1.1 20170528 (GCC) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d4485' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccz413YW.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d4485 /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../.. CMakeFiles/cmTC_d4485.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d4485' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_96751' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cceGSH7M.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_96751 /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../.. CMakeFiles/cmTC_96751.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_96751' '-mtune=generic' '-march=x86-64'
 make[1]: se sale del directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -69,14 +69,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d4485/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d4485.dir/build.make CMakeFiles/cmTC_d4485.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_96751/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_96751.dir/build.make CMakeFiles/cmTC_96751.dir/build]
   ignore line: [make[1]: se entra en el directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_d4485.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_d4485.dir/CMakeCCompilerABI.c.o   -c /opt/clion/bin/cmake/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_d4485]
-  ignore line: [/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4485.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_d4485.dir/CMakeCCompilerABI.c.o  -o cmTC_d4485  ]
+  ignore line: [Building C object CMakeFiles/cmTC_96751.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_96751.dir/CMakeCCompilerABI.c.o   -c /opt/clion/bin/cmake/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_96751]
+  ignore line: [/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96751.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_96751.dir/CMakeCCompilerABI.c.o  -o cmTC_96751  ]
   ignore line: [Usando especificaciones internas.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/lto-wrapper]
@@ -86,13 +86,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc versión 7.1.1 20170528 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d4485' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccz413YW.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d4485 /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../.. CMakeFiles/cmTC_d4485.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_96751' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cceGSH7M.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_96751 /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../.. CMakeFiles/cmTC_96751.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crtn.o]
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccz413YW.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cceGSH7M.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -106,7 +106,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_d4485] ==> ignore
+    arg [cmTC_96751] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtbegin.o] ==> ignore
@@ -115,7 +115,7 @@ Parsed C implicit link information from above output:
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../..]
-    arg [CMakeFiles/cmTC_d4485.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_96751.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -146,14 +146,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c62d6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c62d6.dir/build.make CMakeFiles/cmTC_c62d6.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_376b4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_376b4.dir/build.make CMakeFiles/cmTC_376b4.dir/build
 make[1]: se entra en el directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c62d6.dir/feature_tests.c.o
-/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_c62d6.dir/feature_tests.c.o   -c /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c62d6
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c62d6.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_c62d6.dir/feature_tests.c.o  -o cmTC_c62d6 
+Building C object CMakeFiles/cmTC_376b4.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_376b4.dir/feature_tests.c.o   -c /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_376b4
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_376b4.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_376b4.dir/feature_tests.c.o  -o cmTC_376b4 
 make[1]: se sale del directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -166,14 +166,14 @@ make[1]: se sale del directorio '/home/lifka/Desktop/tetris/project/cmake-build-
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_70074/fast"
-/usr/bin/make -f CMakeFiles/cmTC_70074.dir/build.make CMakeFiles/cmTC_70074.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_65d72/fast"
+/usr/bin/make -f CMakeFiles/cmTC_65d72.dir/build.make CMakeFiles/cmTC_65d72.dir/build
 make[1]: se entra en el directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_70074.dir/feature_tests.c.o
-/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_70074.dir/feature_tests.c.o   -c /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_70074
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70074.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_70074.dir/feature_tests.c.o  -o cmTC_70074 
+Building C object CMakeFiles/cmTC_65d72.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_65d72.dir/feature_tests.c.o   -c /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_65d72
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65d72.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_65d72.dir/feature_tests.c.o  -o cmTC_65d72 
 make[1]: se sale del directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -186,14 +186,14 @@ make[1]: se sale del directorio '/home/lifka/Desktop/tetris/project/cmake-build-
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3206e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3206e.dir/build.make CMakeFiles/cmTC_3206e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_00d2f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_00d2f.dir/build.make CMakeFiles/cmTC_00d2f.dir/build
 make[1]: se entra en el directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3206e.dir/feature_tests.c.o
-/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_3206e.dir/feature_tests.c.o   -c /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_3206e
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3206e.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_3206e.dir/feature_tests.c.o  -o cmTC_3206e 
+Building C object CMakeFiles/cmTC_00d2f.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_00d2f.dir/feature_tests.c.o   -c /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_00d2f
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00d2f.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_00d2f.dir/feature_tests.c.o  -o cmTC_00d2f 
 make[1]: se sale del directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -204,28 +204,28 @@ make[1]: se sale del directorio '/home/lifka/Desktop/tetris/project/cmake-build-
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_52c61/fast"
-/usr/bin/make -f CMakeFiles/cmTC_52c61.dir/build.make CMakeFiles/cmTC_52c61.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_f5bb3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f5bb3.dir/build.make CMakeFiles/cmTC_f5bb3.dir/build
 make[1]: se entra en el directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_52c61.dir/testCXXCompiler.cxx.o
-/usr/bin/c++      -o CMakeFiles/cmTC_52c61.dir/testCXXCompiler.cxx.o -c /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_52c61
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52c61.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_52c61.dir/testCXXCompiler.cxx.o  -o cmTC_52c61 
+Building CXX object CMakeFiles/cmTC_f5bb3.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_f5bb3.dir/testCXXCompiler.cxx.o -c /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_f5bb3
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5bb3.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_f5bb3.dir/testCXXCompiler.cxx.o  -o cmTC_f5bb3 
 make[1]: se sale del directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f224a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f224a.dir/build.make CMakeFiles/cmTC_f224a.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_7d642/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7d642.dir/build.make CMakeFiles/cmTC_7d642.dir/build
 make[1]: se entra en el directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f224a.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++      -o CMakeFiles/cmTC_f224a.dir/CMakeCXXCompilerABI.cpp.o -c /opt/clion/bin/cmake/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_f224a
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f224a.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTC_f224a.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f224a  
+Building CXX object CMakeFiles/cmTC_7d642.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_7d642.dir/CMakeCXXCompilerABI.cpp.o -c /opt/clion/bin/cmake/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_7d642
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d642.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_7d642.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_7d642  
 Usando especificaciones internas.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/lto-wrapper
@@ -235,9 +235,9 @@ Modelo de hilos: posix
 gcc versión 7.1.1 20170528 (GCC) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f224a' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccipN8cR.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f224a /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../.. CMakeFiles/cmTC_f224a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f224a' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d642' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQ67Jg7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7d642 /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../.. CMakeFiles/cmTC_7d642.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d642' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
 make[1]: se sale del directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -245,14 +245,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f224a/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f224a.dir/build.make CMakeFiles/cmTC_f224a.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_7d642/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_7d642.dir/build.make CMakeFiles/cmTC_7d642.dir/build]
   ignore line: [make[1]: se entra en el directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_f224a.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_f224a.dir/CMakeCXXCompilerABI.cpp.o -c /opt/clion/bin/cmake/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_f224a]
-  ignore line: [/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f224a.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_f224a.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f224a  ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_7d642.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_7d642.dir/CMakeCXXCompilerABI.cpp.o -c /opt/clion/bin/cmake/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_7d642]
+  ignore line: [/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d642.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_7d642.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_7d642  ]
   ignore line: [Usando especificaciones internas.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/lto-wrapper]
@@ -262,13 +262,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc versión 7.1.1 20170528 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f224a' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccipN8cR.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f224a /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../.. CMakeFiles/cmTC_f224a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d642' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQ67Jg7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7d642 /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../.. CMakeFiles/cmTC_7d642.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crtn.o]
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccipN8cR.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccQ67Jg7.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -282,7 +282,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f224a] ==> ignore
+    arg [cmTC_7d642] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../lib/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/crtbegin.o] ==> ignore
@@ -291,7 +291,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../..]
-    arg [CMakeFiles/cmTC_f224a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_7d642.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -320,14 +320,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_73ad6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_73ad6.dir/build.make CMakeFiles/cmTC_73ad6.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_a7372/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a7372.dir/build.make CMakeFiles/cmTC_a7372.dir/build
 make[1]: se entra en el directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_73ad6.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_73ad6.dir/feature_tests.cxx.o -c /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_73ad6
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73ad6.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_73ad6.dir/feature_tests.cxx.o  -o cmTC_73ad6 
+Building CXX object CMakeFiles/cmTC_a7372.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_a7372.dir/feature_tests.cxx.o -c /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_a7372
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7372.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_a7372.dir/feature_tests.cxx.o  -o cmTC_a7372 
 make[1]: se sale del directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -393,14 +393,14 @@ make[1]: se sale del directorio '/home/lifka/Desktop/tetris/project/cmake-build-
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c08c8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c08c8.dir/build.make CMakeFiles/cmTC_c08c8.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_cf1cd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cf1cd.dir/build.make CMakeFiles/cmTC_cf1cd.dir/build
 make[1]: se entra en el directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c08c8.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_c08c8.dir/feature_tests.cxx.o -c /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_c08c8
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c08c8.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_c08c8.dir/feature_tests.cxx.o  -o cmTC_c08c8 
+Building CXX object CMakeFiles/cmTC_cf1cd.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_cf1cd.dir/feature_tests.cxx.o -c /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_cf1cd
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf1cd.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_cf1cd.dir/feature_tests.cxx.o  -o cmTC_cf1cd 
 make[1]: se sale del directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -466,14 +466,14 @@ make[1]: se sale del directorio '/home/lifka/Desktop/tetris/project/cmake-build-
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_625dc/fast"
-/usr/bin/make -f CMakeFiles/cmTC_625dc.dir/build.make CMakeFiles/cmTC_625dc.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_44cc2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_44cc2.dir/build.make CMakeFiles/cmTC_44cc2.dir/build
 make[1]: se entra en el directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_625dc.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_625dc.dir/feature_tests.cxx.o -c /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_625dc
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_625dc.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_625dc.dir/feature_tests.cxx.o  -o cmTC_625dc 
+Building CXX object CMakeFiles/cmTC_44cc2.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_44cc2.dir/feature_tests.cxx.o -c /home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_44cc2
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44cc2.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_44cc2.dir/feature_tests.cxx.o  -o cmTC_44cc2 
 make[1]: se sale del directorio '/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
