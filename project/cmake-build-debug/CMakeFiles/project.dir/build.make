@@ -201,6 +201,102 @@ CMakeFiles/project.dir/Model/Options.cpp.o.provides: CMakeFiles/project.dir/Mode
 CMakeFiles/project.dir/Model/Options.cpp.o.provides.build: CMakeFiles/project.dir/Model/Options.cpp.o
 
 
+CMakeFiles/project.dir/Controller/Subject.cpp.o: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/Controller/Subject.cpp.o: ../Controller/Subject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project.dir/Controller/Subject.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project.dir/Controller/Subject.cpp.o -c /home/lifka/Desktop/tetris/project/Controller/Subject.cpp
+
+CMakeFiles/project.dir/Controller/Subject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/Controller/Subject.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lifka/Desktop/tetris/project/Controller/Subject.cpp > CMakeFiles/project.dir/Controller/Subject.cpp.i
+
+CMakeFiles/project.dir/Controller/Subject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/Controller/Subject.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lifka/Desktop/tetris/project/Controller/Subject.cpp -o CMakeFiles/project.dir/Controller/Subject.cpp.s
+
+CMakeFiles/project.dir/Controller/Subject.cpp.o.requires:
+
+.PHONY : CMakeFiles/project.dir/Controller/Subject.cpp.o.requires
+
+CMakeFiles/project.dir/Controller/Subject.cpp.o.provides: CMakeFiles/project.dir/Controller/Subject.cpp.o.requires
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Controller/Subject.cpp.o.provides.build
+.PHONY : CMakeFiles/project.dir/Controller/Subject.cpp.o.provides
+
+CMakeFiles/project.dir/Controller/Subject.cpp.o.provides.build: CMakeFiles/project.dir/Controller/Subject.cpp.o
+
+
+CMakeFiles/project.dir/Controller/GameManager.cpp.o: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/Controller/GameManager.cpp.o: ../Controller/GameManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project.dir/Controller/GameManager.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project.dir/Controller/GameManager.cpp.o -c /home/lifka/Desktop/tetris/project/Controller/GameManager.cpp
+
+CMakeFiles/project.dir/Controller/GameManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/Controller/GameManager.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lifka/Desktop/tetris/project/Controller/GameManager.cpp > CMakeFiles/project.dir/Controller/GameManager.cpp.i
+
+CMakeFiles/project.dir/Controller/GameManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/Controller/GameManager.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lifka/Desktop/tetris/project/Controller/GameManager.cpp -o CMakeFiles/project.dir/Controller/GameManager.cpp.s
+
+CMakeFiles/project.dir/Controller/GameManager.cpp.o.requires:
+
+.PHONY : CMakeFiles/project.dir/Controller/GameManager.cpp.o.requires
+
+CMakeFiles/project.dir/Controller/GameManager.cpp.o.provides: CMakeFiles/project.dir/Controller/GameManager.cpp.o.requires
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Controller/GameManager.cpp.o.provides.build
+.PHONY : CMakeFiles/project.dir/Controller/GameManager.cpp.o.provides
+
+CMakeFiles/project.dir/Controller/GameManager.cpp.o.provides.build: CMakeFiles/project.dir/Controller/GameManager.cpp.o
+
+
+CMakeFiles/project.dir/Controller/PlayerController.cpp.o: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/Controller/PlayerController.cpp.o: ../Controller/PlayerController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project.dir/Controller/PlayerController.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project.dir/Controller/PlayerController.cpp.o -c /home/lifka/Desktop/tetris/project/Controller/PlayerController.cpp
+
+CMakeFiles/project.dir/Controller/PlayerController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/Controller/PlayerController.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lifka/Desktop/tetris/project/Controller/PlayerController.cpp > CMakeFiles/project.dir/Controller/PlayerController.cpp.i
+
+CMakeFiles/project.dir/Controller/PlayerController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/Controller/PlayerController.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lifka/Desktop/tetris/project/Controller/PlayerController.cpp -o CMakeFiles/project.dir/Controller/PlayerController.cpp.s
+
+CMakeFiles/project.dir/Controller/PlayerController.cpp.o.requires:
+
+.PHONY : CMakeFiles/project.dir/Controller/PlayerController.cpp.o.requires
+
+CMakeFiles/project.dir/Controller/PlayerController.cpp.o.provides: CMakeFiles/project.dir/Controller/PlayerController.cpp.o.requires
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Controller/PlayerController.cpp.o.provides.build
+.PHONY : CMakeFiles/project.dir/Controller/PlayerController.cpp.o.provides
+
+CMakeFiles/project.dir/Controller/PlayerController.cpp.o.provides.build: CMakeFiles/project.dir/Controller/PlayerController.cpp.o
+
+
+CMakeFiles/project.dir/View/Drawer.cpp.o: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/View/Drawer.cpp.o: ../View/Drawer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/project.dir/View/Drawer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project.dir/View/Drawer.cpp.o -c /home/lifka/Desktop/tetris/project/View/Drawer.cpp
+
+CMakeFiles/project.dir/View/Drawer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/View/Drawer.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lifka/Desktop/tetris/project/View/Drawer.cpp > CMakeFiles/project.dir/View/Drawer.cpp.i
+
+CMakeFiles/project.dir/View/Drawer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/View/Drawer.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lifka/Desktop/tetris/project/View/Drawer.cpp -o CMakeFiles/project.dir/View/Drawer.cpp.s
+
+CMakeFiles/project.dir/View/Drawer.cpp.o.requires:
+
+.PHONY : CMakeFiles/project.dir/View/Drawer.cpp.o.requires
+
+CMakeFiles/project.dir/View/Drawer.cpp.o.provides: CMakeFiles/project.dir/View/Drawer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/View/Drawer.cpp.o.provides.build
+.PHONY : CMakeFiles/project.dir/View/Drawer.cpp.o.provides
+
+CMakeFiles/project.dir/View/Drawer.cpp.o.provides.build: CMakeFiles/project.dir/View/Drawer.cpp.o
+
+
 # Object files for target project
 project_OBJECTS = \
 "CMakeFiles/project.dir/main.cpp.o" \
@@ -208,7 +304,11 @@ project_OBJECTS = \
 "CMakeFiles/project.dir/Model/Point2D.cpp.o" \
 "CMakeFiles/project.dir/Model/Factory.cpp.o" \
 "CMakeFiles/project.dir/Model/Board.cpp.o" \
-"CMakeFiles/project.dir/Model/Options.cpp.o"
+"CMakeFiles/project.dir/Model/Options.cpp.o" \
+"CMakeFiles/project.dir/Controller/Subject.cpp.o" \
+"CMakeFiles/project.dir/Controller/GameManager.cpp.o" \
+"CMakeFiles/project.dir/Controller/PlayerController.cpp.o" \
+"CMakeFiles/project.dir/View/Drawer.cpp.o"
 
 # External object files for target project
 project_EXTERNAL_OBJECTS =
@@ -219,9 +319,13 @@ project: CMakeFiles/project.dir/Model/Point2D.cpp.o
 project: CMakeFiles/project.dir/Model/Factory.cpp.o
 project: CMakeFiles/project.dir/Model/Board.cpp.o
 project: CMakeFiles/project.dir/Model/Options.cpp.o
+project: CMakeFiles/project.dir/Controller/Subject.cpp.o
+project: CMakeFiles/project.dir/Controller/GameManager.cpp.o
+project: CMakeFiles/project.dir/Controller/PlayerController.cpp.o
+project: CMakeFiles/project.dir/View/Drawer.cpp.o
 project: CMakeFiles/project.dir/build.make
 project: CMakeFiles/project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -235,6 +339,10 @@ CMakeFiles/project.dir/requires: CMakeFiles/project.dir/Model/Point2D.cpp.o.requ
 CMakeFiles/project.dir/requires: CMakeFiles/project.dir/Model/Factory.cpp.o.requires
 CMakeFiles/project.dir/requires: CMakeFiles/project.dir/Model/Board.cpp.o.requires
 CMakeFiles/project.dir/requires: CMakeFiles/project.dir/Model/Options.cpp.o.requires
+CMakeFiles/project.dir/requires: CMakeFiles/project.dir/Controller/Subject.cpp.o.requires
+CMakeFiles/project.dir/requires: CMakeFiles/project.dir/Controller/GameManager.cpp.o.requires
+CMakeFiles/project.dir/requires: CMakeFiles/project.dir/Controller/PlayerController.cpp.o.requires
+CMakeFiles/project.dir/requires: CMakeFiles/project.dir/View/Drawer.cpp.o.requires
 
 .PHONY : CMakeFiles/project.dir/requires
 

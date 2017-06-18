@@ -9,8 +9,9 @@
 #include "Point2D.h"
 #include "Rotation.h"
 #include "Piece.h"
+#include "../Controller/Subject.h"
 
-class Board{
+class Board : public Subject{
 private:
     std::vector<std::vector<int> > m_board;
     Piece falling_piece = NULL;

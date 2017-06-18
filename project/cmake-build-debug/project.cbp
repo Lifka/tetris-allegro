@@ -82,6 +82,27 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Controller/GameManager.cpp">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Controller/GameManager.h">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Controller/Observer.h">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Controller/PlayerController.cpp">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Controller/PlayerController.h">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Controller/Subject.cpp">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Controller/Subject.h">
+			<Option target="project"/>
+		</Unit>
 		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Board.cpp">
 			<Option target="project"/>
 		</Unit>
@@ -95,6 +116,9 @@
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="/home/lifka/Desktop/tetris/project/Model/FactoryMethod.h">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/NotifyCode.h">
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Options.cpp">
@@ -119,6 +143,12 @@
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Rotation.h">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/View/Drawer.cpp">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/View/Drawer.h">
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="/home/lifka/Desktop/tetris/project/main.cpp">

@@ -123,6 +123,87 @@ project/fast:
 	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/build
 .PHONY : project/fast
 
+Controller/GameManager.o: Controller/GameManager.cpp.o
+
+.PHONY : Controller/GameManager.o
+
+# target to build an object file
+Controller/GameManager.cpp.o:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Controller/GameManager.cpp.o
+.PHONY : Controller/GameManager.cpp.o
+
+Controller/GameManager.i: Controller/GameManager.cpp.i
+
+.PHONY : Controller/GameManager.i
+
+# target to preprocess a source file
+Controller/GameManager.cpp.i:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Controller/GameManager.cpp.i
+.PHONY : Controller/GameManager.cpp.i
+
+Controller/GameManager.s: Controller/GameManager.cpp.s
+
+.PHONY : Controller/GameManager.s
+
+# target to generate assembly for a file
+Controller/GameManager.cpp.s:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Controller/GameManager.cpp.s
+.PHONY : Controller/GameManager.cpp.s
+
+Controller/PlayerController.o: Controller/PlayerController.cpp.o
+
+.PHONY : Controller/PlayerController.o
+
+# target to build an object file
+Controller/PlayerController.cpp.o:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Controller/PlayerController.cpp.o
+.PHONY : Controller/PlayerController.cpp.o
+
+Controller/PlayerController.i: Controller/PlayerController.cpp.i
+
+.PHONY : Controller/PlayerController.i
+
+# target to preprocess a source file
+Controller/PlayerController.cpp.i:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Controller/PlayerController.cpp.i
+.PHONY : Controller/PlayerController.cpp.i
+
+Controller/PlayerController.s: Controller/PlayerController.cpp.s
+
+.PHONY : Controller/PlayerController.s
+
+# target to generate assembly for a file
+Controller/PlayerController.cpp.s:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Controller/PlayerController.cpp.s
+.PHONY : Controller/PlayerController.cpp.s
+
+Controller/Subject.o: Controller/Subject.cpp.o
+
+.PHONY : Controller/Subject.o
+
+# target to build an object file
+Controller/Subject.cpp.o:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Controller/Subject.cpp.o
+.PHONY : Controller/Subject.cpp.o
+
+Controller/Subject.i: Controller/Subject.cpp.i
+
+.PHONY : Controller/Subject.i
+
+# target to preprocess a source file
+Controller/Subject.cpp.i:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Controller/Subject.cpp.i
+.PHONY : Controller/Subject.cpp.i
+
+Controller/Subject.s: Controller/Subject.cpp.s
+
+.PHONY : Controller/Subject.s
+
+# target to generate assembly for a file
+Controller/Subject.cpp.s:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Controller/Subject.cpp.s
+.PHONY : Controller/Subject.cpp.s
+
 Model/Board.o: Model/Board.cpp.o
 
 .PHONY : Model/Board.o
@@ -258,6 +339,33 @@ Model/Point2D.cpp.s:
 	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Point2D.cpp.s
 .PHONY : Model/Point2D.cpp.s
 
+View/Drawer.o: View/Drawer.cpp.o
+
+.PHONY : View/Drawer.o
+
+# target to build an object file
+View/Drawer.cpp.o:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/View/Drawer.cpp.o
+.PHONY : View/Drawer.cpp.o
+
+View/Drawer.i: View/Drawer.cpp.i
+
+.PHONY : View/Drawer.i
+
+# target to preprocess a source file
+View/Drawer.cpp.i:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/View/Drawer.cpp.i
+.PHONY : View/Drawer.cpp.i
+
+View/Drawer.s: View/Drawer.cpp.s
+
+.PHONY : View/Drawer.s
+
+# target to generate assembly for a file
+View/Drawer.cpp.s:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/View/Drawer.cpp.s
+.PHONY : View/Drawer.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -294,6 +402,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... project"
+	@echo "... Controller/GameManager.o"
+	@echo "... Controller/GameManager.i"
+	@echo "... Controller/GameManager.s"
+	@echo "... Controller/PlayerController.o"
+	@echo "... Controller/PlayerController.i"
+	@echo "... Controller/PlayerController.s"
+	@echo "... Controller/Subject.o"
+	@echo "... Controller/Subject.i"
+	@echo "... Controller/Subject.s"
 	@echo "... Model/Board.o"
 	@echo "... Model/Board.i"
 	@echo "... Model/Board.s"
@@ -309,6 +426,9 @@ help:
 	@echo "... Model/Point2D.o"
 	@echo "... Model/Point2D.i"
 	@echo "... Model/Point2D.s"
+	@echo "... View/Drawer.o"
+	@echo "... View/Drawer.i"
+	@echo "... View/Drawer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

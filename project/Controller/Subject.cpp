@@ -1,0 +1,23 @@
+//
+// Created by lifka on 18/06/17.
+//
+
+#include "Observer.h"
+#include "Subject.h"
+#include "../Model/NotifyCode.h"
+
+void Subject::addObserver(Observer* o) {
+    observers.push_back(o);
+}
+
+void Subject::removeObserver(Observer* o) {
+    observers.erase(o);
+}
+
+void Subject::notifyObservers(NotifyCode code) {
+    for(std::vector<Observer*>::const_iterator it = observers.begin(); it != observers.end(); ++it){
+        if(*it != 0) {
+            (*it)->update(code);
+        }
+    }
+}

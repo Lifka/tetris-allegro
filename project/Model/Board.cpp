@@ -54,3 +54,4 @@ bool Board::isGameOver() {
 bool Board::isPossibleMoviment(Point2D, Rotation) {
     return false; // TODO
 }
+

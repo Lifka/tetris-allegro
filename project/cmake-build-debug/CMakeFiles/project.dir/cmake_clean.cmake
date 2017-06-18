@@ -5,6 +5,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/project.dir/Model/Factory.cpp.o"
   "CMakeFiles/project.dir/Model/Board.cpp.o"
   "CMakeFiles/project.dir/Model/Options.cpp.o"
+  "CMakeFiles/project.dir/Controller/Subject.cpp.o"
+  "CMakeFiles/project.dir/Controller/GameManager.cpp.o"
+  "CMakeFiles/project.dir/Controller/PlayerController.cpp.o"
+  "CMakeFiles/project.dir/View/Drawer.cpp.o"
   "project.pdb"
   "project"
 )
