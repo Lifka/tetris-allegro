@@ -12,72 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7084057f-f4b5-45b7-a697-6c4c0fb33da6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Board.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Board.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Factory.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Factory.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/FactoryMethod.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Options.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Options.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/PieceType.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Point2D.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Point2D.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Rotation.h" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/tetris.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../_config.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Model/PieceType.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Model/Rotation.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/CXX.includecache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Model/Piece.cpp.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Model/PieceType.cpp.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Model/Rotation.cpp.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/depend.internal" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/main.cpp.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../source/Model/Piece.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../source/Model/Piece.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../source/Model/PieceType.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../source/Model/Rotation.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../source/main.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../tetris.vpp~1" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/project" afterPath="$PROJECT_DIR$/cmake-build-debug/project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../tetris.vpp" afterPath="$PROJECT_DIR$/../tetris.vpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/project.iml" afterPath="$PROJECT_DIR$/.idea/project.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Piece.cpp" afterPath="$PROJECT_DIR$/Model/Piece.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Piece.h" afterPath="$PROJECT_DIR$/Model/Piece.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CMakeCCompiler.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CMakeCCompiler.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CMakeCXXCompiler.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CMakeCXXCompiler.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CMakeSystem.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CMakeSystem.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/cmake_clean.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/flags.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/link.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/project.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/project.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -201,6 +136,11 @@
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Lifka &lt;javier@izquierdovera.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
@@ -520,12 +460,20 @@
       <workItem from="1497736260970" duration="1593000" />
       <workItem from="1497738001545" duration="128000" />
       <workItem from="1497738155543" duration="3991000" />
-      <workItem from="1497743042775" duration="8969000" />
+      <workItem from="1497743042775" duration="9213000" />
     </task>
+    <task id="LOCAL-00001" summary="Model implement">
+      <created>1497754984512</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1497754984512</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14681000" />
+    <option name="totallyTimeSpent" value="14925000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -566,6 +514,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Model implement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model implement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
