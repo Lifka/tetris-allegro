@@ -13,6 +13,7 @@ private:
     int y;
 public:
     Point2D(int, int);
+    Point2D();
     int getX();
     int getY();
     void setX(int);

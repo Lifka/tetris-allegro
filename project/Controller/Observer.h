@@ -10,7 +10,7 @@
 
 class Observer {
 public:
-    virtual void update(NotifyCode);
+    virtual void update(NotifyCode){};
 };
 
 

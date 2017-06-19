@@ -9,7 +9,8 @@
 
 class FactoryMethod{
 public:
-    virtual Piece createPiece(PieceType type);
+    virtual Piece createPiece(PieceType type){};
 };
+
 
 #endif //PROJECT_FACTORYMETHOD_H

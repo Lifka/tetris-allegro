@@ -41,3 +41,6 @@ std::vector <std::vector<int> > Piece::getPieceBlocks() {
             return rotation270;
     }
 }
+
+Piece::Piece() {
+}

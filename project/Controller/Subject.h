@@ -15,7 +15,6 @@ private:
     std::vector<Observer* > observers;
 public:
     void addObserver(Observer* o);
-    void removeObserver(Observer* o);
     void notifyObservers(NotifyCode);
 };
 

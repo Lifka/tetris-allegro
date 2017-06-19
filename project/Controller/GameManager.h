@@ -11,7 +11,7 @@
 class GameManager : public Subject, Observer{
 private:
     static GameManager* instance;
-    GameManager();
+    GameManager(){};
     GameManager& operator=(GameManager const&){};
     GameManager(GameManager const&){};
     Factory factory = Factory();

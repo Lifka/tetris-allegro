@@ -4,9 +4,12 @@
 
 #include "PlayerController.h"
 
+
+PlayerController* PlayerController::instance = nullptr;
+
 PlayerController* PlayerController::getInstance() {
     if (!instance){
-        new PlayerController();
+        instance = new PlayerController();
     }
     return instance;
 }
@@ -29,4 +32,7 @@ void PlayerController::left() {
 
 void PlayerController::rotatePiece() {
     //TODO
+}
+
+PlayerController::PlayerController() {
 }

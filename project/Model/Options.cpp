@@ -4,6 +4,8 @@
 
 #include "Options.h"
 
+Options* Options::instance = nullptr;
+
 Options* Options::getInstance() {
     if (!instance)
         instance = new Options();
@@ -40,4 +42,7 @@ unsigned long Options::getBoard_blocks_height() const {
 
 void Options::setBoard_blocks_height(int board_blocks_height) {
     Options::board_blocks_height = board_blocks_height;
+}
+
+Options::Options() {
 }

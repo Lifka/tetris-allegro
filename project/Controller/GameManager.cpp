@@ -5,9 +5,12 @@
 #include "GameManager.h"
 #include "../Model/Board.h"
 
+
+GameManager* GameManager::instance = nullptr;
+
 GameManager* GameManager::getInstance() {
     if (!instance){
-        new GameManager();
+        instance = new GameManager();
     }
     return instance;
 }

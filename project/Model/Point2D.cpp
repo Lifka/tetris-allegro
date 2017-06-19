@@ -28,3 +28,8 @@ void Point2D::setY(int y) {
 std::pair<int,int> Point2D::getPosition() {
     return std::make_pair(x,y);
 }
+
+Point2D::Point2D() {
+    x = 0;
+    y = 0;
+}

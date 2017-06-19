@@ -7,18 +7,19 @@
 
 #include <vector>
 #include "Point2D.h"
-#include "Rotation.h"
 #include "Piece.h"
 #include "../Controller/Subject.h"
 
 class Board : public Subject{
 private:
     std::vector<std::vector<int> > m_board;
-    Piece falling_piece = NULL;
-    static Board* instance;
+    Piece falling_piece;
     Board();
+
+    static Board* instance;
     Board& operator=(Board const&){};
     Board(Board const&){};
+
     void deleteLine(int line);
 public:
     static Board* getInstance();

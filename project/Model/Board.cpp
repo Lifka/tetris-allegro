@@ -5,6 +5,8 @@
 #include "Board.h"
 #include "Options.h"
 
+Board* Board::instance = nullptr;
+
 void Board::deleteLine(int n_line) {
     for(int x = n_line+1; x < m_board.size(); x++)
         m_board[x-1] = m_board[x];
@@ -14,11 +16,13 @@ void Board::deleteLine(int n_line) {
 }
 
 Board* Board::getInstance() {
+
     if (!instance){
-        new Board();
+        instance = new Board();
     }
     return instance;
 }
+
 
 bool Board::isFree(Point2D p) {
     return m_board[p.getX()][p.getY()] == 0;
@@ -43,8 +47,8 @@ void Board::setFallingPiece(Piece falling_piece) {
 
 void Board::initBoard(Piece first_piece) {
     setFallingPiece(first_piece);
-    m_board = std::vector<std::vector<int> >(Options::getInstance()->getBoard_blocks_height(),
-                                             std::vector<int>(Options::getInstance()->getBoard_blocks_width(),0));
+  //  m_board = std::vector<std::vector<int> >(Options::getInstance()->getBoard_blocks_height(),
+ //                                            std::vector<int>(Options::getInstance()->getBoard_blocks_width(),0));
 }
 
 bool Board::isGameOver() {
@@ -54,4 +58,11 @@ bool Board::isGameOver() {
 bool Board::isPossibleMoviment(Point2D, Rotation) {
     return false; // TODO
 }
+
+Board::Board() {
+    setFallingPiece(Piece());
+}
+
+
+
 

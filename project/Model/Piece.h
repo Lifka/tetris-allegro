@@ -20,6 +20,7 @@ private:
     Point2D initial_position;
     PieceType type;
 public:
+    Piece();
     Piece(std::vector<std::vector<int> >, std::vector<std::vector<int> >, std::vector<std::vector<int> >,
               std::vector<std::vector<int> >, Point2D, Rotation, PieceType);
     Point2D getInitialPosition();
