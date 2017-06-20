@@ -47,8 +47,8 @@ void Board::setFallingPiece(Piece falling_piece) {
 
 void Board::initBoard(Piece first_piece) {
     setFallingPiece(first_piece);
-  //  m_board = std::vector<std::vector<int> >(Options::getInstance()->getBoard_blocks_height(),
- //                                            std::vector<int>(Options::getInstance()->getBoard_blocks_width(),0));
+    m_board = std::vector<std::vector<int> >(Options::getInstance()->getBoard_blocks_height(),
+                                             std::vector<int>(Options::getInstance()->getBoard_blocks_width(),0));
 }
 
 bool Board::isGameOver() {
