@@ -1,8 +1,4 @@
 /opt/clion/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/lifka/Desktop/tetris/project
-CMake Error at CMakeLists.txt:10 (target_link_libraries):
-  Cannot specify link libraries for target "liballegro.so" which is not built
-  by this project.
-
-
--- Configuring incomplete, errors occurred!
-See also "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lifka/Desktop/tetris/project/cmake-build-debug

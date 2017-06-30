@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+version=5.0.7
+soversion=5.0
+suffix=
+
+Name: allegro
+Description: Allegro game programming library
+Version: ${version}
+Libs: -L${libdir} -lallegro${suffix}
+Libs.private: 
+Cflags: -I${includedir}

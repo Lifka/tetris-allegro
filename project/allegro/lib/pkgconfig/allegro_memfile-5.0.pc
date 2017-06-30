@@ -1,0 +1,15 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+version=5.0.7
+soversion=5.0
+suffix=
+
+Name: allegro_memfile
+Description: Allegro game programming library, memory files addon
+Version: ${version}
+Libs: -L${libdir} -lallegro_memfile${suffix}
+Libs.private: 
+Requires: allegro${suffix}-${soversion} >= ${version}
+Cflags: -I${includedir}
