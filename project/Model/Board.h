@@ -21,6 +21,7 @@ private:
     Board(Board const&){};
 
     void deleteLine(int line);
+    void fillBoard();
 public:
     static Board* getInstance();
     bool isFree(Point2D);

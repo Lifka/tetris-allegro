@@ -5,6 +5,8 @@
 #include "Board.h"
 #include "Options.h"
 
+#define wall 1
+
 Board* Board::instance = nullptr;
 
 void Board::deleteLine(int n_line) {
@@ -47,8 +49,7 @@ void Board::setFallingPiece(Piece falling_piece) {
 
 void Board::initBoard(Piece first_piece) {
     setFallingPiece(first_piece);
-    m_board = std::vector<std::vector<int> >(Options::getInstance()->getBoard_blocks_height(),
-                                             std::vector<int>(Options::getInstance()->getBoard_blocks_width(),0));
+    fillBoard();
 }
 
 bool Board::isGameOver() {
@@ -63,6 +64,39 @@ Board::Board() {
     setFallingPiece(Piece());
 }
 
+void Board::fillBoard() {
+    m_board = std::vector<std::vector<int> >(Options::getInstance()->getBoard_blocks_height(),
+                                             std::vector<int>(Options::getInstance()->getBoard_blocks_width(),0));
+
+    unsigned long game_width = Options::getInstance()->getGame_width();
+    unsigned long wall_width = Options::getInstance()->getWalls_width();
+
+    int up = 0;
+
+    for (int i = 0; i < m_board.size(); i++){
+
+        up++;
+
+        for(int j = 0; j < m_board.size(); j++){
+
+            if (j < wall_width) // Pared derecha
+                m_board[i][j] = wall;
+
+            if ((m_board.size() - j) < wall_width) // Pared izquierda
+                m_board[i][j] = wall;
+
+            if (up < wall_width) // Superior
+                m_board[i][j] = wall;
+
+            if ((m_board.size() - up) < wall_width) // Inferior
+                m_board[i][j] = wall;
+
+            if (j >= game_width && (game_width + wall_width) < j) // Game
+                m_board[i][j] = wall;
+
+        }
+    }
+}
 
 
 

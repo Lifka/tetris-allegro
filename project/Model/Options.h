@@ -11,6 +11,7 @@ private:
     unsigned long block_size;
     unsigned long board_blocks_width;
     unsigned long board_blocks_height;
+    unsigned long game_width;
     static Options* instance;
     Options& operator=(Options const&){};
     Options(Options const&){};
@@ -25,5 +26,7 @@ public:
     void setBoard_blocks_width(int board_blocks_width);
     unsigned long getBoard_blocks_height() const;
     void setBoard_blocks_height(int board_blocks_height);
+    unsigned long getGame_width() const;
+    void setGame_width(int board_blocks_height);
 };
 #endif //PROJECT_OPTIONS_H

@@ -44,5 +44,13 @@ void Options::setBoard_blocks_height(int board_blocks_height) {
     Options::board_blocks_height = board_blocks_height;
 }
 
+unsigned long Options::getGame_width() const{
+    return game_width;
+}
+
+void Options::setGame_width(int game_width){
+    Options::game_width = game_width;
+}
+
 Options::Options() {
 }

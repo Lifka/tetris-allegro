@@ -1,11 +1,18 @@
 #include <iostream>
 #include "Model/Piece.h"
 #include "Model/Point2D.h"
+#include "Controller/GameManager.h"
+#include "Model/Options.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <allegro5/allegro.h>
 
+void game_loop() {
 
+    while(true){
+
+    }
+}
 
 int main(int argc, char **argv)  {
 
@@ -31,14 +38,12 @@ int main(int argc, char **argv)  {
 
     al_destroy_display(display);
 
+    Options::getInstance()->setBoard_blocks_height(200);
+    Options::getInstance()->setBoard_blocks_width(200);
+    Options::getInstance()->setWalls_width(10);
+    Options::getInstance()->setGame_width(150);
+    GameManager::getInstance()->initGame();
+    game_loop();
 
-
-
-    //--------------
-
-    Point2D test(2,3);
-
-
-    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
