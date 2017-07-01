@@ -3,6 +3,7 @@
 #include "Model/Point2D.h"
 #include "Controller/GameManager.h"
 #include "Model/Options.h"
+#include "View/Drawer.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <allegro5/allegro.h>
@@ -24,7 +25,23 @@ int main(int argc, char **argv)  {
         return -1;
     }
 
-    display = al_create_display(640, 480);
+    // ********* OPTIONS
+
+    Options::getInstance()->setBoard_blocks_height(30);
+    Options::getInstance()->setBoard_blocks_width(19);
+    Options::getInstance()->setGame_width(11);
+
+    Options::getInstance()->setWalls_width(1);
+
+    Options::getInstance()->setBlock_size(30);
+    Options::getInstance()->setScreen_height(900);
+    Options::getInstance()->setScreen_width(570);
+
+    // ********* /OPTIONS
+
+
+
+    display = al_create_display(Options::getInstance()->getScreen_height(), Options::getInstance()->getScreen_width());
     if(!display) {
         fprintf(stderr, "failed to create display!\n");
         return -1;
@@ -38,11 +55,10 @@ int main(int argc, char **argv)  {
 
     al_destroy_display(display);
 
-    Options::getInstance()->setBoard_blocks_height(200);
-    Options::getInstance()->setBoard_blocks_width(200);
-    Options::getInstance()->setWalls_width(10);
-    Options::getInstance()->setGame_width(150);
+
+    GameManager::getInstance()->addObserver(Drawer::getInstance());
     GameManager::getInstance()->initGame();
+
     game_loop();
 
     return 0;

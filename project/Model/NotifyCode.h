@@ -6,7 +6,7 @@
 #define PROJECT_NOTIFYCODE_H
 
 
-enum NotifyCode { next_piece, falling_piece};
+enum NotifyCode { next_piece, falling_piece, draw_screen};
 
 
 #endif //PROJECT_NOTIFYCODE_H

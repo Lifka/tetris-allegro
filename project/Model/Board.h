@@ -6,6 +6,7 @@
 #define PROJECT_BOARD_H
 
 #include <vector>
+#include <allegro/gfx.h>
 #include "Point2D.h"
 #include "Piece.h"
 #include "../Controller/Subject.h"
@@ -14,6 +15,7 @@ class Board : public Subject{
 private:
     std::vector<std::vector<int> > m_board;
     Piece falling_piece;
+
     Board();
 
     static Board* instance;
@@ -30,6 +32,7 @@ public:
     bool isGameOver();
     void initBoard(Piece);
     void setFallingPiece(Piece);
+    std::vector<std::vector<int> > getBoardMatrix();
 };
 
 #endif //PROJECT_BOARD_H

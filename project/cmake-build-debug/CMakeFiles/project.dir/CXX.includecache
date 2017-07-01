@@ -379,6 +379,8 @@ Options.h
 /home/lifka/Desktop/tetris/project/Model/Board.h
 vector
 -
+allegro/gfx.h
+-
 Point2D.h
 /home/lifka/Desktop/tetris/project/Model/Point2D.h
 Piece.h
@@ -437,10 +439,22 @@ utility
 /home/lifka/Desktop/tetris/project/View/Drawer.cpp
 Drawer.h
 /home/lifka/Desktop/tetris/project/View/Drawer.h
+../Model/Board.h
+/home/lifka/Desktop/tetris/project/Model/Board.h
+../Model/Options.h
+/home/lifka/Desktop/tetris/project/Model/Options.h
 
 /home/lifka/Desktop/tetris/project/View/Drawer.h
+allegro5/allegro.h
+-
+allegro/gfx.h
+-
+allegro.h
+-
 ../Controller/Observer.h
 /home/lifka/Desktop/tetris/project/Controller/Observer.h
+../Model/Options.h
+/home/lifka/Desktop/tetris/project/Model/Options.h
 
 /home/lifka/Desktop/tetris/project/main.cpp
 iostream
@@ -449,6 +463,12 @@ Model/Piece.h
 /home/lifka/Desktop/tetris/project/Model/Piece.h
 Model/Point2D.h
 /home/lifka/Desktop/tetris/project/Model/Point2D.h
+Controller/GameManager.h
+/home/lifka/Desktop/tetris/project/Controller/GameManager.h
+Model/Options.h
+/home/lifka/Desktop/tetris/project/Model/Options.h
+View/Drawer.h
+/home/lifka/Desktop/tetris/project/View/Drawer.h
 stdio.h
 -
 stdlib.h

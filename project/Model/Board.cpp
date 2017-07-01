@@ -99,4 +99,9 @@ void Board::fillBoard() {
 }
 
 
+std::vector<std::vector<int> > Board::getBoardMatrix(){
+    return m_board;
+}
+
+
 

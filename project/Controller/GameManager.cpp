@@ -19,7 +19,10 @@ void GameManager::initGame() {
     createNewPiece();
     Board::getInstance()->initBoard(next_piece);
     createNewPiece();
+
+    notifyObservers(NotifyCode::draw_screen);
 }
+
 
 void GameManager::createNewPiece() {
 
