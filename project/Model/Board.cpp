@@ -2,10 +2,12 @@
 // Created by lifka on 18/06/17.
 //
 
+#include <iostream>
 #include "Board.h"
 #include "Options.h"
 
 #define wall 1
+#define free 0
 
 Board* Board::instance = nullptr;
 
@@ -45,9 +47,12 @@ void Board::checkLines() {
 
 void Board::setFallingPiece(Piece falling_piece) {
     this->falling_piece = falling_piece;
+    /**/std::cout << "[DEBUG]: (Board:setFallingPiece) New falling piece setted --> Type = " << falling_piece.getPieceType() << std::endl;
 }
 
 void Board::initBoard(Piece first_piece) {
+    /**/std::cout << "[DEBUG]: (Board:initBoard) Starting board..." << std::endl;
+    /**/std::cout << "[DEBUG]: (Board:initBoard) Setting new falling piece..." << std::endl;
     setFallingPiece(first_piece);
     fillBoard();
 }
@@ -68,34 +73,8 @@ void Board::fillBoard() {
     m_board = std::vector<std::vector<int> >(Options::getInstance()->getBoard_blocks_height(),
                                              std::vector<int>(Options::getInstance()->getBoard_blocks_width(),0));
 
-    unsigned long game_width = Options::getInstance()->getGame_width();
-    unsigned long wall_width = Options::getInstance()->getWalls_width();
-
-    int up = 0;
-
-    for (int i = 0; i < m_board.size(); i++){
-
-        up++;
-
-        for(int j = 0; j < m_board.size(); j++){
-
-            if (j < wall_width) // Pared derecha
-                m_board[i][j] = wall;
-
-            if ((m_board.size() - j) < wall_width) // Pared izquierda
-                m_board[i][j] = wall;
-
-            if (up < wall_width) // Superior
-                m_board[i][j] = wall;
-
-            if ((m_board.size() - up) < wall_width) // Inferior
-                m_board[i][j] = wall;
-
-            if (j >= game_width && (game_width + wall_width) < j) // Game
-                m_board[i][j] = wall;
-
-        }
-    }
+    /**/std::cout << "[DEBUG]: (Board:fillBoard) Board created --> size = " <<  m_board.size() << " x " << m_board[0].size() << std::endl;
+    /**/debugPrintBoard();
 }
 
 
@@ -103,5 +82,16 @@ std::vector<std::vector<int> > Board::getBoardMatrix(){
     return m_board;
 }
 
+void Board::debugPrintBoard(){
+    /**/std::cout << "[DEBUG]: (Board:debugPrintBoard) Showing board:" << std::endl;
+    /**/std::cout << std::endl << "-------------------------------------------" << std::endl;
+    for (int i = 0; i < m_board.size(); i++){
+        for (int j = 0; j < m_board[i].size(); j++){
+            std::cout << m_board[i][j] << " ";
+        }
+        std::cout << std::endl;
+    }
+    /**/std::cout << "-------------------------------------------" << std::endl << std::endl;
+}
 
 

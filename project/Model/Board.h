@@ -33,6 +33,8 @@ public:
     void initBoard(Piece);
     void setFallingPiece(Piece);
     std::vector<std::vector<int> > getBoardMatrix();
+
+    /**/ void debugPrintBoard();
 };
 
 #endif //PROJECT_BOARD_H

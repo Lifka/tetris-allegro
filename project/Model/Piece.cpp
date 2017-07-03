@@ -44,3 +44,9 @@ std::vector <std::vector<int> > Piece::getPieceBlocks() {
 
 Piece::Piece() {
 }
+
+Piece::Piece(const Piece &p2){
+    current_rotation = p2.current_rotation;
+    initial_position = p2.initial_position;
+    type = p2.type;
+}

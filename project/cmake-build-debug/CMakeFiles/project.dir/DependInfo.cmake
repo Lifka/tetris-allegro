@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/lifka/Desktop/tetris/project/Model/Options.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/Options.cpp.o"
   "/home/lifka/Desktop/tetris/project/Model/Piece.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/Piece.cpp.o"
   "/home/lifka/Desktop/tetris/project/Model/Point2D.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/Point2D.cpp.o"
+  "/home/lifka/Desktop/tetris/project/View/BlockDrawer.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/View/BlockDrawer.cpp.o"
   "/home/lifka/Desktop/tetris/project/View/Drawer.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/View/Drawer.cpp.o"
   "/home/lifka/Desktop/tetris/project/main.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/main.cpp.o"
   )

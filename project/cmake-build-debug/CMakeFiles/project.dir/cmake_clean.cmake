@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/project.dir/Controller/GameManager.cpp.o"
   "CMakeFiles/project.dir/Controller/PlayerController.cpp.o"
   "CMakeFiles/project.dir/View/Drawer.cpp.o"
+  "CMakeFiles/project.dir/View/BlockDrawer.cpp.o"
   "project.pdb"
   "project"
 )

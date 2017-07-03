@@ -339,6 +339,33 @@ Model/Point2D.cpp.s:
 	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Point2D.cpp.s
 .PHONY : Model/Point2D.cpp.s
 
+View/BlockDrawer.o: View/BlockDrawer.cpp.o
+
+.PHONY : View/BlockDrawer.o
+
+# target to build an object file
+View/BlockDrawer.cpp.o:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/View/BlockDrawer.cpp.o
+.PHONY : View/BlockDrawer.cpp.o
+
+View/BlockDrawer.i: View/BlockDrawer.cpp.i
+
+.PHONY : View/BlockDrawer.i
+
+# target to preprocess a source file
+View/BlockDrawer.cpp.i:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/View/BlockDrawer.cpp.i
+.PHONY : View/BlockDrawer.cpp.i
+
+View/BlockDrawer.s: View/BlockDrawer.cpp.s
+
+.PHONY : View/BlockDrawer.s
+
+# target to generate assembly for a file
+View/BlockDrawer.cpp.s:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/View/BlockDrawer.cpp.s
+.PHONY : View/BlockDrawer.cpp.s
+
 View/Drawer.o: View/Drawer.cpp.o
 
 .PHONY : View/Drawer.o
@@ -426,6 +453,9 @@ help:
 	@echo "... Model/Point2D.o"
 	@echo "... Model/Point2D.i"
 	@echo "... Model/Point2D.s"
+	@echo "... View/BlockDrawer.o"
+	@echo "... View/BlockDrawer.i"
+	@echo "... View/BlockDrawer.s"
 	@echo "... View/Drawer.o"
 	@echo "... View/Drawer.i"
 	@echo "... View/Drawer.s"

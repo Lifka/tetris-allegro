@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../allegro/include/allegro5/addons/image/allegro5/allegro_image.h
+
+../allegro/include/allegro5/addons/primitives/allegro5/allegro_primitives.h
+allegro5/allegro.h
+-
+
 ../allegro/include/allegro5/alcompat.h
 
 ../allegro/include/allegro5/allegro.h
@@ -331,6 +337,8 @@ allegro5/base.h
 ../allegro/include/allegro5/allegro5/base.h
 
 /home/lifka/Desktop/tetris/project/Controller/GameManager.cpp
+iostream
+-
 GameManager.h
 /home/lifka/Desktop/tetris/project/Controller/GameManager.h
 ../Model/Board.h
@@ -371,6 +379,8 @@ Observer.h
 /home/lifka/Desktop/tetris/project/Controller/Observer.h
 
 /home/lifka/Desktop/tetris/project/Model/Board.cpp
+iostream
+-
 Board.h
 /home/lifka/Desktop/tetris/project/Model/Board.h
 Options.h
@@ -409,6 +419,10 @@ Options.h
 /home/lifka/Desktop/tetris/project/Model/Options.h
 
 /home/lifka/Desktop/tetris/project/Model/Options.h
+allegro5/color.h
+-
+Point2D.h
+/home/lifka/Desktop/tetris/project/Model/Point2D.h
 
 /home/lifka/Desktop/tetris/project/Model/Piece.cpp
 Piece.h
@@ -436,20 +450,48 @@ utility
 
 /home/lifka/Desktop/tetris/project/Model/Rotation.h
 
+/home/lifka/Desktop/tetris/project/Model/direction.h
+
+/home/lifka/Desktop/tetris/project/View/BlockDrawer.cpp
+allegro5/addons/primitives/allegro5/allegro_primitives.h
+-
+iostream
+-
+BlockDrawer.h
+/home/lifka/Desktop/tetris/project/View/BlockDrawer.h
+../Model/direction.h
+/home/lifka/Desktop/tetris/project/Model/direction.h
+
+/home/lifka/Desktop/tetris/project/View/BlockDrawer.h
+allegro5/color.h
+-
+../Model/Point2D.h
+/home/lifka/Desktop/tetris/project/Model/Point2D.h
+../Model/Options.h
+/home/lifka/Desktop/tetris/project/Model/Options.h
+../Model/Piece.h
+/home/lifka/Desktop/tetris/project/Model/Piece.h
+../Model/direction.h
+/home/lifka/Desktop/tetris/project/Model/direction.h
+
 /home/lifka/Desktop/tetris/project/View/Drawer.cpp
+iostream
+-
+allegro5/addons/primitives/allegro5/allegro_primitives.h
+-
 Drawer.h
 /home/lifka/Desktop/tetris/project/View/Drawer.h
 ../Model/Board.h
 /home/lifka/Desktop/tetris/project/Model/Board.h
 ../Model/Options.h
 /home/lifka/Desktop/tetris/project/Model/Options.h
+BlockDrawer.h
+/home/lifka/Desktop/tetris/project/View/BlockDrawer.h
 
 /home/lifka/Desktop/tetris/project/View/Drawer.h
+stdlib.h
+-
 allegro5/allegro.h
--
-allegro/gfx.h
--
-allegro.h
 -
 ../Controller/Observer.h
 /home/lifka/Desktop/tetris/project/Controller/Observer.h
@@ -459,20 +501,18 @@ allegro.h
 /home/lifka/Desktop/tetris/project/main.cpp
 iostream
 -
-Model/Piece.h
-/home/lifka/Desktop/tetris/project/Model/Piece.h
-Model/Point2D.h
-/home/lifka/Desktop/tetris/project/Model/Point2D.h
-Controller/GameManager.h
-/home/lifka/Desktop/tetris/project/Controller/GameManager.h
 Model/Options.h
 /home/lifka/Desktop/tetris/project/Model/Options.h
+Controller/GameManager.h
+/home/lifka/Desktop/tetris/project/Controller/GameManager.h
 View/Drawer.h
 /home/lifka/Desktop/tetris/project/View/Drawer.h
-stdio.h
--
+View/BlockDrawer.h
+/home/lifka/Desktop/tetris/project/View/BlockDrawer.h
 stdlib.h
 -
-allegro5/allegro.h
+allegro5/addons/primitives/allegro5/allegro_primitives.h
+-
+allegro5/addons/image/allegro5/allegro_image.h
 -
 

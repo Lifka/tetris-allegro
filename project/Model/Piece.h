@@ -21,6 +21,7 @@ private:
     PieceType type;
 public:
     Piece();
+    Piece(const Piece &p2);
     Piece(std::vector<std::vector<int> >, std::vector<std::vector<int> >, std::vector<std::vector<int> >,
               std::vector<std::vector<int> >, Point2D, Rotation, PieceType);
     Point2D getInitialPosition();

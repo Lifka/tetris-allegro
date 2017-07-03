@@ -149,6 +149,15 @@
 		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Rotation.h">
 			<Option target="project"/>
 		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/direction.h">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/View/BlockDrawer.cpp">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/View/BlockDrawer.h">
+			<Option target="project"/>
+		</Unit>
 		<Unit filename="/home/lifka/Desktop/tetris/project/View/Drawer.cpp">
 			<Option target="project"/>
 		</Unit>

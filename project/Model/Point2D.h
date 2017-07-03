@@ -9,16 +9,16 @@
 
 class Point2D{
 private:
-    int x;
-    int y;
+    float x;
+    float y;
 public:
-    Point2D(int, int);
+    Point2D(float, float);
     Point2D();
-    int getX();
-    int getY();
-    void setX(int);
-    void setY(int);
-    std::pair<int, int> getPosition();
+    float getX();
+    float getY();
+    void setX(float);
+    void setY(float);
+    std::pair<float, float> getPosition();
 };
 
 #endif //PROJECT_POINT2D_H

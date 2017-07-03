@@ -2,6 +2,7 @@
 // Created by lifka on 18/06/17.
 //
 
+#include <iostream>
 #include "GameManager.h"
 #include "../Model/Board.h"
 
@@ -16,8 +17,13 @@ GameManager* GameManager::getInstance() {
 }
 
 void GameManager::initGame() {
+    /**/std::cout << "[DEBUG]: (GameManager:initGame) starting gane..." << std::endl;
+
     createNewPiece();
+
+    /**/std::cout << "[DEBUG]: (GameManager:initGame) starting board..." << std::endl;
     Board::getInstance()->initBoard(next_piece);
+
     createNewPiece();
 
     notifyObservers(NotifyCode::draw_screen);
@@ -52,5 +58,8 @@ void GameManager::createNewPiece() {
             break;
     }
 
+
     next_piece = factory.createPiece(type);
+    /**/std::cout << "[DEBUG]: (GameManager:createNewPiece) New piece created --> Type = " <<  type << std::endl;
+
 }
