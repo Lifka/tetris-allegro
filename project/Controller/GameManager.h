@@ -23,6 +23,8 @@ public:
     void initGame();
     void createNewPiece();
     void scoreUp();
+    void nextPiece();
+    void newFallingPiece();
 };
 
 #endif //PROJECT_GAMEMANAGER_H

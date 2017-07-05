@@ -29,7 +29,7 @@ ColorName ColorPalette::getRandomColor() {
 
     std::advance(begin, k);
 
-    /**/std::cout << "[DEBUG]: (ColorPalette:getRandomColor) Color generated --> " << *begin << " --- k: " << k << std::endl;
+    /**///std::cout << "[DEBUG]: (ColorPalette:getRandomColor) Color generated --> " << *begin << " --- k: " << k << std::endl;
 
     return (*begin);
 }
@@ -54,6 +54,7 @@ ColorPalette::ColorPalette() {
     colors[ColorName::bluegrey] = ALLEGRO_COLOR(al_map_rgb(96,125,139));
     colors[ColorName::lime] = ALLEGRO_COLOR(al_map_rgb(205,220,57));
     colors[ColorName::yellow] = ALLEGRO_COLOR(al_map_rgb(255,235,59));
+    colors[ColorName::white] = ALLEGRO_COLOR(al_map_rgb(255,255,255));
 
     for (std::map<ColorName,ALLEGRO_COLOR>::iterator it = colors.begin(); it != colors.end(); ++it){
         piece_colors.push_back((*it).first);

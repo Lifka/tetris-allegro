@@ -13,35 +13,35 @@ Options* Options::getInstance() {
     return instance;
 }
 
-unsigned long Options::getWalls_width() const {
+int Options::getWalls_width() const {
     return walls_width;
 }
 
-void Options::setWalls_width(unsigned long walls_width) {
+void Options::setWalls_width(int walls_width) {
     Options::walls_width = walls_width;
 }
 
-unsigned long Options::getBlock_size() const {
+int Options::getBlock_size() const {
     return block_size;
 }
 
-void Options::setBlock_size(unsigned long block_size) {
+void Options::setBlock_size(int block_size) {
     Options::block_size = block_size;
 }
 
-unsigned long Options::getBoard_blocks_width() const {
+int Options::getBoard_blocks_width() const {
     return board_blocks_width;
 }
 
-void Options::setBoard_blocks_width(unsigned long board_blocks_width) {
+void Options::setBoard_blocks_width(int board_blocks_width) {
     Options::board_blocks_width = board_blocks_width;
 }
 
-unsigned long Options::getBoard_blocks_height() const {
+int Options::getBoard_blocks_height() const {
     return board_blocks_height;
 }
 
-void Options::setBoard_blocks_height(unsigned long board_blocks_height) {
+void Options::setBoard_blocks_height(int board_blocks_height) {
     Options::board_blocks_height = board_blocks_height;
 }
 
@@ -110,11 +110,24 @@ void Options::setWalls_color(ColorName walls_color) {
     Options::walls_color = walls_color;
 }
 
-unsigned long Options::getBoardWidthInPixels() const {
+
+ColorName Options::getTextColor(){
+    return text_color;
+}
+
+void Options::setTextColor(ColorName text_color) {
+    if (Options::text_color != ColorName::none){
+        ColorPalette::getInstance()->removeSystemColor(Options::text_color);
+    }
+    ColorPalette::getInstance()->setSystemColor(text_color);
+    Options::text_color = text_color;
+}
+
+int Options::getBoardWidthInPixels() const {
     return board_blocks_width * block_size;
 }
 
-unsigned long Options::getBoardHeightInPixels() const {
+int Options::getBoardHeightInPixels() const {
     return board_blocks_height * block_size;
 }
 
@@ -124,4 +137,44 @@ int Options::getLine_score() const {
 
 int Options::getScore_for_levelup() const {
     return score_for_levelup;
+}
+
+const Point2D &Options::getNext_piece_offset_position_screen() const {
+    return next_piece_offset_position_screen;
+}
+
+void Options::setNext_piece_offset_position_screen(const Point2D &next_piece_position_screen) {
+    Options::next_piece_offset_position_screen = next_piece_position_screen;
+}
+
+const Point2D &Options::getScore_offset_position_screen() const {
+    return score_offset_position_screen;
+}
+
+void Options::setScore_offset_position_screen(const Point2D &score_offset_position_screen) {
+    Options::score_offset_position_screen = score_offset_position_screen;
+}
+
+const Point2D &Options::getLevel_offset_position_screen() const {
+    return level_offset_position_screen;
+}
+
+void Options::setLevel_offset_position_screen(const Point2D &level_offset_position_screen) {
+    Options::level_offset_position_screen = level_offset_position_screen;
+}
+
+int Options::getFont_size() const {
+    return font_size;
+}
+
+void Options::setFont_size(int font_size) {
+    Options::font_size = font_size;
+}
+
+char *Options::getFont() const {
+    return font;
+}
+
+void Options::setFont(char *font) {
+    Options::font = font;
 }

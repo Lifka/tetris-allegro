@@ -7,11 +7,24 @@
 #include <stdlib.h>
 #include <allegro5/addons/primitives/allegro5/allegro_primitives.h>
 #include <allegro5/addons/image/allegro5/allegro_image.h>
+#include <allegro5/allegro_font.h>
+#include <allegro5/allegro_ttf.h>
+
+void updateGame(){
+
+}
+
+void displayGame(){
+
+}
 
 void game_loop() {
 
-    while(true){
+    bool game_is_running = true;
 
+    while(game_is_running){
+        updateGame();
+        displayGame();
     }
 }
 
@@ -41,8 +54,15 @@ int main(int argc, char **argv)  {
     Options::getInstance()->setWalls_color(ColorName::purple);
     Options::getInstance()->setBoard_color(ColorName::indigo);
     Options::getInstance()->setBackground_color(ColorName::black);
+    Options::getInstance()->setTextColor(ColorName::white);
+
+    Options::getInstance()->setFont_size(20);
+    Options::getInstance()->setFont((char *) "../fonts/pirulen.ttf");
 
     Options::getInstance()->setBoard_offset(Point2D(0,0));
+    Options::getInstance()->setNext_piece_offset_position_screen(Point2D(650,100));
+    Options::getInstance()->setLevel_offset_position_screen(Point2D(650,500));
+    Options::getInstance()->setScore_offset_position_screen(Point2D(650,700));
 
     // ********* /OPTIONS
 
@@ -62,6 +82,9 @@ int main(int argc, char **argv)  {
     al_init_primitives_addon();
     al_init_image_addon();
 
+    al_init_font_addon();
+    al_init_ttf_addon();
+
 
 
 
@@ -71,10 +94,7 @@ int main(int argc, char **argv)  {
 
     GameManager::getInstance()->initGame();
 
-
-
-
-
+    game_loop();
 
 
     al_flip_display();
@@ -84,7 +104,6 @@ int main(int argc, char **argv)  {
 
     al_destroy_display(display);
 
-    game_loop();
 
 
 

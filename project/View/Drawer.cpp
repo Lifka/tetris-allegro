@@ -6,9 +6,11 @@
 #include <allegro5/addons/primitives/allegro5/allegro_primitives.h>
 #include "Drawer.h"
 #include "../Model/Board.h"
-#include "../Model/Options.h"
+#include "../Model/Strings.h"
 #include "BlockDrawer.h"
 #include "../Model/ColorPalette.h"
+#include <allegro5/allegro_font.h>
+#include <allegro5/allegro_ttf.h>
 
 #define block 1
 
@@ -24,10 +26,11 @@ Drawer *Drawer::getInstance() {
 
 void Drawer::refreshBoard() {
 
-    float x_init = Options::getInstance()->getBoard_offset().getX() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
+    int x_init = Options::getInstance()->getBoard_offset().getX() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
+    int y_init = Options::getInstance()->getBoard_offset().getY() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
 
     Point2D init_point = Point2D(x_init,
-                                 Options::getInstance()->getBoard_offset().getY() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width());
+                                 y_init);
 
 
     for(int i = 0; i < Options::getInstance()->getBoard_blocks_height(); i++){
@@ -50,8 +53,8 @@ void Drawer::initBoard() {
 
     /**/std::cout << "[DEBUG]: (Drawer:initBoard) initBoard..." << std::endl;
 
-    float x_init = Options::getInstance()->getBoard_offset().getX() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
-    float y_init = Options::getInstance()->getBoard_offset().getY() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
+    int x_init = Options::getInstance()->getBoard_offset().getX() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
+    int y_init = Options::getInstance()->getBoard_offset().getY() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
 
     Point2D init_point = Point2D(x_init, y_init);
 
@@ -63,6 +66,7 @@ void Drawer::initBoard() {
         init_point.setY(init_point.getY() + Options::getInstance()->getBlock_size());
         init_point.setX(x_init);
     }
+    writeFonts();
 }
 
 void Drawer::walls() {
@@ -70,7 +74,7 @@ void Drawer::walls() {
 
     // Up
     Point2D init_point = Point2D(Options::getInstance()->getBoard_offset().getX(),Options::getInstance()->getBoard_offset().getY() + Options::getInstance()->getWalls_width()/2);
-    float size = Options::getInstance()->getBoardWidthInPixels() + Options::getInstance()->getWalls_width()/2;
+    int size = Options::getInstance()->getBoardWidthInPixels() + Options::getInstance()->getWalls_width()/2;
     Point2D final_point = Point2D(Options::getInstance()->getBoard_offset().getX() + size + Options::getInstance()->getWalls_width(), Options::getInstance()->getBoard_offset().getY() + Options::getInstance()->getWalls_width()/2);
 
     al_draw_line(init_point.getX(), init_point.getY(), final_point.getX(), final_point.getY(), color, Options::getInstance()->getWalls_width());
@@ -116,20 +120,104 @@ void Observer::update(NotifyCode code,  Piece piece){
         case falling_piece:
             BlockDrawer::getInstance()->drawBlocksPiece(piece);
             break;
+        case next_piece:
+            Drawer::getInstance()->refreshNextPiece(piece);
+            break;
 
     }
 }
 
+void Observer::update(NotifyCode code,  int n){
+    /**/std::cout << "[DEBUG]: (Drawer-update) notify recieved with code --> " << code;
+   switch (code){
+        case draw_scoreup:
+            Drawer::getInstance()->writeScore(n);
+            break;
+        case draw_levelup:
+            Drawer::getInstance()->writeLevel(n);
+            break;
 
-
-void Drawer::refreshNextPiece() {
-    //TODO
+    }
 }
 
-void Drawer::refreshFallingPiece() {
-    //TODO
+void Drawer::refreshNextPiece(Piece piece) {
+    BlockDrawer::getInstance()->drawBlocksNextPiece(piece);
 }
+
 
 Drawer::Drawer() {
 
 }
+
+void Drawer::writeFonts() {
+
+    ALLEGRO_FONT *font = al_load_ttf_font(Options::getInstance()->getFont(),
+                                          Options::getInstance()->getFont_size(),0 );
+
+    Point2D offset_next_piece = Options::getInstance()->getNext_piece_offset_position_screen();
+    int adjust_y = 50;
+
+    al_draw_text(font,
+            ColorPalette::getInstance()->getColor(Options::getInstance()->getTextColor()),
+                 offset_next_piece.getX(),
+                 offset_next_piece.getY()-adjust_y,
+                 ALLEGRO_ALIGN_LEFT,
+                 Strings::getInstance()->getNext_piece());
+
+
+    Point2D offset_level = Options::getInstance()->getLevel_offset_position_screen();
+
+    al_draw_text(font,
+                 ColorPalette::getInstance()->getColor(Options::getInstance()->getTextColor()),
+                 offset_level.getX(),
+                 offset_level.getY()-adjust_y,
+                 ALLEGRO_ALIGN_LEFT,
+                 Strings::getInstance()->getLevel());
+
+
+    Point2D offset_score = Options::getInstance()->getScore_offset_position_screen();
+
+    al_draw_text(font,
+                 ColorPalette::getInstance()->getColor(Options::getInstance()->getTextColor()),
+                 offset_score.getX(),
+                 offset_score.getY()-adjust_y,
+                 ALLEGRO_ALIGN_LEFT,
+                 Strings::getInstance()->getScore());
+}
+
+void Drawer::writeScore(int i) {
+
+    char str[10];
+    sprintf(str, "%d", i);
+
+    ALLEGRO_FONT *font = al_load_ttf_font(Options::getInstance()->getFont(),
+                                          Options::getInstance()->getFont_size(),0 );
+
+    Point2D offset_score = Options::getInstance()->getScore_offset_position_screen();
+
+    al_draw_text(font,
+                 ColorPalette::getInstance()->getColor(Options::getInstance()->getTextColor()),
+                 offset_score.getX(),
+                 offset_score.getY(),
+                 ALLEGRO_ALIGN_LEFT,
+                 str);
+}
+
+void Drawer::writeLevel(int i) {
+
+    char str[10];
+    sprintf(str, "%d", i);
+
+    ALLEGRO_FONT *font = al_load_ttf_font(Options::getInstance()->getFont(),
+                                          Options::getInstance()->getFont_size(),0 );
+
+    Point2D offset_level = Options::getInstance()->getLevel_offset_position_screen();
+
+    al_draw_text(font,
+                 ColorPalette::getInstance()->getColor(Options::getInstance()->getTextColor()),
+                 offset_level.getX(),
+                 offset_level.getY(),
+                 ALLEGRO_ALIGN_LEFT,
+                 str);
+}
+

@@ -7,7 +7,7 @@
 
 
 
-enum ColorName { none, blue, green, yellow, orange, purple, red, indigo, cyan, brown, grey, pink, teal, black, lime, bluegrey};
+enum ColorName { none, blue, green, yellow, orange, purple, red, indigo, cyan, brown, grey, pink, teal, black, lime, bluegrey, white};
 
 
 #endif //PROJECT_COLORNAME_H

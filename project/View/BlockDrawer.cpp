@@ -30,7 +30,7 @@ void BlockDrawer::drawBlock(Point2D position, ColorName color, float size) {
     /**///std::cout << "[DEBUG]: (BlockDrawer-drawBlock) drawed block --> size=" << size << " Point(" << position.getX() << "," << position.getY() << ")" << std::endl;
 }
 
-void BlockDrawer::drawBlocksLine(Point2D init, Direction dir, int size, ColorName color, float thickness) {
+void BlockDrawer::drawBlocksLine(Point2D init, Direction dir, int size, ColorName color, int thickness) {
     Point2D point = init;
 
     switch (dir){
@@ -62,10 +62,10 @@ void BlockDrawer::drawBlocksLine(Point2D init, Direction dir, int size, ColorNam
 }
 
 void BlockDrawer::drawBlockInBoardPosition(std::pair<int,int> board_position, ColorName color){
-    /**/std::cout << "[DEBUG]: (BlockDrawer-drawBlockInBoardPosition) drawing block --> (" << board_position.first << "," << board_position.second << ") - Color: " << color << std::endl;
+    /**///std::cout << "[DEBUG]: (BlockDrawer-drawBlockInBoardPosition) drawing block --> (" << board_position.first << "," << board_position.second << ") - Color: " << color << std::endl;
 
-    float screen_position_x = Options::getInstance()->getBoard_offset().getX() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
-    float screen_position_y = Options::getInstance()->getBoard_offset().getY() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
+    int screen_position_x = (int)(Options::getInstance()->getBoard_offset().getX() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width());
+    int screen_position_y = (int)(Options::getInstance()->getBoard_offset().getY() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width());
 
     screen_position_x += Options::getInstance()->getBlock_size() * (board_position.first );
     screen_position_y += Options::getInstance()->getBlock_size() * (board_position.second );
@@ -78,7 +78,6 @@ void BlockDrawer::drawBlockInBoardPosition(std::pair<int,int> board_position, Co
 void BlockDrawer::drawBlocksPiece(Piece piece) {
     /**/std::cout << "[DEBUG]: (BlockDrawer-drawBlocksPiece) drawing piece in position --> (" << piece.getCurrent_position_matrix().first << "," << piece.getCurrent_position_matrix().second << ") - " << piece.getPieceType() << std::endl;
 
-    int count_x = 0;
     int count_y = 0;
 
     bool piece_paint = false;
@@ -94,7 +93,6 @@ void BlockDrawer::drawBlocksPiece(Piece piece) {
                                        piece.getCurrent_position_matrix().second + count_y),
                         piece.getColor());
 
-                count_x++;
                 piece_paint = true;
             }
         }
@@ -102,11 +100,31 @@ void BlockDrawer::drawBlocksPiece(Piece piece) {
         if (piece_paint){
             count_y++;
             piece_paint = false;
-            count_x = 0;
         }
     }
 
+}
 
-    /**/piece.debugMatrix();
+void BlockDrawer::drawBlocksNextPiece(Piece piece) {
+
+    Point2D offset = Options::getInstance()->getNext_piece_offset_position_screen();
+
+    int position_x = offset.getX();
+    int position_y = offset.getY();
+
+    int size_block = Options::getInstance()->getBlock_size();
+
+    for (int y = 0; y < piece.getPieceBlocks().size(); y++) {
+        for (int x = 0; x < piece.getPieceBlocks()[y].size(); x++) {
+            Point2D position = Point2D(position_x + x * size_block,
+                                       position_y + y * size_block);
+
+            if (piece.getPieceBlocks()[y][x] == 1 || piece.getPieceBlocks()[y][x] == 2) {
+                drawBlock(position, piece.getColor());
+            } else {
+                drawBlock(position, Options::getInstance()->getBackground_color());
+            }
+        }
+    }
 }
 

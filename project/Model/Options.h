@@ -12,17 +12,23 @@
 class Options{
 private:
     Point2D board_offset;
+    Point2D next_piece_offset_position_screen;
+    Point2D score_offset_position_screen;
+    Point2D level_offset_position_screen;
 
     ColorName background_color = ColorName::none;
     ColorName board_color = ColorName::none;
     ColorName walls_color = ColorName::none;
+    ColorName text_color = ColorName::none;
 
+    char* font;
+    int font_size = 20;
     int line_score = 10;
     int score_for_levelup = 100;
-    unsigned long walls_width;
-    unsigned long block_size;
-    unsigned long board_blocks_width;
-    unsigned long board_blocks_height;
+    int walls_width;
+    int block_size;
+    int board_blocks_width;
+    int board_blocks_height;
     int screen_width;
     int screen_height;
     static Options* instance;
@@ -31,21 +37,21 @@ private:
     Options();
 public:
     static Options* getInstance();
-    unsigned long getWalls_width() const;
-    void setWalls_width(unsigned long walls_width);
-    unsigned long getBlock_size() const;
-    void setBlock_size(unsigned long block_size);
-    unsigned long getBoard_blocks_width() const;
-    void setBoard_blocks_width(unsigned long board_blocks_width);
-    unsigned long getBoard_blocks_height() const;
-    void setBoard_blocks_height(unsigned long board_blocks_height);
+    int getWalls_width() const;
+    void setWalls_width(int walls_width);
+    int getBlock_size() const;
+    void setBlock_size(int block_size);
+    int getBoard_blocks_width() const;
+    void setBoard_blocks_width(int board_blocks_width);
+    int getBoard_blocks_height() const;
+    void setBoard_blocks_height(int board_blocks_height);
     int getScreen_width() const;
     void setScreen_width(int screen_width);
     int getScreen_height() const;
     void setScreen_height(int screen_height);
 
-    unsigned long getBoardWidthInPixels() const;
-    unsigned long getBoardHeightInPixels() const;
+    int getBoardWidthInPixels() const;
+    int getBoardHeightInPixels() const;
 
     //Colors
     ColorName getBackground_color();
@@ -54,6 +60,8 @@ public:
     void setBoard_color(ColorName board_color);
     ColorName getWalls_color();
     void setWalls_color(ColorName walls_color);
+    ColorName getTextColor();
+    void setTextColor(ColorName color);
 
     //Board position
     Point2D &getBoard_offset();
@@ -62,7 +70,19 @@ public:
     int getLine_score() const;
     int getScore_for_levelup() const;
 
+    const Point2D &getNext_piece_offset_position_screen() const;
+    void setNext_piece_offset_position_screen(const Point2D &next_piece_position_screen);
+    const Point2D &getScore_offset_position_screen() const;
+    void setScore_offset_position_screen(const Point2D &score_position_screen);
+    const Point2D &getLevel_offset_position_screen() const;
+    void setLevel_offset_position_screen(const Point2D &level_position_screen);
 
+    int getFont_size() const;
 
+    void setFont_size(int font_size);
+
+    char *getFont() const;
+
+    void setFont(char *font);
 };
 #endif //PROJECT_OPTIONS_H

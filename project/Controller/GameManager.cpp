@@ -19,29 +19,27 @@ GameManager* GameManager::getInstance() {
 }
 
 void GameManager::initGame() {
-    /**/std::cout << "[DEBUG]: (GameManager:initGame) starting gane..." << std::endl;
+    /**/std::cout << "[DEBUG]: (GameManager:initGame) starting game..." << std::endl;
 
     level = 0;
     score = 0;
 
-    createNewPiece();
-
     /**/std::cout << "[DEBUG]: (GameManager:initGame) starting board..." << std::endl;
+
     Board::getInstance()->initBoard();
     notifyObservers(NotifyCode::draw_screen);
 
-    Board::getInstance()->setFallingPiece(next_piece);
+    scoreUp();
 
+    // First piece..
     createNewPiece();
 
-    /**/next_piece.debugMatrix();
+    nextPiece();
 }
-
 
 void GameManager::createNewPiece() {
 
     PieceType type;
-
 
     std::mt19937 rng;
     rng.seed(std::random_device()());
@@ -74,8 +72,8 @@ void GameManager::createNewPiece() {
 
 
     next_piece = factory.createPiece(type);
-    /**/std::cout << "[DEBUG]: (GameManager:createNewPiece) New piece created --> Type = " <<  type << std::endl;
-
+    /**/std::cout << "[DEBUG]: (GameManager:createNewPiece) New piece created --> Type = " <<  type << " -- Showing: " << std::endl;
+    /**/next_piece.debugMatrix();
 }
 
 
@@ -96,5 +94,26 @@ void GameManager::scoreUp(){
 
     if (score >= Options::getInstance()->getScore_for_levelup()*level*level){
         level++;
+        notifyObservers(NotifyCode::draw_levelup, level);
     }
+
+    notifyObservers(NotifyCode::draw_scoreup, score);
+
+}
+
+void GameManager::nextPiece() {
+    /**/std::cout << "[DEBUG]: (GameManager:nextPiece) " << std::endl;
+
+    // Set falling piece:
+    newFallingPiece();
+
+    // Set next piece:
+    createNewPiece();
+    notifyObservers(NotifyCode::next_piece, next_piece);
+
+}
+
+void GameManager::newFallingPiece() {
+    /**/std::cout << "[DEBUG]: (GameManager:newFallingPiece) " << std::endl;
+    Board::getInstance()->setFallingPiece(next_piece);
 }

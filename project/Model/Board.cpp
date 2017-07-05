@@ -57,7 +57,6 @@ void Board::setFallingPiece(Piece falling_piece) {
 
 void Board::initBoard() {
     /**/std::cout << "[DEBUG]: (Board:initBoard) Starting board..." << std::endl;
-    /**/std::cout << "[DEBUG]: (Board:initBoard) Setting new falling piece..." << std::endl;
     fillBoard();
 }
 

@@ -4,28 +4,28 @@
 
 #include "Point2D.h"
 
-Point2D::Point2D(float x, float y){
+Point2D::Point2D(int x, int y){
     this->x = x;
     this->y = y;
 }
 
-float Point2D::getX() {
+int Point2D::getX() {
     return x;
 }
 
-float Point2D::getY() {
+int Point2D::getY() {
     return y;
 }
 
-void Point2D::setX(float x) {
+void Point2D::setX(int x) {
     this->x = x;
 }
 
-void Point2D::setY(float y) {
+void Point2D::setY(int y) {
     this->y = y;
 }
 
-std::pair<float,float> Point2D::getPosition() {
+std::pair<int,int> Point2D::getPosition() {
     return std::make_pair(x,y);
 }
 

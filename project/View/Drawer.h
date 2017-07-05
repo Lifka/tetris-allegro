@@ -22,13 +22,24 @@ private:
     Drawer();
     Drawer& operator=(Drawer const&){};
     Drawer(Drawer const&){};
+    void writeFonts();
 public:
     static Drawer* getInstance();
+
+    // Draws the background of the board depending on his offset, the size of the block, the walls, etc
     void initBoard();
+
+    // Draws the walls of the board depending on the board offset position and the walls width
     void walls();
+
+    // Repaint the board filling the stored blocks
     void refreshBoard();
-    void refreshNextPiece();
-    void refreshFallingPiece();
+
+    // Repaint the next piece indicator in the screen position setted in the options (using the BlockDrawer method)
+    void refreshNextPiece(Piece piece);
+
+    void writeLevel(int i);
+    void writeScore(int i);
 };
 
 #endif //PROJECT_DRAWER_H

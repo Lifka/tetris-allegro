@@ -17,6 +17,7 @@ private:
 public:
     void addObserver(Observer* o);
     void notifyObservers(NotifyCode, Piece piece);
+    void notifyObservers(NotifyCode, int);
     void notifyObservers(NotifyCode);
 };
 

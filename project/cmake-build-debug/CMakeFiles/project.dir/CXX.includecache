@@ -64,6 +64,10 @@ allegro5/config.h
 allegro5/alcompat.h
 ../allegro/include/allegro5/allegro5/alcompat.h
 
+../allegro/include/allegro5/allegro_font.h
+allegro5/allegro.h
+../allegro/include/allegro5/allegro5/allegro.h
+
 ../allegro/include/allegro5/altime.h
 allegro5/base.h
 ../allegro/include/allegro5/allegro5/base.h
@@ -502,6 +506,12 @@ utility
 
 /home/lifka/Desktop/tetris/project/Model/Rotation.h
 
+/home/lifka/Desktop/tetris/project/Model/Strings.cpp
+Strings.h
+/home/lifka/Desktop/tetris/project/Model/Strings.h
+
+/home/lifka/Desktop/tetris/project/Model/Strings.h
+
 /home/lifka/Desktop/tetris/project/View/BlockDrawer.cpp
 allegro5/addons/primitives/allegro5/allegro_primitives.h
 -
@@ -533,12 +543,16 @@ Drawer.h
 /home/lifka/Desktop/tetris/project/View/Drawer.h
 ../Model/Board.h
 /home/lifka/Desktop/tetris/project/Model/Board.h
-../Model/Options.h
-/home/lifka/Desktop/tetris/project/Model/Options.h
+../Model/Strings.h
+/home/lifka/Desktop/tetris/project/Model/Strings.h
 BlockDrawer.h
 /home/lifka/Desktop/tetris/project/View/BlockDrawer.h
 ../Model/ColorPalette.h
 /home/lifka/Desktop/tetris/project/Model/ColorPalette.h
+allegro5/allegro_font.h
+-
+allegro5/allegro_ttf.h
+-
 
 /home/lifka/Desktop/tetris/project/View/Drawer.h
 stdlib.h
@@ -570,5 +584,9 @@ stdlib.h
 allegro5/addons/primitives/allegro5/allegro_primitives.h
 -
 allegro5/addons/image/allegro5/allegro_image.h
+-
+allegro5/allegro_font.h
+-
+allegro5/allegro_ttf.h
 -
 

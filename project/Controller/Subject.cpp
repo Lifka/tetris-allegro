@@ -27,3 +27,11 @@ void Subject::notifyObservers(NotifyCode code) {
     }
 }
 
+void Subject::notifyObservers(NotifyCode code, int number) {
+    for(std::vector<Observer*>::const_iterator it = observers.begin(); it != observers.end(); ++it){
+        if(*it != 0) {
+            (*it)->update(code, number);
+        }
+    }
+}
+

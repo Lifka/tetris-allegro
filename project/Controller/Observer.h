@@ -12,6 +12,7 @@
 class Observer {
 public:
     virtual void update(NotifyCode, Piece piece);
+    virtual void update(NotifyCode, int number);
     virtual void update(NotifyCode);
     virtual void updateScore(NotifyCode);
 };

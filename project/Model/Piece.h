@@ -26,17 +26,27 @@ private:
 public:
     Piece();
     Piece(const Piece &p2);
+
+    // Creates a piece with a matrix map for each rotation. Also, initialices the spawn position at the middle of the first row
     Piece(std::vector<std::vector<int> >, std::vector<std::vector<int> >, std::vector<std::vector<int> >,
               std::vector<std::vector<int> >, std::pair <int,int>, Rotation, PieceType, ColorName);
+
     std::pair <int,int> getInitialPosition();
     PieceType getPieceType();
     void setRotation(Rotation rotation);
     Rotation getRotation();
+
+    // Returns the map matrix of the current rotation of the piece
     const std::vector<std::vector<int>> &getPieceBlocks() const;
+
+    // Returns the board position of the piece in board coordinates ( x,y integers)
     std::pair <int,int> &getCurrent_position_matrix();
+
     void setCurrent_position_matrix(const std::pair <int,int> &current_position);
     ColorName getColor() const;
     void setColor(ColorName color);
+
+    // Returns the center pivot of the piece in his current rotation
     std::pair <int,int> getCenterPiece();
 
     /**/void debugMatrix();

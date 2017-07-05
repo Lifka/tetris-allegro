@@ -128,6 +128,9 @@ CMakeFiles/project.dir/Model/Piece.cpp.o: ../Model/Rotation.h
 CMakeFiles/project.dir/Model/Point2D.cpp.o: ../Model/Point2D.cpp
 CMakeFiles/project.dir/Model/Point2D.cpp.o: ../Model/Point2D.h
 
+CMakeFiles/project.dir/Model/Strings.cpp.o: ../Model/Strings.cpp
+CMakeFiles/project.dir/Model/Strings.cpp.o: ../Model/Strings.h
+
 CMakeFiles/project.dir/View/BlockDrawer.cpp.o: ../allegro/include/allegro5/addons/primitives/allegro5/allegro_primitives.h
 CMakeFiles/project.dir/View/BlockDrawer.cpp.o: ../allegro/include/allegro5/alcompat.h
 CMakeFiles/project.dir/View/BlockDrawer.cpp.o: ../allegro/include/allegro5/allegro.h
@@ -186,6 +189,7 @@ CMakeFiles/project.dir/View/BlockDrawer.cpp.o: ../View/BlockDrawer.h
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../allegro/include/allegro5/addons/primitives/allegro5/allegro_primitives.h
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../allegro/include/allegro5/alcompat.h
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../allegro/include/allegro5/allegro.h
+CMakeFiles/project.dir/View/Drawer.cpp.o: ../allegro/include/allegro5/allegro_font.h
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../allegro/include/allegro5/altime.h
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../allegro/include/allegro5/base.h
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../allegro/include/allegro5/bitmap.h
@@ -239,6 +243,7 @@ CMakeFiles/project.dir/View/Drawer.cpp.o: ../Model/Piece.h
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../Model/PieceType.h
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../Model/Point2D.h
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../Model/Rotation.h
+CMakeFiles/project.dir/View/Drawer.cpp.o: ../Model/Strings.h
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../View/BlockDrawer.h
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../View/Drawer.cpp
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../View/Drawer.h
@@ -247,6 +252,7 @@ CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/addons/image/alle
 CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/addons/primitives/allegro5/allegro_primitives.h
 CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/alcompat.h
 CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/allegro.h
+CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/allegro_font.h
 CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/altime.h
 CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/base.h
 CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/bitmap.h

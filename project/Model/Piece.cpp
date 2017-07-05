@@ -16,14 +16,14 @@ Piece::Piece(std::vector<std::vector<int> > rotation0, std::vector<std::vector<i
     this->color = color;
 
     // Piece is spawned at row 0 of the board in the middle column (round to minor)
-    this->initial_position_matrix.first = Options::getInstance()->getBoard_blocks_width() / 2 -2;
+    this->initial_position_matrix.first = (int)(Options::getInstance()->getBoard_blocks_width() / 2 -2);
     this->initial_position_matrix.second = 0;
 
     this->current_position_matrix.first = initial_position_matrix.first;
     this->current_position_matrix.second = initial_position_matrix.second;
 
 
-    /**/std::cout << "[DEBUG]: (Piece-Piece) piece created in position (" << current_position_matrix.first << "," << current_position_matrix.second << ")" << std::endl;
+    /**///std::cout << "[DEBUG]: (Piece-Piece) piece created in position (" << current_position_matrix.first << "," << current_position_matrix.second << ")" << std::endl;
 
 }
 
