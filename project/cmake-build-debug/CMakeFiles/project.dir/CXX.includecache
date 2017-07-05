@@ -339,8 +339,12 @@ allegro5/base.h
 /home/lifka/Desktop/tetris/project/Controller/GameManager.cpp
 iostream
 -
+random
+-
 GameManager.h
 /home/lifka/Desktop/tetris/project/Controller/GameManager.h
+../Model/Options.h
+/home/lifka/Desktop/tetris/project/Model/Options.h
 ../Model/Board.h
 /home/lifka/Desktop/tetris/project/Model/Board.h
 
@@ -353,6 +357,8 @@ Subject.h
 /home/lifka/Desktop/tetris/project/Controller/Observer.h
 ../Model/NotifyCode.h
 /home/lifka/Desktop/tetris/project/Model/NotifyCode.h
+../Model/Piece.h
+/home/lifka/Desktop/tetris/project/Model/Piece.h
 
 /home/lifka/Desktop/tetris/project/Controller/PlayerController.cpp
 PlayerController.h
@@ -363,6 +369,8 @@ Subject.h
 /home/lifka/Desktop/tetris/project/Controller/Subject.h
 
 /home/lifka/Desktop/tetris/project/Controller/Subject.cpp
+iostream
+-
 Observer.h
 /home/lifka/Desktop/tetris/project/Controller/Observer.h
 Subject.h
@@ -377,6 +385,8 @@ vector
 -
 Observer.h
 /home/lifka/Desktop/tetris/project/Controller/Observer.h
+../Model/Piece.h
+/home/lifka/Desktop/tetris/project/Model/Piece.h
 
 /home/lifka/Desktop/tetris/project/Model/Board.cpp
 iostream
@@ -389,7 +399,7 @@ Options.h
 /home/lifka/Desktop/tetris/project/Model/Board.h
 vector
 -
-allegro/gfx.h
+allegro5/color.h
 -
 Point2D.h
 /home/lifka/Desktop/tetris/project/Model/Point2D.h
@@ -397,12 +407,44 @@ Piece.h
 /home/lifka/Desktop/tetris/project/Model/Piece.h
 ../Controller/Subject.h
 /home/lifka/Desktop/tetris/project/Controller/Subject.h
+ColorName.h
+/home/lifka/Desktop/tetris/project/Model/ColorName.h
+
+/home/lifka/Desktop/tetris/project/Model/ColorName.h
+
+/home/lifka/Desktop/tetris/project/Model/ColorPalette.cpp
+allegro5/addons/primitives/allegro5/allegro_primitives.h
+-
+iostream
+-
+random
+-
+ColorPalette.h
+/home/lifka/Desktop/tetris/project/Model/ColorPalette.h
+
+/home/lifka/Desktop/tetris/project/Model/ColorPalette.h
+allegro5/color.h
+-
+map
+-
+list
+-
+ColorName.h
+/home/lifka/Desktop/tetris/project/Model/ColorName.h
+
+/home/lifka/Desktop/tetris/project/Model/Direction.h
 
 /home/lifka/Desktop/tetris/project/Model/Factory.cpp
 cstdlib
 -
+iostream
+-
+random
+-
 Factory.h
 /home/lifka/Desktop/tetris/project/Model/Factory.h
+ColorPalette.h
+/home/lifka/Desktop/tetris/project/Model/ColorPalette.h
 
 /home/lifka/Desktop/tetris/project/Model/Factory.h
 FactoryMethod.h
@@ -417,26 +459,36 @@ Piece.h
 /home/lifka/Desktop/tetris/project/Model/Options.cpp
 Options.h
 /home/lifka/Desktop/tetris/project/Model/Options.h
+ColorPalette.h
+/home/lifka/Desktop/tetris/project/Model/ColorPalette.h
 
 /home/lifka/Desktop/tetris/project/Model/Options.h
 allegro5/color.h
 -
 Point2D.h
 /home/lifka/Desktop/tetris/project/Model/Point2D.h
+ColorName.h
+/home/lifka/Desktop/tetris/project/Model/ColorName.h
 
 /home/lifka/Desktop/tetris/project/Model/Piece.cpp
+iostream
+-
 Piece.h
 /home/lifka/Desktop/tetris/project/Model/Piece.h
+Options.h
+/home/lifka/Desktop/tetris/project/Model/Options.h
 
 /home/lifka/Desktop/tetris/project/Model/Piece.h
 vector
 -
+allegro5/color.h
+-
 Rotation.h
 /home/lifka/Desktop/tetris/project/Model/Rotation.h
-Point2D.h
-/home/lifka/Desktop/tetris/project/Model/Point2D.h
 PieceType.h
 /home/lifka/Desktop/tetris/project/Model/PieceType.h
+ColorName.h
+/home/lifka/Desktop/tetris/project/Model/ColorName.h
 
 /home/lifka/Desktop/tetris/project/Model/PieceType.h
 
@@ -450,8 +502,6 @@ utility
 
 /home/lifka/Desktop/tetris/project/Model/Rotation.h
 
-/home/lifka/Desktop/tetris/project/Model/direction.h
-
 /home/lifka/Desktop/tetris/project/View/BlockDrawer.cpp
 allegro5/addons/primitives/allegro5/allegro_primitives.h
 -
@@ -459,8 +509,8 @@ iostream
 -
 BlockDrawer.h
 /home/lifka/Desktop/tetris/project/View/BlockDrawer.h
-../Model/direction.h
-/home/lifka/Desktop/tetris/project/Model/direction.h
+../Model/ColorPalette.h
+/home/lifka/Desktop/tetris/project/Model/ColorPalette.h
 
 /home/lifka/Desktop/tetris/project/View/BlockDrawer.h
 allegro5/color.h
@@ -471,8 +521,8 @@ allegro5/color.h
 /home/lifka/Desktop/tetris/project/Model/Options.h
 ../Model/Piece.h
 /home/lifka/Desktop/tetris/project/Model/Piece.h
-../Model/direction.h
-/home/lifka/Desktop/tetris/project/Model/direction.h
+../Model/Direction.h
+/home/lifka/Desktop/tetris/project/Model/Direction.h
 
 /home/lifka/Desktop/tetris/project/View/Drawer.cpp
 iostream
@@ -487,6 +537,8 @@ Drawer.h
 /home/lifka/Desktop/tetris/project/Model/Options.h
 BlockDrawer.h
 /home/lifka/Desktop/tetris/project/View/BlockDrawer.h
+../Model/ColorPalette.h
+/home/lifka/Desktop/tetris/project/Model/ColorPalette.h
 
 /home/lifka/Desktop/tetris/project/View/Drawer.h
 stdlib.h
@@ -497,18 +549,22 @@ allegro5/allegro.h
 /home/lifka/Desktop/tetris/project/Controller/Observer.h
 ../Model/Options.h
 /home/lifka/Desktop/tetris/project/Model/Options.h
+../Model/Piece.h
+/home/lifka/Desktop/tetris/project/Model/Piece.h
 
 /home/lifka/Desktop/tetris/project/main.cpp
 iostream
 -
 Model/Options.h
 /home/lifka/Desktop/tetris/project/Model/Options.h
+Model/ColorPalette.h
+/home/lifka/Desktop/tetris/project/Model/ColorPalette.h
 Controller/GameManager.h
 /home/lifka/Desktop/tetris/project/Controller/GameManager.h
+Model/Board.h
+/home/lifka/Desktop/tetris/project/Model/Board.h
 View/Drawer.h
 /home/lifka/Desktop/tetris/project/View/Drawer.h
-View/BlockDrawer.h
-/home/lifka/Desktop/tetris/project/View/BlockDrawer.h
 stdlib.h
 -
 allegro5/addons/primitives/allegro5/allegro_primitives.h

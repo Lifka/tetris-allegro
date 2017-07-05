@@ -3,6 +3,7 @@
 //
 
 #include "Options.h"
+#include "ColorPalette.h"
 
 Options* Options::instance = nullptr;
 
@@ -73,27 +74,39 @@ void Options::setBoard_offset(const Point2D &board_offset) {
     Options::board_offset = board_offset;
 }
 
-const ALLEGRO_COLOR &Options::getBackground_color() const {
+ColorName Options::getBackground_color() {
     return background_color;
 }
 
-void Options::setBackground_color(const ALLEGRO_COLOR &background_color) {
+void Options::setBackground_color(ColorName background_color) {
+    if (Options::background_color !=  ColorName::none){
+        ColorPalette::getInstance()->removeSystemColor(Options::background_color);
+    }
+    ColorPalette::getInstance()->setSystemColor(background_color);
     Options::background_color = background_color;
 }
 
-const ALLEGRO_COLOR &Options::getBoard_color() const {
+ColorName Options::getBoard_color() {
     return board_color;
 }
 
-void Options::setBoard_color(const ALLEGRO_COLOR &board_color) {
+void Options::setBoard_color(ColorName board_color) {
+    if (Options::board_color != ColorName::none){
+        ColorPalette::getInstance()->removeSystemColor(Options::board_color);
+    }
+    ColorPalette::getInstance()->setSystemColor(board_color);
     Options::board_color = board_color;
 }
 
-const ALLEGRO_COLOR &Options::getWalls_color() const {
+ColorName Options::getWalls_color() {
     return walls_color;
 }
 
-void Options::setWalls_color(const ALLEGRO_COLOR &walls_color) {
+void Options::setWalls_color(ColorName walls_color) {
+    if (Options::walls_color != ColorName::none){
+        ColorPalette::getInstance()->removeSystemColor(Options::walls_color);
+    }
+    ColorPalette::getInstance()->setSystemColor(walls_color);
     Options::walls_color = walls_color;
 }
 
@@ -103,4 +116,12 @@ unsigned long Options::getBoardWidthInPixels() const {
 
 unsigned long Options::getBoardHeightInPixels() const {
     return board_blocks_height * block_size;
+}
+
+int Options::getLine_score() const {
+    return line_score;
+}
+
+int Options::getScore_for_levelup() const {
+    return score_for_levelup;
 }

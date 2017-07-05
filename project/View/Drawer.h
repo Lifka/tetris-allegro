@@ -10,6 +10,7 @@
 
 #include "../Controller/Observer.h"
 #include "../Model/Options.h"
+#include "../Model/Piece.h"
 
 class Drawer : public Observer{
 private:

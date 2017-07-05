@@ -231,6 +231,33 @@ Model/Board.cpp.s:
 	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Board.cpp.s
 .PHONY : Model/Board.cpp.s
 
+Model/ColorPalette.o: Model/ColorPalette.cpp.o
+
+.PHONY : Model/ColorPalette.o
+
+# target to build an object file
+Model/ColorPalette.cpp.o:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/ColorPalette.cpp.o
+.PHONY : Model/ColorPalette.cpp.o
+
+Model/ColorPalette.i: Model/ColorPalette.cpp.i
+
+.PHONY : Model/ColorPalette.i
+
+# target to preprocess a source file
+Model/ColorPalette.cpp.i:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/ColorPalette.cpp.i
+.PHONY : Model/ColorPalette.cpp.i
+
+Model/ColorPalette.s: Model/ColorPalette.cpp.s
+
+.PHONY : Model/ColorPalette.s
+
+# target to generate assembly for a file
+Model/ColorPalette.cpp.s:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/ColorPalette.cpp.s
+.PHONY : Model/ColorPalette.cpp.s
+
 Model/Factory.o: Model/Factory.cpp.o
 
 .PHONY : Model/Factory.o
@@ -441,6 +468,9 @@ help:
 	@echo "... Model/Board.o"
 	@echo "... Model/Board.i"
 	@echo "... Model/Board.s"
+	@echo "... Model/ColorPalette.o"
+	@echo "... Model/ColorPalette.i"
+	@echo "... Model/ColorPalette.s"
 	@echo "... Model/Factory.o"
 	@echo "... Model/Factory.i"
 	@echo "... Model/Factory.s"

@@ -10,7 +10,7 @@
 #include "../Model/Point2D.h"
 #include "../Model/Options.h"
 #include "../Model/Piece.h"
-#include "../Model/direction.h"
+#include "../Model/Direction.h"
 
 class BlockDrawer {
 private:
@@ -21,9 +21,11 @@ private:
 
 public:
     static BlockDrawer* getInstance();
-    void drawBlock(Point2D position, ALLEGRO_COLOR, float size = Options::getInstance()->getBlock_size());
-    void drawBlocksLine(Point2D init, Direction dir, int size, ALLEGRO_COLOR, float thickness = Options::getInstance()->getBlock_size());
-    void drawBlocksPiece(Piece, ALLEGRO_COLOR);
+    void drawBlock(Point2D position, ColorName , float size = Options::getInstance()->getBlock_size());
+    void drawBlocksLine(Point2D init, Direction dir, int size, ColorName , float thickness = Options::getInstance()->getBlock_size());
+    void drawBlocksPiece(Piece);
+
+    void drawBlockInBoardPosition(std::pair<int,int> board_position, ColorName color);
 };
 
 

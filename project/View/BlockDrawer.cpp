@@ -5,7 +5,7 @@
 #include <allegro5/addons/primitives/allegro5/allegro_primitives.h>
 #include <iostream>
 #include "BlockDrawer.h"
-#include "../Model/direction.h"
+#include "../Model/ColorPalette.h"
 
 BlockDrawer* BlockDrawer::instance = nullptr;
 
@@ -20,17 +20,17 @@ BlockDrawer *BlockDrawer::getInstance() {
     return instance;
 }
 
-void BlockDrawer::drawBlock(Point2D position, ALLEGRO_COLOR color, float size) {
+void BlockDrawer::drawBlock(Point2D position, ColorName color, float size) {
     al_draw_line(position.getX() - size/2,
                  position.getY(),
                  position.getX() + size/2,
                  position.getY(),
-                 color,
+                 ColorPalette::getInstance()->getColor(color),
                  size);
-    /**/std::cout << "[DEBUG]: (BlockDrawer-drawBlock) drwaed block --> size=" << size << " Point(" << position.getX() << "," << position.getY() << ")" << std::endl;
+    /**///std::cout << "[DEBUG]: (BlockDrawer-drawBlock) drawed block --> size=" << size << " Point(" << position.getX() << "," << position.getY() << ")" << std::endl;
 }
 
-void BlockDrawer::drawBlocksLine(Point2D init, Direction dir, int size, ALLEGRO_COLOR color, float thickness) {
+void BlockDrawer::drawBlocksLine(Point2D init, Direction dir, int size, ColorName color, float thickness) {
     Point2D point = init;
 
     switch (dir){
@@ -61,7 +61,52 @@ void BlockDrawer::drawBlocksLine(Point2D init, Direction dir, int size, ALLEGRO_
     }
 }
 
-void BlockDrawer::drawBlocksPiece(Piece, ALLEGRO_COLOR) {
+void BlockDrawer::drawBlockInBoardPosition(std::pair<int,int> board_position, ColorName color){
+    /**/std::cout << "[DEBUG]: (BlockDrawer-drawBlockInBoardPosition) drawing block --> (" << board_position.first << "," << board_position.second << ") - Color: " << color << std::endl;
 
+    float screen_position_x = Options::getInstance()->getBoard_offset().getX() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
+    float screen_position_y = Options::getInstance()->getBoard_offset().getY() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
+
+    screen_position_x += Options::getInstance()->getBlock_size() * (board_position.first );
+    screen_position_y += Options::getInstance()->getBlock_size() * (board_position.second );
+
+    Point2D block_screen_position = Point2D(screen_position_x, screen_position_y);
+    drawBlock(block_screen_position, color);
+
+}
+
+void BlockDrawer::drawBlocksPiece(Piece piece) {
+    /**/std::cout << "[DEBUG]: (BlockDrawer-drawBlocksPiece) drawing piece in position --> (" << piece.getCurrent_position_matrix().first << "," << piece.getCurrent_position_matrix().second << ") - " << piece.getPieceType() << std::endl;
+
+    int count_x = 0;
+    int count_y = 0;
+
+    bool piece_paint = false;
+
+    for (int y = 0; y < piece.getPieceBlocks().size(); y++){
+        for (int x = 0; x < piece.getPieceBlocks()[y].size(); x++){
+
+            if (piece.getPieceBlocks()[y][x] == 1 || piece.getPieceBlocks()[y][x] == 2) {
+
+
+                drawBlockInBoardPosition(
+                        std::make_pair(piece.getCurrent_position_matrix().first + x,
+                                       piece.getCurrent_position_matrix().second + count_y),
+                        piece.getColor());
+
+                count_x++;
+                piece_paint = true;
+            }
+        }
+
+        if (piece_paint){
+            count_y++;
+            piece_paint = false;
+            count_x = 0;
+        }
+    }
+
+
+    /**/piece.debugMatrix();
 }
 

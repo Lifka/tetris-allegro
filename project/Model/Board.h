@@ -6,14 +6,16 @@
 #define PROJECT_BOARD_H
 
 #include <vector>
-#include <allegro/gfx.h>
+#include <allegro5/color.h>
 #include "Point2D.h"
 #include "Piece.h"
 #include "../Controller/Subject.h"
+#include "ColorName.h"
 
 class Board : public Subject{
 private:
     std::vector<std::vector<int> > m_board;
+    std::vector<std::vector<ColorName> > m_board_colors;
     Piece falling_piece;
 
     Board();
@@ -30,11 +32,14 @@ public:
     bool isPossibleMoviment(Point2D, Rotation);
     void checkLines();
     bool isGameOver();
-    void initBoard(Piece);
+    void initBoard();
     void setFallingPiece(Piece);
     std::vector<std::vector<int> > getBoardMatrix();
+    int getBoardPosition(int x, int y) const;
+    ColorName getColorPosition(int x, int y) const;
 
     /**/ void debugPrintBoard();
+    /**/ const Piece &getFalling_piece() const;
 };
 
 #endif //PROJECT_BOARD_H

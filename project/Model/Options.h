@@ -7,14 +7,18 @@
 
 #include <allegro5/color.h>
 #include "Point2D.h"
+#include "ColorName.h"
 
 class Options{
 private:
     Point2D board_offset;
-    ALLEGRO_COLOR background_color;
-    ALLEGRO_COLOR board_color;
-    ALLEGRO_COLOR walls_color;
 
+    ColorName background_color = ColorName::none;
+    ColorName board_color = ColorName::none;
+    ColorName walls_color = ColorName::none;
+
+    int line_score = 10;
+    int score_for_levelup = 100;
     unsigned long walls_width;
     unsigned long block_size;
     unsigned long board_blocks_width;
@@ -44,16 +48,19 @@ public:
     unsigned long getBoardHeightInPixels() const;
 
     //Colors
-    const ALLEGRO_COLOR &getBackground_color() const;
-    void setBackground_color(const ALLEGRO_COLOR &background_color);
-    const ALLEGRO_COLOR &getBoard_color() const;
-    void setBoard_color(const ALLEGRO_COLOR &board_color);
-    const ALLEGRO_COLOR &getWalls_color() const;
-    void setWalls_color(const ALLEGRO_COLOR &walls_color);
+    ColorName getBackground_color();
+    void setBackground_color(ColorName background_color);
+    ColorName getBoard_color();
+    void setBoard_color(ColorName board_color);
+    ColorName getWalls_color();
+    void setWalls_color(ColorName walls_color);
 
     //Board position
     Point2D &getBoard_offset();
     void setBoard_offset(const Point2D &board_offset);
+
+    int getLine_score() const;
+    int getScore_for_levelup() const;
 
 
 

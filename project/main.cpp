@@ -1,8 +1,9 @@
 #include <iostream>
 #include "Model/Options.h"
+#include "Model/ColorPalette.h"
 #include "Controller/GameManager.h"
+#include "Model/Board.h"
 #include "View/Drawer.h"
-#include "View/BlockDrawer.h"
 #include <stdlib.h>
 #include <allegro5/addons/primitives/allegro5/allegro_primitives.h>
 #include <allegro5/addons/image/allegro5/allegro_image.h>
@@ -28,20 +29,20 @@ int main(int argc, char **argv)  {
     // ********* OPTIONS
 
     Options::getInstance()->setBoard_blocks_height(20); // blocks
-    Options::getInstance()->setBoard_blocks_width(9); // blocks
+    Options::getInstance()->setBoard_blocks_width(11); // blocks
 
     Options::getInstance()->setWalls_width(14);
 
-    Options::getInstance()->setBlock_size(30); // pixels block
+    Options::getInstance()->setBlock_size(46); // pixels block
 
-    Options::getInstance()->setScreen_height(900); // pixels
+    Options::getInstance()->setScreen_height(945); // pixels
     Options::getInstance()->setScreen_width(900); // pixels
 
-    Options::getInstance()->setWalls_color(ALLEGRO_COLOR(al_map_rgb(255,255,255)));
-    Options::getInstance()->setBoard_color(ALLEGRO_COLOR(al_map_rgb(55,55,55)));
-    Options::getInstance()->setBackground_color(ALLEGRO_COLOR(al_map_rgb(4,0,90)));
+    Options::getInstance()->setWalls_color(ColorName::purple);
+    Options::getInstance()->setBoard_color(ColorName::indigo);
+    Options::getInstance()->setBackground_color(ColorName::black);
 
-    Options::getInstance()->setBoard_offset(Point2D(400,100));
+    Options::getInstance()->setBoard_offset(Point2D(0,0));
 
     // ********* /OPTIONS
 
@@ -55,7 +56,7 @@ int main(int argc, char **argv)  {
 
     al_set_window_title(display, "Tetris");
 
-    al_clear_to_color(Options::getInstance()->getBackground_color());
+    al_clear_to_color(ColorPalette::getInstance()->getColor(Options::getInstance()->getBackground_color()));
 
 
     al_init_primitives_addon();
@@ -63,13 +64,15 @@ int main(int argc, char **argv)  {
 
 
 
-    ALLEGRO_COLOR electric_blue = al_map_rgb(44, 117, 255);
-
 
     GameManager::getInstance()->addObserver(Drawer::getInstance());
+    Board::getInstance()->addObserver(GameManager::getInstance());
+    Board::getInstance()->addObserver(Drawer::getInstance());
+
     GameManager::getInstance()->initGame();
 
-    // BlockDrawer::getInstance()->drawBlock(Point2D(15,15), electric_blue);
+
+
 
 
 

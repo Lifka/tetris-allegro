@@ -8,8 +8,9 @@
 #include "../Model/Board.h"
 #include "../Model/Options.h"
 #include "BlockDrawer.h"
+#include "../Model/ColorPalette.h"
 
-#define wall 1
+#define block 1
 
 
 Drawer* Drawer::instance = nullptr;
@@ -23,21 +24,40 @@ Drawer *Drawer::getInstance() {
 
 void Drawer::refreshBoard() {
 
-}
-
-void Drawer::initBoard() {
-    ALLEGRO_COLOR color = Options::getInstance()->getBoard_color();
-
-    /**/std::cout << "[DEBUG]: (Drawer:initBoard) initBoard..." << std::endl;
-
     float x_init = Options::getInstance()->getBoard_offset().getX() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
 
     Point2D init_point = Point2D(x_init,
                                  Options::getInstance()->getBoard_offset().getY() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width());
 
+
     for(int i = 0; i < Options::getInstance()->getBoard_blocks_height(); i++){
         for(int j = 0; j < Options::getInstance()->getBoard_blocks_width(); j++){
-            BlockDrawer::getInstance()->drawBlock(init_point, color);
+
+            if (Board::getInstance()->getBoardPosition(i,j) == block) {
+                BlockDrawer::getInstance()->drawBlock(init_point, Board::getInstance()->getColorPosition(i,j));
+                init_point.setX(init_point.getX() + Options::getInstance()->getBlock_size());
+            }
+
+
+        }
+        init_point.setY(init_point.getY() + Options::getInstance()->getBlock_size());
+        init_point.setX(x_init);
+    }
+
+}
+
+void Drawer::initBoard() {
+
+    /**/std::cout << "[DEBUG]: (Drawer:initBoard) initBoard..." << std::endl;
+
+    float x_init = Options::getInstance()->getBoard_offset().getX() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
+    float y_init = Options::getInstance()->getBoard_offset().getY() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
+
+    Point2D init_point = Point2D(x_init, y_init);
+
+    for(int i = 0; i < Options::getInstance()->getBoard_blocks_height(); i++){
+        for(int j = 0; j < Options::getInstance()->getBoard_blocks_width(); j++){
+            BlockDrawer::getInstance()->drawBlock(init_point, Options::getInstance()->getBoard_color());
             init_point.setX(init_point.getX() + Options::getInstance()->getBlock_size());
         }
         init_point.setY(init_point.getY() + Options::getInstance()->getBlock_size());
@@ -46,7 +66,7 @@ void Drawer::initBoard() {
 }
 
 void Drawer::walls() {
-    ALLEGRO_COLOR color = Options::getInstance()->getWalls_color();
+    ALLEGRO_COLOR color = ColorPalette::getInstance()->getColor(Options::getInstance()->getWalls_color());
 
     // Up
     Point2D init_point = Point2D(Options::getInstance()->getBoard_offset().getX(),Options::getInstance()->getBoard_offset().getY() + Options::getInstance()->getWalls_width()/2);
@@ -85,8 +105,22 @@ void Observer::update(NotifyCode code){
             Drawer::getInstance()->walls();
             Drawer::getInstance()->initBoard();
             break;
+
     }
 }
+
+void Observer::update(NotifyCode code,  Piece piece){
+    /**/std::cout << "[DEBUG]: (Drawer-update) notify recieved with code --> " << code;
+    /**/std::cout << " with piece in position (" << piece.getCurrent_position_matrix().first << "," << piece.getCurrent_position_matrix().second << ")" << std::endl;
+    switch (code){
+        case falling_piece:
+            BlockDrawer::getInstance()->drawBlocksPiece(piece);
+            break;
+
+    }
+}
+
+
 
 void Drawer::refreshNextPiece() {
     //TODO

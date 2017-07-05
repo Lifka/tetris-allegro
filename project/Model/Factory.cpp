@@ -3,7 +3,10 @@
 //
 
 #include <cstdlib>
+#include <iostream>
+#include <random>
 #include "Factory.h"
+#include "ColorPalette.h"
 
 Piece Factory::createPiece(PieceType type) {
     std::vector<std::vector<int> > rotation0;
@@ -11,10 +14,15 @@ Piece Factory::createPiece(PieceType type) {
     std::vector<std::vector<int> > rotation180;
     std::vector<std::vector<int> > rotation270;
 
-    Rotation current_rotation;
-    Point2D initial_position(0,0); //TODO
+    Rotation current_rotation = degrees0;
+    std::pair<int,int> initial_position(0,0); //TODO
 
-    int random = 0 + (rand() % static_cast<int>(3 - 0 + 1));
+
+    std::mt19937 rng;
+    rng.seed(std::random_device()());
+    std::uniform_int_distribution<std::mt19937::result_type> rnd(0,3); // distribution in range [0, 3]
+    unsigned long random = rnd(rng);
+
     switch (random) {
         case 0:
             current_rotation = degrees0;
@@ -485,6 +493,8 @@ Piece Factory::createPiece(PieceType type) {
             break;
     }
 
-    return Piece(rotation0, rotation90, rotation180, rotation270, initial_position, current_rotation, type);
+    ColorName color = ColorPalette::getInstance()->getRandomColor();
+
+    return Piece(rotation0, rotation90, rotation180, rotation270, initial_position, current_rotation, type, color);
 
 }

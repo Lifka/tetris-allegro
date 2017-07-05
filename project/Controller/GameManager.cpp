@@ -3,7 +3,9 @@
 //
 
 #include <iostream>
+#include <random>
 #include "GameManager.h"
+#include "../Model/Options.h"
 #include "../Model/Board.h"
 
 
@@ -19,21 +21,33 @@ GameManager* GameManager::getInstance() {
 void GameManager::initGame() {
     /**/std::cout << "[DEBUG]: (GameManager:initGame) starting gane..." << std::endl;
 
+    level = 0;
+    score = 0;
+
     createNewPiece();
 
     /**/std::cout << "[DEBUG]: (GameManager:initGame) starting board..." << std::endl;
-    Board::getInstance()->initBoard(next_piece);
+    Board::getInstance()->initBoard();
+    notifyObservers(NotifyCode::draw_screen);
+
+    Board::getInstance()->setFallingPiece(next_piece);
 
     createNewPiece();
 
-    notifyObservers(NotifyCode::draw_screen);
+    /**/next_piece.debugMatrix();
 }
 
 
 void GameManager::createNewPiece() {
 
     PieceType type;
-    int random = 0 + (rand() % static_cast<int>(6 - 0 + 1));
+
+
+    std::mt19937 rng;
+    rng.seed(std::random_device()());
+    std::uniform_int_distribution<std::mt19937::result_type> rnd(0,6); // distribution in range [0, 6]
+    unsigned long random = rnd(rng);
+
     switch (random) {
         case 0:
             type = square;
@@ -62,4 +76,25 @@ void GameManager::createNewPiece() {
     next_piece = factory.createPiece(type);
     /**/std::cout << "[DEBUG]: (GameManager:createNewPiece) New piece created --> Type = " <<  type << std::endl;
 
+}
+
+
+
+void Observer::updateScore(NotifyCode code){
+
+    /**/std::cout << "[DEBUG]: (GameManager-update) notify recieved with code --> " << code;
+    switch (code){
+        case up_score:
+            GameManager::getInstance()->scoreUp();
+            break;
+
+    }
+}
+
+void GameManager::scoreUp(){
+    score += Options::getInstance()->getLine_score()*level;
+
+    if (score >= Options::getInstance()->getScore_for_levelup()*level*level){
+        level++;
+    }
 }

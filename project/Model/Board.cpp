@@ -17,6 +17,10 @@ void Board::deleteLine(int n_line) {
     // full last line except
     m_board[m_board.size()-1] = std::vector<int>(m_board[m_board.size()-1].size(), 0);
 
+    // TODO ---
+
+
+
 }
 
 Board* Board::getInstance() {
@@ -47,13 +51,13 @@ void Board::checkLines() {
 
 void Board::setFallingPiece(Piece falling_piece) {
     this->falling_piece = falling_piece;
+    notifyObservers(NotifyCode::falling_piece, falling_piece);
     /**/std::cout << "[DEBUG]: (Board:setFallingPiece) New falling piece setted --> Type = " << falling_piece.getPieceType() << std::endl;
 }
 
-void Board::initBoard(Piece first_piece) {
+void Board::initBoard() {
     /**/std::cout << "[DEBUG]: (Board:initBoard) Starting board..." << std::endl;
     /**/std::cout << "[DEBUG]: (Board:initBoard) Setting new falling piece..." << std::endl;
-    setFallingPiece(first_piece);
     fillBoard();
 }
 
@@ -94,4 +98,15 @@ void Board::debugPrintBoard(){
     /**/std::cout << "-------------------------------------------" << std::endl << std::endl;
 }
 
+int Board::getBoardPosition(int x, int y) const {
+    return m_board[x][y];
+}
+
+ColorName Board::getColorPosition(int x, int y) const {
+    return m_board_colors[x][y];
+}
+
+const Piece &Board::getFalling_piece() const {
+    return falling_piece;
+}
 

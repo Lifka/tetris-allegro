@@ -9,12 +9,14 @@
 #include <functional>
 #include <vector>
 #include "Observer.h"
+#include "../Model/Piece.h"
 
 class Subject {
 private:
     std::vector<Observer* > observers;
 public:
     void addObserver(Observer* o);
+    void notifyObservers(NotifyCode, Piece piece);
     void notifyObservers(NotifyCode);
 };
 

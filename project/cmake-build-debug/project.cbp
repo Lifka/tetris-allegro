@@ -113,6 +113,18 @@
 		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Board.h">
 			<Option target="project"/>
 		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/ColorName.h">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/ColorPalette.cpp">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/ColorPalette.h">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Direction.h">
+			<Option target="project"/>
+		</Unit>
 		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Factory.cpp">
 			<Option target="project"/>
 		</Unit>
@@ -147,9 +159,6 @@
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Rotation.h">
-			<Option target="project"/>
-		</Unit>
-		<Unit filename="/home/lifka/Desktop/tetris/project/Model/direction.h">
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="/home/lifka/Desktop/tetris/project/View/BlockDrawer.cpp">

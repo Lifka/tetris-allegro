@@ -7,10 +7,13 @@
 
 
 #include "../Model/NotifyCode.h"
+#include "../Model/Piece.h"
 
 class Observer {
 public:
+    virtual void update(NotifyCode, Piece piece);
     virtual void update(NotifyCode);
+    virtual void updateScore(NotifyCode);
 };
 
 
