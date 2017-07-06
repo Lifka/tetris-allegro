@@ -28,23 +28,25 @@ void Drawer::refreshBoard() {
 
     /**/std::cout << "[DEBUG]: (Drawer:refreshBoard) refreshing..." << std::endl;//*/
 
+    Board::getInstance()->debugPrintBoard();
 
-    for (int y = 0; y < Options::getInstance()->getBoard_blocks_height(); y++){
-        for (int x = 0; x < Options::getInstance()->getBoard_blocks_width(); x++){
 
-            if (Board::getInstance()->getBoardPosition(x,y) == 1 || Board::getInstance()->getBoardPosition(x,y) == 2) {
+    for (int i = 0; i < Options::getInstance()->getBoard_blocks_height(); i++){
+        for (int j= 0; j < Options::getInstance()->getBoard_blocks_width(); j++){
+
+            if (Board::getInstance()->getBoardPosition(i,j) == 1 || Board::getInstance()->getBoardPosition(i,j) == 2) {
 
 
                 BlockDrawer::getInstance()->drawBlockInBoardPosition(
-                        std::make_pair(x,
-                                       y),
-                        Board::getInstance()->getColorPosition(x, y));
+                        std::make_pair(j,
+                                       i),
+                        Board::getInstance()->getColorPosition(i, j));
 ;
             } else {
 
                 BlockDrawer::getInstance()->drawBlockInBoardPosition(
-                        std::make_pair(x,
-                                       y),
+                        std::make_pair(j,
+                                       i),
                         Options::getInstance()->getBoard_color());
             }
         }

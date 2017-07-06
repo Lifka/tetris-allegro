@@ -16,7 +16,7 @@ public:
     virtual void update(NotifyCode, KeyCode);
     virtual void update(NotifyCode, int number);
     virtual void update(NotifyCode);
-    virtual void updateScore(NotifyCode);
+    virtual void updateLine(NotifyCode);
 };
 
 

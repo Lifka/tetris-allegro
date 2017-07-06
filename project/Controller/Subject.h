@@ -21,6 +21,7 @@ public:
     void notifyObservers(NotifyCode, int);
     void notifyObservers(NotifyCode);
     void notifyObservers(NotifyCode, KeyCode);
+    void notifyObserversLine(NotifyCode);
 };
 
 

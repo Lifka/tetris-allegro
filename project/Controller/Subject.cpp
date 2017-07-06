@@ -43,4 +43,12 @@ void Subject::notifyObservers(NotifyCode code, KeyCode key) {
     }
 }
 
+void Subject::notifyObserversLine(NotifyCode code) {
+    for(std::vector<Observer*>::const_iterator it = observers.begin(); it != observers.end(); ++it){
+        if(*it != 0) {
+            (*it)->updateLine(code);
+        }
+    }
+}
+
 

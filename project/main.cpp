@@ -125,6 +125,7 @@ int main(int argc, char **argv)  {
 
 
     GameManager::getInstance()->initGame();
+    GameManager::getInstance()->refreshNextPiece();
     Board::getInstance()->refreshFallingPiece();
     al_flip_display();
 

@@ -65,29 +65,53 @@ bool Board::isGameOver() {
 }
 
 bool Board::isPossibleMoviment(std::pair <int,int> position, Rotation rotation) {
+    bool possible = isPossibleMovimentX(position, rotation);
+
+    if (possible){
+        if (!isPossibleMovimentY(position, rotation) ){
+            possible = false;
+            requestNewPiece();
+        }
+    }
+
+    return possible;
+}
+
+bool Board::isPossibleMovimentY(std::pair <int,int> position, Rotation rotation) {
     bool possible = true;
 
     for(int y = 0; possible && y < falling_piece.getRotation(rotation).size(); y++){
         for(int x = 0; possible && x < falling_piece.getRotation(rotation)[y].size(); x++){
 
             if (falling_piece.getRotation(rotation)[y][x] == 1 || falling_piece.getRotation(rotation)[y][x] == 2){
-                possible = ((y + position.second) <= Options::getInstance()->getBoard_blocks_height())
+                possible = (((y + position.second) < Options::getInstance()->getBoard_blocks_height())
                            && ((y + position.second) >= 0 )
-                           && ((x + position.first) < Options::getInstance()->getBoard_blocks_width())
-                           && ((x + position.first) >= 0 )
-                           && m_board[y][x] == 0;
+                           && m_board[y + position.second][x + position.first] == 0);
             }
 
         }
     }
 
-    if (possible)
-        /**/std::cout << "[DEBUG]: (Board:isPossibleMoviment) ---> : SIIIIIIIIIIIII"  << std::endl;//*/
-    else
-        /**/std::cout << "[DEBUG]: (Board:isPossibleMoviment) ---> : NOOOOOOOOO"  << std::endl;//*/
+    return possible;
+}
+
+bool Board::isPossibleMovimentX(std::pair <int,int> position, Rotation rotation) {
+    bool possible = true;
+
+    for(int y = 0; possible && y < falling_piece.getRotation(rotation).size(); y++){
+        for(int x = 0; possible && x < falling_piece.getRotation(rotation)[y].size(); x++){
+
+            if (falling_piece.getRotation(rotation)[y][x] == 1 || falling_piece.getRotation(rotation)[y][x] == 2){
+                possible = ((x + position.first) < Options::getInstance()->getBoard_blocks_width())
+                           && ((x + position.first) >= 0 );
+            }
+
+        }
+    }
 
     return possible;
 }
+
 
 Board::Board() {
     setFallingPiece(Piece());
@@ -96,6 +120,9 @@ Board::Board() {
 void Board::fillBoard() {
     m_board = std::vector<std::vector<int> >(Options::getInstance()->getBoard_blocks_height(),
                                              std::vector<int>(Options::getInstance()->getBoard_blocks_width(),0));
+
+    m_board_colors = std::vector<std::vector<ColorName> >(Options::getInstance()->getBoard_blocks_height(),
+                                             std::vector<ColorName >(Options::getInstance()->getBoard_blocks_width(),ColorName::none));
 
     /**/std::cout << "[DEBUG]: (Board:fillBoard) Board created --> size = " <<  m_board.size() << " x " << m_board[0].size() << std::endl;//*/
     /**/debugPrintBoard();//*/
@@ -148,5 +175,27 @@ void Board::moveFallingPieceToLeft() {
 void Board::moveFallingPieceDown() {
     if (isPossibleMoviment(falling_piece.nextPositionDown(), falling_piece.getRotation()))
         falling_piece.fall();
+}
+
+void Board::requestNewPiece() {
+
+    for(int y = 0; y < falling_piece.getPieceBlocks().size(); y++){
+        for(int x = 0; x < falling_piece.getPieceBlocks()[y].size(); x++){
+            if (falling_piece.getPieceBlocks()[y][x] == 1 || falling_piece.getPieceBlocks()[y][x] == 2){
+
+                std::cout << "[" <<y + falling_piece.getCurrent_position_matrix().second <<
+                          "," << x + falling_piece.getCurrent_position_matrix().first << "]" << std::endl << std::endl;
+
+                m_board[y + falling_piece.getCurrent_position_matrix().second][x + falling_piece.getCurrent_position_matrix().first] = 1;
+                m_board_colors[y + falling_piece.getCurrent_position_matrix().second][x + falling_piece.getCurrent_position_matrix().first] = falling_piece.getColor();
+            }
+        }
+    }
+
+
+    Board::getInstance()->debugPrintBoard();
+
+
+    notifyObserversLine(NotifyCode::next_piece);
 }
 

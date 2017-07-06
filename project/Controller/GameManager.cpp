@@ -78,15 +78,20 @@ void GameManager::createNewPiece() {
 
 
 
-void Observer::updateScore(NotifyCode code){
+void Observer::updateLine(NotifyCode code){
 
     /**/std::cout << "[DEBUG]: (GameManager-update) notify recieved with code --> " << code;//*/
     switch (code){
         case up_score:
             GameManager::getInstance()->scoreUp();
+            GameManager::getInstance()->nextPiece();
+            break;
+        case next_piece:
+            GameManager::getInstance()->nextPiece();
             break;
 
     }
+
 }
 
 void GameManager::scoreUp(){
@@ -109,13 +114,14 @@ void GameManager::nextPiece() {
 
     // Set next piece:
     createNewPiece();
-    notifyObservers(NotifyCode::next_piece, next_piece);
+    //notifyObservers(NotifyCode::next_piece, next_piece);
 
 }
 
 void GameManager::newFallingPiece() {
     /**/std::cout << "[DEBUG]: (GameManager:newFallingPiece) " << std::endl;//*/
     Board::getInstance()->setFallingPiece(next_piece);
+
 }
 
 void GameManager::refreshNextPiece() {

@@ -30,6 +30,8 @@ public:
     static Board* getInstance();
     bool isFree(Point2D);
     bool isPossibleMoviment(std::pair <int,int>, Rotation);
+    bool isPossibleMovimentY(std::pair <int,int>, Rotation);
+    bool isPossibleMovimentX(std::pair <int,int>, Rotation);
     void checkLines();
     bool isGameOver();
     void initBoard();
@@ -41,6 +43,7 @@ public:
     void moveFallingPieceToRight();
     void moveFallingPieceToLeft();
     void moveFallingPieceDown();
+    void requestNewPiece();
 
     /**/ void debugPrintBoard();//*/
     /**/ const Piece &getFalling_piece() const;//*/
