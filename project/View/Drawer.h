@@ -22,7 +22,6 @@ private:
     Drawer();
     Drawer& operator=(Drawer const&){};
     Drawer(Drawer const&){};
-    void writeFonts();
 public:
     static Drawer* getInstance();
 
@@ -40,6 +39,7 @@ public:
 
     void writeLevel(int i);
     void writeScore(int i);
+    void writeFonts();
 };
 
 #endif //PROJECT_DRAWER_H

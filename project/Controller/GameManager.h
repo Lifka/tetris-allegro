@@ -25,6 +25,8 @@ public:
     void scoreUp();
     void nextPiece();
     void newFallingPiece();
+    void refreshNextPiece();
+    void refreshScoreAndLevel();
 };
 
 #endif //PROJECT_GAMEMANAGER_H

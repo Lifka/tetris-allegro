@@ -339,6 +339,33 @@ Model/Piece.cpp.s:
 	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/Piece.cpp.s
 .PHONY : Model/Piece.cpp.s
 
+Model/PlayerInput.o: Model/PlayerInput.cpp.o
+
+.PHONY : Model/PlayerInput.o
+
+# target to build an object file
+Model/PlayerInput.cpp.o:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/PlayerInput.cpp.o
+.PHONY : Model/PlayerInput.cpp.o
+
+Model/PlayerInput.i: Model/PlayerInput.cpp.i
+
+.PHONY : Model/PlayerInput.i
+
+# target to preprocess a source file
+Model/PlayerInput.cpp.i:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/PlayerInput.cpp.i
+.PHONY : Model/PlayerInput.cpp.i
+
+Model/PlayerInput.s: Model/PlayerInput.cpp.s
+
+.PHONY : Model/PlayerInput.s
+
+# target to generate assembly for a file
+Model/PlayerInput.cpp.s:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Model/PlayerInput.cpp.s
+.PHONY : Model/PlayerInput.cpp.s
+
 Model/Point2D.o: Model/Point2D.cpp.o
 
 .PHONY : Model/Point2D.o
@@ -507,6 +534,9 @@ help:
 	@echo "... Model/Piece.o"
 	@echo "... Model/Piece.i"
 	@echo "... Model/Piece.s"
+	@echo "... Model/PlayerInput.o"
+	@echo "... Model/PlayerInput.i"
+	@echo "... Model/PlayerInput.s"
 	@echo "... Model/Point2D.o"
 	@echo "... Model/Point2D.i"
 	@echo "... Model/Point2D.s"

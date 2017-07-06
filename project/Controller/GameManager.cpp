@@ -19,12 +19,12 @@ GameManager* GameManager::getInstance() {
 }
 
 void GameManager::initGame() {
-    /**/std::cout << "[DEBUG]: (GameManager:initGame) starting game..." << std::endl;
+    /**/std::cout << "[DEBUG]: (GameManager:initGame) starting game..." << std::endl;//*/
 
     level = 0;
     score = 0;
 
-    /**/std::cout << "[DEBUG]: (GameManager:initGame) starting board..." << std::endl;
+    /**/std::cout << "[DEBUG]: (GameManager:initGame) starting board..." << std::endl;//*/
 
     Board::getInstance()->initBoard();
     notifyObservers(NotifyCode::draw_screen);
@@ -72,15 +72,15 @@ void GameManager::createNewPiece() {
 
 
     next_piece = factory.createPiece(type);
-    /**/std::cout << "[DEBUG]: (GameManager:createNewPiece) New piece created --> Type = " <<  type << " -- Showing: " << std::endl;
-    /**/next_piece.debugMatrix();
+    /**/std::cout << "[DEBUG]: (GameManager:createNewPiece) New piece created --> Type = " <<  type << " -- Showing: " << std::endl;//*/
+    /**next_piece.debugMatrix();//*/
 }
 
 
 
 void Observer::updateScore(NotifyCode code){
 
-    /**/std::cout << "[DEBUG]: (GameManager-update) notify recieved with code --> " << code;
+    /**/std::cout << "[DEBUG]: (GameManager-update) notify recieved with code --> " << code;//*/
     switch (code){
         case up_score:
             GameManager::getInstance()->scoreUp();
@@ -102,7 +102,7 @@ void GameManager::scoreUp(){
 }
 
 void GameManager::nextPiece() {
-    /**/std::cout << "[DEBUG]: (GameManager:nextPiece) " << std::endl;
+    /**/std::cout << "[DEBUG]: (GameManager:nextPiece) " << std::endl;//*/
 
     // Set falling piece:
     newFallingPiece();
@@ -114,6 +114,39 @@ void GameManager::nextPiece() {
 }
 
 void GameManager::newFallingPiece() {
-    /**/std::cout << "[DEBUG]: (GameManager:newFallingPiece) " << std::endl;
+    /**/std::cout << "[DEBUG]: (GameManager:newFallingPiece) " << std::endl;//*/
     Board::getInstance()->setFallingPiece(next_piece);
+}
+
+void GameManager::refreshNextPiece() {
+    notifyObservers(NotifyCode::next_piece, next_piece);
+}
+
+void GameManager::refreshScoreAndLevel() {
+    notifyObservers(NotifyCode::draw_levelup, level);
+    notifyObservers(NotifyCode::draw_scoreup, score);
+}
+
+
+void Observer::update(NotifyCode code, KeyCode key) {
+
+    /**/std::cout << "[DEBUG]: (GameManager-update) notify recieved with code --> " << code;//*/
+    if (code == NotifyCode::key_pressed){
+
+        switch(key){
+            case KeyCode::key_up:
+                Board::getInstance()->rotateFallingPiece();
+                break;
+            case KeyCode::key_down:
+
+                break;
+            case KeyCode::key_right:
+
+                break;
+            case KeyCode::key_left:
+
+                break;
+        }
+
+    }
 }

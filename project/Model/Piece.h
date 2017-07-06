@@ -50,6 +50,11 @@ public:
     std::pair <int,int> getCenterPiece();
 
     /**/void debugMatrix();
+
+    void rotateRight();
+    void moveToRight();
+    void moveToLeft();
+    void fall();
 };
 
 

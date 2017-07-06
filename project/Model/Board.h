@@ -37,9 +37,11 @@ public:
     std::vector<std::vector<int> > getBoardMatrix();
     int getBoardPosition(int x, int y) const;
     ColorName getColorPosition(int x, int y) const;
+    void rotateFallingPiece();
+    void refreshFallingPiece();
 
-    /**/ void debugPrintBoard();
-    /**/ const Piece &getFalling_piece() const;
+    /**/ void debugPrintBoard();//*/
+    /**/ const Piece &getFalling_piece() const;//*/
 };
 
 #endif //PROJECT_BOARD_H

@@ -10,6 +10,7 @@
 #include <vector>
 #include "Observer.h"
 #include "../Model/Piece.h"
+#include "../Model/keycode.h"
 
 class Subject {
 private:
@@ -19,6 +20,7 @@ public:
     void notifyObservers(NotifyCode, Piece piece);
     void notifyObservers(NotifyCode, int);
     void notifyObservers(NotifyCode);
+    void notifyObservers(NotifyCode, KeyCode);
 };
 
 

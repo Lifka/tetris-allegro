@@ -27,7 +27,7 @@ void BlockDrawer::drawBlock(Point2D position, ColorName color, float size) {
                  position.getY(),
                  ColorPalette::getInstance()->getColor(color),
                  size);
-    /**///std::cout << "[DEBUG]: (BlockDrawer-drawBlock) drawed block --> size=" << size << " Point(" << position.getX() << "," << position.getY() << ")" << std::endl;
+    /*std::cout << "[DEBUG]: (BlockDrawer-drawBlock) drawed block --> size=" << size << " Point(" << position.getX() << "," << position.getY() << ")" << std::endl;//*/
 }
 
 void BlockDrawer::drawBlocksLine(Point2D init, Direction dir, int size, ColorName color, int thickness) {
@@ -62,7 +62,7 @@ void BlockDrawer::drawBlocksLine(Point2D init, Direction dir, int size, ColorNam
 }
 
 void BlockDrawer::drawBlockInBoardPosition(std::pair<int,int> board_position, ColorName color){
-    /**///std::cout << "[DEBUG]: (BlockDrawer-drawBlockInBoardPosition) drawing block --> (" << board_position.first << "," << board_position.second << ") - Color: " << color << std::endl;
+    /*std::cout << "[DEBUG]: (BlockDrawer-drawBlockInBoardPosition) drawing block --> (" << board_position.first << "," << board_position.second << ") - Color: " << color << std::endl;//*/
 
     int screen_position_x = (int)(Options::getInstance()->getBoard_offset().getX() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width());
     int screen_position_y = (int)(Options::getInstance()->getBoard_offset().getY() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width());
@@ -76,8 +76,8 @@ void BlockDrawer::drawBlockInBoardPosition(std::pair<int,int> board_position, Co
 }
 
 void BlockDrawer::drawBlocksPiece(Piece piece) {
-    /**/std::cout << "[DEBUG]: (BlockDrawer-drawBlocksPiece) drawing piece in position --> (" << piece.getCurrent_position_matrix().first << "," << piece.getCurrent_position_matrix().second << ") - " << piece.getPieceType() << std::endl;
-
+    /**/std::cout << "[DEBUG]: (BlockDrawer-drawBlocksPiece) drawing piece in position --> (" << piece.getCurrent_position_matrix().first << "," << piece.getCurrent_position_matrix().second << ") - With rotation ->" << piece.getRotation() << std::endl;//*/
+    /**/piece.debugMatrix();//*/
     int count_y = 0;
 
     bool piece_paint = false;

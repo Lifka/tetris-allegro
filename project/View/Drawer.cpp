@@ -26,32 +26,36 @@ Drawer *Drawer::getInstance() {
 
 void Drawer::refreshBoard() {
 
-    int x_init = Options::getInstance()->getBoard_offset().getX() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
-    int y_init = Options::getInstance()->getBoard_offset().getY() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
-
-    Point2D init_point = Point2D(x_init,
-                                 y_init);
+    /**/std::cout << "[DEBUG]: (Drawer:refreshBoard) refreshing..." << std::endl;//*/
 
 
-    for(int i = 0; i < Options::getInstance()->getBoard_blocks_height(); i++){
-        for(int j = 0; j < Options::getInstance()->getBoard_blocks_width(); j++){
+    for (int y = 0; y < Board::getInstance()->getBoardMatrix().size(); y++){
+        for (int x = 0; x < Board::getInstance()->getBoardMatrix()[y].size(); x++){
 
-            if (Board::getInstance()->getBoardPosition(i,j) == block) {
-                BlockDrawer::getInstance()->drawBlock(init_point, Board::getInstance()->getColorPosition(i,j));
-                init_point.setX(init_point.getX() + Options::getInstance()->getBlock_size());
+            if (Board::getInstance()->getBoardMatrix()[y][x] == 1 || Board::getInstance()->getBoardMatrix()[y][x] == 2) {
+
+
+                BlockDrawer::getInstance()->drawBlockInBoardPosition(
+                        std::make_pair(x,
+                                       y),
+                        Board::getInstance()->getColorPosition(x, y));
+;
+            } else {
+
+                BlockDrawer::getInstance()->drawBlockInBoardPosition(
+                        std::make_pair(x,
+                                       y),
+                        Options::getInstance()->getBoard_color());
             }
-
-
         }
-        init_point.setY(init_point.getY() + Options::getInstance()->getBlock_size());
-        init_point.setX(x_init);
+
     }
 
 }
 
 void Drawer::initBoard() {
 
-    /**/std::cout << "[DEBUG]: (Drawer:initBoard) initBoard..." << std::endl;
+    /**/std::cout << "[DEBUG]: (Drawer:initBoard) initBoard..." << std::endl;//*/
 
     int x_init = Options::getInstance()->getBoard_offset().getX() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
     int y_init = Options::getInstance()->getBoard_offset().getY() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
@@ -117,7 +121,8 @@ void Observer::update(NotifyCode code,  Piece piece){
     /**/std::cout << "[DEBUG]: (Drawer-update) notify recieved with code --> " << code;
     /**/std::cout << " with piece in position (" << piece.getCurrent_position_matrix().first << "," << piece.getCurrent_position_matrix().second << ")" << std::endl;
     switch (code){
-        case falling_piece:
+        case falling_piece_changed:
+            /*piece.debugMatrix();//*/
             BlockDrawer::getInstance()->drawBlocksPiece(piece);
             break;
         case next_piece:

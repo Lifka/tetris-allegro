@@ -119,4 +119,34 @@ std::pair<int, int> Piece::getCenterPiece() {
     }
 
     return coord;
+}
+
+void Piece::rotateRight() {
+    switch (getRotation()){
+        case degrees0:
+            setRotation(degrees90);
+            break;
+        case degrees90:
+            setRotation(degrees180);
+            break;
+        case degrees180:
+            setRotation(degrees270);
+            break;
+        case degrees270:
+            setRotation(degrees0);
+            break;
+    }
+
+}
+
+void Piece::moveToRight() {
+
+}
+
+void Piece::moveToLeft() {
+
+}
+
+void Piece::fall() {
+
 };

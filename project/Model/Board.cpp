@@ -51,12 +51,12 @@ void Board::checkLines() {
 
 void Board::setFallingPiece(Piece falling_piece) {
     this->falling_piece = falling_piece;
-    notifyObservers(NotifyCode::falling_piece, falling_piece);
-    /**/std::cout << "[DEBUG]: (Board:setFallingPiece) New falling piece setted --> Type = " << falling_piece.getPieceType() << std::endl;
+    //notifyObservers(NotifyCode::falling_piece_changed, falling_piece);
+    /**/std::cout << "[DEBUG]: (Board:setFallingPiece) New falling piece setted --> Type = " << falling_piece.getPieceType() << std::endl;//*/
 }
 
 void Board::initBoard() {
-    /**/std::cout << "[DEBUG]: (Board:initBoard) Starting board..." << std::endl;
+    /**/std::cout << "[DEBUG]: (Board:initBoard) Starting board..." << std::endl;//*/
     fillBoard();
 }
 
@@ -76,8 +76,8 @@ void Board::fillBoard() {
     m_board = std::vector<std::vector<int> >(Options::getInstance()->getBoard_blocks_height(),
                                              std::vector<int>(Options::getInstance()->getBoard_blocks_width(),0));
 
-    /**/std::cout << "[DEBUG]: (Board:fillBoard) Board created --> size = " <<  m_board.size() << " x " << m_board[0].size() << std::endl;
-    /**/debugPrintBoard();
+    /**/std::cout << "[DEBUG]: (Board:fillBoard) Board created --> size = " <<  m_board.size() << " x " << m_board[0].size() << std::endl;//*/
+    /**/debugPrintBoard();//*/
 }
 
 
@@ -86,15 +86,15 @@ std::vector<std::vector<int> > Board::getBoardMatrix(){
 }
 
 void Board::debugPrintBoard(){
-    /**/std::cout << "[DEBUG]: (Board:debugPrintBoard) Showing board:" << std::endl;
-    /**/std::cout << std::endl << "-------------------------------------------" << std::endl;
+    /**/std::cout << "[DEBUG]: (Board:debugPrintBoard) Showing board:" << std::endl;//*/
+    /**/std::cout << std::endl << "-------------------------------------------" << std::endl;//*/
     for (int i = 0; i < m_board.size(); i++){
         for (int j = 0; j < m_board[i].size(); j++){
             std::cout << m_board[i][j] << " ";
         }
         std::cout << std::endl;
     }
-    /**/std::cout << "-------------------------------------------" << std::endl << std::endl;
+    /**/std::cout << "-------------------------------------------" << std::endl << std::endl;//*/
 }
 
 int Board::getBoardPosition(int x, int y) const {
@@ -107,5 +107,14 @@ ColorName Board::getColorPosition(int x, int y) const {
 
 const Piece &Board::getFalling_piece() const {
     return falling_piece;
+}
+
+void Board::rotateFallingPiece() {
+    falling_piece.rotateRight();
+    /*falling_piece.debugMatrix();//*/
+}
+
+void Board::refreshFallingPiece() {
+    notifyObservers(NotifyCode::falling_piece_changed, falling_piece);
 }
 

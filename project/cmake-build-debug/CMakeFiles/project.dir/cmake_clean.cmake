@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/project.dir/View/BlockDrawer.cpp.o"
   "CMakeFiles/project.dir/Model/ColorPalette.cpp.o"
   "CMakeFiles/project.dir/Model/Strings.cpp.o"
+  "CMakeFiles/project.dir/Model/PlayerInput.cpp.o"
   "project.pdb"
   "project"
 )

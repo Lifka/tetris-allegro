@@ -152,6 +152,12 @@
 		<Unit filename="/home/lifka/Desktop/tetris/project/Model/PieceType.h">
 			<Option target="project"/>
 		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/PlayerInput.cpp">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/PlayerInput.h">
+			<Option target="project"/>
+		</Unit>
 		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Point2D.cpp">
 			<Option target="project"/>
 		</Unit>
@@ -165,6 +171,9 @@
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Strings.h">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/keycode.h">
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="/home/lifka/Desktop/tetris/project/View/BlockDrawer.cpp">

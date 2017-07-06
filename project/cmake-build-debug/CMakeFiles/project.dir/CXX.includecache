@@ -363,6 +363,8 @@ Subject.h
 /home/lifka/Desktop/tetris/project/Model/NotifyCode.h
 ../Model/Piece.h
 /home/lifka/Desktop/tetris/project/Model/Piece.h
+../Model/keycode.h
+/home/lifka/Desktop/tetris/project/Model/keycode.h
 
 /home/lifka/Desktop/tetris/project/Controller/PlayerController.cpp
 PlayerController.h
@@ -391,6 +393,8 @@ Observer.h
 /home/lifka/Desktop/tetris/project/Controller/Observer.h
 ../Model/Piece.h
 /home/lifka/Desktop/tetris/project/Model/Piece.h
+../Model/keycode.h
+/home/lifka/Desktop/tetris/project/Model/keycode.h
 
 /home/lifka/Desktop/tetris/project/Model/Board.cpp
 iostream
@@ -496,6 +500,22 @@ ColorName.h
 
 /home/lifka/Desktop/tetris/project/Model/PieceType.h
 
+/home/lifka/Desktop/tetris/project/Model/PlayerInput.cpp
+PlayerInput.h
+/home/lifka/Desktop/tetris/project/Model/PlayerInput.h
+iostream
+-
+
+/home/lifka/Desktop/tetris/project/Model/PlayerInput.h
+keycode.h
+/home/lifka/Desktop/tetris/project/Model/keycode.h
+../Controller/Subject.h
+/home/lifka/Desktop/tetris/project/Controller/Subject.h
+map
+-
+allegro5/allegro.h
+-
+
 /home/lifka/Desktop/tetris/project/Model/Point2D.cpp
 Point2D.h
 /home/lifka/Desktop/tetris/project/Model/Point2D.h
@@ -511,6 +531,8 @@ Strings.h
 /home/lifka/Desktop/tetris/project/Model/Strings.h
 
 /home/lifka/Desktop/tetris/project/Model/Strings.h
+
+/home/lifka/Desktop/tetris/project/Model/keycode.h
 
 /home/lifka/Desktop/tetris/project/View/BlockDrawer.cpp
 allegro5/addons/primitives/allegro5/allegro_primitives.h
@@ -579,6 +601,8 @@ Model/Board.h
 /home/lifka/Desktop/tetris/project/Model/Board.h
 View/Drawer.h
 /home/lifka/Desktop/tetris/project/View/Drawer.h
+Model/PlayerInput.h
+/home/lifka/Desktop/tetris/project/Model/PlayerInput.h
 stdlib.h
 -
 allegro5/addons/primitives/allegro5/allegro_primitives.h
