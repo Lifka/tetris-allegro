@@ -122,31 +122,85 @@ std::pair<int, int> Piece::getCenterPiece() {
 }
 
 void Piece::rotateRight() {
-    switch (getRotation()){
-        case degrees0:
-            setRotation(degrees90);
-            break;
-        case degrees90:
-            setRotation(degrees180);
-            break;
-        case degrees180:
-            setRotation(degrees270);
-            break;
-        case degrees270:
-            setRotation(degrees0);
-            break;
-    }
-
+    setRotation(nextRotationRight());
 }
 
 void Piece::moveToRight() {
-
+    current_position_matrix.first = nextPositionRight().first;
+    current_position_matrix.second = nextPositionRight().second;
 }
 
 void Piece::moveToLeft() {
-
+    current_position_matrix.first = nextPositionLeft().first;
+    current_position_matrix.second = nextPositionLeft().second;
 }
 
 void Piece::fall() {
+    current_position_matrix.first = nextPositionDown().first;
+    current_position_matrix.second = nextPositionDown().second;
+}
 
+Rotation Piece::nextRotationRight() {
+    Rotation next_rotation = degrees0;
+
+    switch (getRotation()){
+        case degrees0:
+            next_rotation = (degrees90);
+            break;
+        case degrees90:
+            next_rotation = (degrees180);
+            break;
+        case degrees180:
+            next_rotation = (degrees270);
+            break;
+        case degrees270:
+            next_rotation = (degrees0);
+            break;
+    }
+
+    return next_rotation;
+
+}
+
+std::pair<int, int> Piece::nextPositionRight() {
+    std::pair <int,int> next_position;
+    next_position.first = getCurrent_position_matrix().first;
+    next_position.second = getCurrent_position_matrix().second;
+
+    next_position.first++;
+
+    return next_position;
+}
+
+std::pair<int, int> Piece::nextPositionLeft() {
+    std::pair <int,int> next_position;
+    next_position.first = getCurrent_position_matrix().first;
+    next_position.second = getCurrent_position_matrix().second;
+
+    next_position.first--;
+
+    return next_position;
+}
+
+std::pair<int, int> Piece::nextPositionDown() {
+    std::pair <int,int> next_position;
+    next_position.first = getCurrent_position_matrix().first;
+    next_position.second = getCurrent_position_matrix().second;
+
+    next_position.second++;
+
+    return next_position;
+}
+
+std::vector<std::vector<int> > Piece::getRotation(Rotation rotation) {
+    switch (rotation){
+        case degrees0:
+            return rotation0;
+        case degrees90:
+            return rotation90;
+        case degrees180:
+            return rotation180;
+        case degrees270:
+            return rotation270;
+    }
 };

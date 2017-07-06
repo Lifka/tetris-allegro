@@ -64,8 +64,29 @@ bool Board::isGameOver() {
     return false; // TODO
 }
 
-bool Board::isPossibleMoviment(Point2D, Rotation) {
-    return false; // TODO
+bool Board::isPossibleMoviment(std::pair <int,int> position, Rotation rotation) {
+    bool possible = true;
+
+    for(int y = 0; possible && y < falling_piece.getRotation(rotation).size(); y++){
+        for(int x = 0; possible && x < falling_piece.getRotation(rotation)[y].size(); x++){
+
+            if (falling_piece.getRotation(rotation)[y][x] == 1 || falling_piece.getRotation(rotation)[y][x] == 2){
+                possible = ((y + position.second) <= Options::getInstance()->getBoard_blocks_height())
+                           && ((y + position.second) >= 0 )
+                           && ((x + position.first) < Options::getInstance()->getBoard_blocks_width())
+                           && ((x + position.first) >= 0 )
+                           && m_board[y][x] == 0;
+            }
+
+        }
+    }
+
+    if (possible)
+        /**/std::cout << "[DEBUG]: (Board:isPossibleMoviment) ---> : SIIIIIIIIIIIII"  << std::endl;//*/
+    else
+        /**/std::cout << "[DEBUG]: (Board:isPossibleMoviment) ---> : NOOOOOOOOO"  << std::endl;//*/
+
+    return possible;
 }
 
 Board::Board() {
@@ -78,11 +99,6 @@ void Board::fillBoard() {
 
     /**/std::cout << "[DEBUG]: (Board:fillBoard) Board created --> size = " <<  m_board.size() << " x " << m_board[0].size() << std::endl;//*/
     /**/debugPrintBoard();//*/
-}
-
-
-std::vector<std::vector<int> > Board::getBoardMatrix(){
-    return m_board;
 }
 
 void Board::debugPrintBoard(){
@@ -110,11 +126,27 @@ const Piece &Board::getFalling_piece() const {
 }
 
 void Board::rotateFallingPiece() {
-    falling_piece.rotateRight();
+    if (isPossibleMoviment(falling_piece.getCurrent_position_matrix(), falling_piece.nextRotationRight()))
+        falling_piece.rotateRight();
     /*falling_piece.debugMatrix();//*/
 }
 
 void Board::refreshFallingPiece() {
     notifyObservers(NotifyCode::falling_piece_changed, falling_piece);
+}
+
+void Board::moveFallingPieceToRight() {
+    if (isPossibleMoviment(falling_piece.nextPositionRight(), falling_piece.getRotation()))
+        falling_piece.moveToRight();
+}
+
+void Board::moveFallingPieceToLeft() {
+    if (isPossibleMoviment(falling_piece.nextPositionLeft(), falling_piece.getRotation()))
+        falling_piece.moveToLeft();
+}
+
+void Board::moveFallingPieceDown() {
+    if (isPossibleMoviment(falling_piece.nextPositionDown(), falling_piece.getRotation()))
+        falling_piece.fall();
 }
 

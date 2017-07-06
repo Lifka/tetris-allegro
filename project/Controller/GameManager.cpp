@@ -130,7 +130,7 @@ void GameManager::refreshScoreAndLevel() {
 
 void Observer::update(NotifyCode code, KeyCode key) {
 
-    /**/std::cout << "[DEBUG]: (GameManager-update) notify recieved with code --> " << code;//*/
+    /**/std::cout << "[DEBUG]: (GameManager-update) notify recieved with code --> " << code << std::endl;//*/
     if (code == NotifyCode::key_pressed){
 
         switch(key){
@@ -138,13 +138,13 @@ void Observer::update(NotifyCode code, KeyCode key) {
                 Board::getInstance()->rotateFallingPiece();
                 break;
             case KeyCode::key_down:
-
+                Board::getInstance()->moveFallingPieceDown();
                 break;
             case KeyCode::key_right:
-
+                Board::getInstance()->moveFallingPieceToRight();
                 break;
             case KeyCode::key_left:
-
+                Board::getInstance()->moveFallingPieceToLeft();
                 break;
         }
 

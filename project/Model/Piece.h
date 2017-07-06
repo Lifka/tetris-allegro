@@ -35,6 +35,7 @@ public:
     PieceType getPieceType();
     void setRotation(Rotation rotation);
     Rotation getRotation();
+    std::vector <std::vector<int> > getRotation(Rotation rotation);
 
     // Returns the map matrix of the current rotation of the piece
     const std::vector<std::vector<int>> &getPieceBlocks() const;
@@ -51,9 +52,13 @@ public:
 
     /**/void debugMatrix();
 
+    Rotation nextRotationRight();
     void rotateRight();
+    std::pair <int,int> nextPositionRight();
     void moveToRight();
+    std::pair <int,int> nextPositionLeft();
     void moveToLeft();
+    std::pair <int,int> nextPositionDown();
     void fall();
 };
 

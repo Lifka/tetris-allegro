@@ -29,10 +29,10 @@ void Drawer::refreshBoard() {
     /**/std::cout << "[DEBUG]: (Drawer:refreshBoard) refreshing..." << std::endl;//*/
 
 
-    for (int y = 0; y < Board::getInstance()->getBoardMatrix().size(); y++){
-        for (int x = 0; x < Board::getInstance()->getBoardMatrix()[y].size(); x++){
+    for (int y = 0; y < Options::getInstance()->getBoard_blocks_height(); y++){
+        for (int x = 0; x < Options::getInstance()->getBoard_blocks_width(); x++){
 
-            if (Board::getInstance()->getBoardMatrix()[y][x] == 1 || Board::getInstance()->getBoardMatrix()[y][x] == 2) {
+            if (Board::getInstance()->getBoardPosition(x,y) == 1 || Board::getInstance()->getBoardPosition(x,y) == 2) {
 
 
                 BlockDrawer::getInstance()->drawBlockInBoardPosition(
@@ -118,7 +118,7 @@ void Observer::update(NotifyCode code){
 }
 
 void Observer::update(NotifyCode code,  Piece piece){
-    /**/std::cout << "[DEBUG]: (Drawer-update) notify recieved with code --> " << code;
+    /**/std::cout << "[DEBUG]: (Drawer-update) notify recieved with code --> " << code; //*/
     /**/std::cout << " with piece in position (" << piece.getCurrent_position_matrix().first << "," << piece.getCurrent_position_matrix().second << ")" << std::endl;
     switch (code){
         case falling_piece_changed:
@@ -133,7 +133,7 @@ void Observer::update(NotifyCode code,  Piece piece){
 }
 
 void Observer::update(NotifyCode code,  int n){
-    /**/std::cout << "[DEBUG]: (Drawer-update) notify recieved with code --> " << code;
+    /**/std::cout << "[DEBUG]: (Drawer-update) notify recieved with code --> " << code << std::endl;//*/
    switch (code){
         case draw_scoreup:
             Drawer::getInstance()->writeScore(n);

@@ -29,16 +29,18 @@ private:
 public:
     static Board* getInstance();
     bool isFree(Point2D);
-    bool isPossibleMoviment(Point2D, Rotation);
+    bool isPossibleMoviment(std::pair <int,int>, Rotation);
     void checkLines();
     bool isGameOver();
     void initBoard();
     void setFallingPiece(Piece);
-    std::vector<std::vector<int> > getBoardMatrix();
     int getBoardPosition(int x, int y) const;
     ColorName getColorPosition(int x, int y) const;
     void rotateFallingPiece();
     void refreshFallingPiece();
+    void moveFallingPieceToRight();
+    void moveFallingPieceToLeft();
+    void moveFallingPieceDown();
 
     /**/ void debugPrintBoard();//*/
     /**/ const Piece &getFalling_piece() const;//*/
