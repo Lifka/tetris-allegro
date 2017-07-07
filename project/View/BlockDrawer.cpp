@@ -78,7 +78,7 @@ void BlockDrawer::drawBlockInBoardPosition(std::pair<int,int> board_position, Co
 void BlockDrawer::drawBlocksPiece(Piece piece) {
     /**/std::cout << "[DEBUG]: (BlockDrawer-drawBlocksPiece) drawing piece in position --> (" << piece.getCurrent_position_matrix().first << "," << piece.getCurrent_position_matrix().second << ") - With rotation ->" << piece.getRotation() << std::endl;//*/
     /**/piece.debugMatrix();//*/
-    int count_y = 0;
+   // int count_y = 0;
 
     bool piece_paint = false;
 
@@ -90,7 +90,7 @@ void BlockDrawer::drawBlocksPiece(Piece piece) {
 
                 drawBlockInBoardPosition(
                         std::make_pair(piece.getCurrent_position_matrix().first + x,
-                                       piece.getCurrent_position_matrix().second + count_y),
+                                       piece.getCurrent_position_matrix().second + /**/y/**//*count_y*/),
                         piece.getColor());
 
                 piece_paint = true;
@@ -98,7 +98,7 @@ void BlockDrawer::drawBlocksPiece(Piece piece) {
         }
 
         if (piece_paint){
-            count_y++;
+            //count_y++;
             piece_paint = false;
         }
     }

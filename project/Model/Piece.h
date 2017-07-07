@@ -17,11 +17,17 @@ private:
     std::vector <std::vector<int> > rotation90;
     std::vector <std::vector<int> > rotation180;
     std::vector <std::vector<int> > rotation270;
+    std::pair <int,int> initial_position_rotation0;
+    std::pair <int,int> initial_position_rotation90;
+    std::pair <int,int> initial_position_rotation180;
+    std::pair <int,int> initial_position_rotation270;
+
     Rotation current_rotation;
-    std::pair <int,int> initial_position_matrix;
     std::pair <int,int> current_position_matrix;
     PieceType type;
     ColorName color;
+
+    void calculateInitialPositions();
 
 public:
     Piece();
@@ -29,7 +35,7 @@ public:
 
     // Creates a piece with a matrix map for each rotation. Also, initialices the spawn position at the middle of the first row
     Piece(std::vector<std::vector<int> >, std::vector<std::vector<int> >, std::vector<std::vector<int> >,
-              std::vector<std::vector<int> >, std::pair <int,int>, Rotation, PieceType, ColorName);
+              std::vector<std::vector<int> >, Rotation, PieceType, ColorName);
 
     std::pair <int,int> getInitialPosition();
     PieceType getPieceType();

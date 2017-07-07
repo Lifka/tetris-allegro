@@ -8,19 +8,17 @@
 
 Piece::Piece(std::vector<std::vector<int> > rotation0, std::vector<std::vector<int> > rotation90,
              std::vector<std::vector<int> > rotation180, std::vector<std::vector<int> > rotation270,
-             std::pair <int,int> initial_position, Rotation rotation, PieceType type, ColorName color)
-        : initial_position_matrix(initial_position), rotation0(rotation0), rotation90(rotation90),
+             Rotation rotation, PieceType type, ColorName color)
+        : rotation0(rotation0), rotation90(rotation90),
           rotation180(rotation180), rotation270(rotation270){
     this->current_rotation = rotation;
     this->type = type;
     this->color = color;
 
-    // Piece is spawned at row 0 of the board in the middle column (round to minor)
-    this->initial_position_matrix.first = (int)(Options::getInstance()->getBoard_blocks_width() / 2 -2);
-    this->initial_position_matrix.second = 0;
+    calculateInitialPositions();
 
-    this->current_position_matrix.first = initial_position_matrix.first;
-    this->current_position_matrix.second = initial_position_matrix.second;
+    this->current_position_matrix.first = getInitialPosition().first;
+    this->current_position_matrix.second = getInitialPosition().second;
 
 
     /**///std::cout << "[DEBUG]: (Piece-Piece) piece created in position (" << current_position_matrix.first << "," << current_position_matrix.second << ")" << std::endl;
@@ -32,7 +30,16 @@ PieceType Piece::getPieceType() {
 }
 
 std::pair <int,int> Piece::getInitialPosition() {
-    return initial_position_matrix;
+    switch (current_rotation){
+        case degrees0:
+            return initial_position_rotation0;
+        case degrees90:
+            return initial_position_rotation90;
+        case degrees180:
+            return initial_position_rotation180;
+        case degrees270:
+            return initial_position_rotation270;
+    }
 }
 
 void Piece::setRotation(Rotation rotation) {
@@ -62,8 +69,18 @@ Piece::Piece(const Piece &p2){
     current_rotation = p2.current_rotation;
     current_position_matrix.first = p2.current_position_matrix.first;
     current_position_matrix.second = p2.current_position_matrix.second;
-    initial_position_matrix.first = p2.initial_position_matrix.first;
-    initial_position_matrix.second = p2.initial_position_matrix.second;
+
+    initial_position_rotation0.first = p2.initial_position_rotation0.first;
+    initial_position_rotation0.second = p2.initial_position_rotation0.second;
+
+    initial_position_rotation90.first = p2.initial_position_rotation90.first;
+    initial_position_rotation90.second = p2.initial_position_rotation90.second;
+
+    initial_position_rotation180.first = p2.initial_position_rotation180.first;
+    initial_position_rotation180.second = p2.initial_position_rotation180.second;
+
+    initial_position_rotation270.first = p2.initial_position_rotation270.first;
+    initial_position_rotation270.second = p2.initial_position_rotation270.second;
 
 
     rotation0 = p2.rotation0;
@@ -203,4 +220,90 @@ std::vector<std::vector<int> > Piece::getRotation(Rotation rotation) {
         case degrees270:
             return rotation270;
     }
-};
+}
+
+void Piece::calculateInitialPositions() {
+
+    // Piece is spawned at row 0 of the board in the middle column (round to minor)
+    this->initial_position_rotation0.first = (int)(Options::getInstance()->getBoard_blocks_width() / 2 -2);
+    this->initial_position_rotation90.first = (int)(Options::getInstance()->getBoard_blocks_width() / 2 -2);
+    this->initial_position_rotation180.first = (int)(Options::getInstance()->getBoard_blocks_width() / 2 -2);
+    this->initial_position_rotation270.first = (int)(Options::getInstance()->getBoard_blocks_width() / 2 -2);
+
+    bool empty_line = true;
+    int count = 0;
+
+    for (int i = 0; empty_line && i < rotation0.size(); i++){
+        for (int j=0; empty_line && j < rotation0[i].size(); j++){
+
+            if (rotation0[i][j] != 0){
+                empty_line = false;
+            }
+        }
+        if (empty_line){
+            count++;
+        }
+    }
+
+    this->initial_position_rotation0.second = 0 - count;
+
+    // --------
+
+    empty_line = true;
+    count = 0;
+
+    for (int i = 0; empty_line && i < rotation90.size(); i++){
+        for (int j=0; empty_line && j < rotation90[i].size(); j++){
+
+            if (rotation90[i][j] != 0){
+                empty_line = false;
+            }
+        }
+        if (empty_line){
+            count++;
+        }
+    }
+
+    this->initial_position_rotation90.second = 0 - count;
+
+    // --------
+
+    empty_line = true;
+    count = 0;
+
+    for (int i = 0; empty_line && i < rotation180.size(); i++){
+        for (int j=0; empty_line && j < rotation180[i].size(); j++){
+
+            if (rotation180[i][j] != 0){
+                empty_line = false;
+            }
+        }
+        if (empty_line){
+            count++;
+        }
+    }
+
+    this->initial_position_rotation180.second = 0 - count;
+
+    // --------
+
+    empty_line = true;
+    count = 0;
+
+    for (int i = 0; empty_line && i < rotation270.size(); i++){
+        for (int j=0; empty_line && j < rotation270[i].size(); j++){
+
+            if (rotation270[i][j] != 0){
+                empty_line = false;
+            }
+        }
+        if (empty_line){
+            count++;
+        }
+    }
+
+    this->initial_position_rotation270.second = 0 - count;
+
+    // --------
+
+}

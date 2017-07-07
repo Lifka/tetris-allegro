@@ -15,7 +15,6 @@ Piece Factory::createPiece(PieceType type) {
     std::vector<std::vector<int> > rotation270;
 
     Rotation current_rotation = degrees0;
-    std::pair<int,int> initial_position(0,0); //TODO
 
 
     std::mt19937 rng;
@@ -48,7 +47,7 @@ Piece Factory::createPiece(PieceType type) {
             rotation0.push_back(std::vector<int>(line0_0_square,
                                                  line0_0_square + sizeof line0_0_square / sizeof line0_0_square[0]));
             rotation0.push_back(std::vector<int>(line0_1_square,
-                                                 line0_1_square + sizeof line0_1_square / sizeof line0_1_square[0]));
+                                                      line0_1_square + sizeof line0_1_square / sizeof line0_1_square[0]));
             rotation0.push_back(std::vector<int>(line0_2_square,
                                                  line0_2_square + sizeof line0_2_square / sizeof line0_2_square[0]));
             rotation0.push_back(std::vector<int>(line0_3_square,
@@ -61,10 +60,10 @@ Piece Factory::createPiece(PieceType type) {
             int line90_2_square[] = {0, 0, 2, 1, 0};
             int line90_3_square[] = {0, 0, 1, 1, 0};
             int line90_4_square[] = {0, 0, 0, 0, 0};
-            rotation90.push_back(std::vector<int>(line90_0_square, line90_0_square +
-                                                                   sizeof line90_0_square / sizeof line90_0_square[0]));
-            rotation90.push_back(std::vector<int>(line90_1_square, line90_1_square +
-                                                                   sizeof line90_1_square / sizeof line90_1_square[0]));
+                rotation90.push_back(std::vector<int>(line90_0_square, line90_0_square +
+                                                                       sizeof line90_0_square / sizeof line90_0_square[0]));
+                rotation90.push_back(std::vector<int>(line90_1_square, line90_1_square +
+                                                                       sizeof line90_1_square / sizeof line90_1_square[0]));
             rotation90.push_back(std::vector<int>(line90_2_square, line90_2_square +
                                                                    sizeof line90_2_square / sizeof line90_2_square[0]));
             rotation90.push_back(std::vector<int>(line90_3_square, line90_3_square +
@@ -495,6 +494,6 @@ Piece Factory::createPiece(PieceType type) {
 
     ColorName color = ColorPalette::getInstance()->getRandomColor();
 
-    return Piece(rotation0, rotation90, rotation180, rotation270, initial_position, current_rotation, type, color);
+    return Piece(rotation0, rotation90, rotation180, rotation270, current_rotation, type, color);
 
 }
