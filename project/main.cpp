@@ -19,7 +19,8 @@ void updateGame(){
 
     ALLEGRO_EVENT ev;
     al_wait_for_event(event_queue, &ev);
-    PlayerInput::getInstance()->updateInput(ev);
+    PlayerInput::getInstance()->updateInput(ev, *display);
+
 
 }
 
@@ -123,7 +124,6 @@ int main(int argc, char **argv)  {
     PlayerInput::getInstance()->addObserver(GameManager::getInstance());
     Board::getInstance()->addObserver(Drawer::getInstance());
 
-
     GameManager::getInstance()->initGame();
     GameManager::getInstance()->refreshNextPiece();
     Board::getInstance()->refreshFallingPiece();
@@ -131,8 +131,6 @@ int main(int argc, char **argv)  {
 
     game_loop();
 
-
-    al_rest(60.0);
     al_destroy_display(display);
 
     return 0;

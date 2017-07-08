@@ -581,6 +581,8 @@ stdlib.h
 -
 allegro5/allegro.h
 -
+allegro5/allegro_font.h
+-
 ../Controller/Observer.h
 /home/lifka/Desktop/tetris/project/Controller/Observer.h
 ../Model/Options.h

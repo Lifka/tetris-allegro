@@ -20,9 +20,11 @@ private:
 
     std::map<KeyCode, bool > keys;
 
+    void close(ALLEGRO_DISPLAY&);
+
 public:
     static PlayerInput* getInstance();
-    void updateInput(ALLEGRO_EVENT&);
+    void updateInput(ALLEGRO_EVENT&, ALLEGRO_DISPLAY&);
     bool getKeyState(KeyCode);
     bool getUpState();
     bool getDownState();

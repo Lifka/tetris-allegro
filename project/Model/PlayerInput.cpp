@@ -13,7 +13,7 @@ PlayerInput* PlayerInput::getInstance() {
     return instance;
 }
 
-void PlayerInput::updateInput(ALLEGRO_EVENT& ev) {
+void PlayerInput::updateInput(ALLEGRO_EVENT& ev, ALLEGRO_DISPLAY& display) {
 
     if(ev.type == ALLEGRO_EVENT_KEY_DOWN) {
         switch(ev.keyboard.keycode) {
@@ -39,7 +39,7 @@ void PlayerInput::updateInput(ALLEGRO_EVENT& ev) {
 
             case ALLEGRO_KEY_ESCAPE:
                 keys[KeyCode::key_escape] = true;
-                notifyObservers(NotifyCode::key_pressed, KeyCode::key_escape);
+                close(display);
                 break;
         }
     }
@@ -65,7 +65,10 @@ void PlayerInput::updateInput(ALLEGRO_EVENT& ev) {
                 keys[KeyCode::key_escape] = false;
                 break;
         }
+    } else if(ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE) {
+        close(display);
     }
+
 }
 
 bool PlayerInput::getKeyState(KeyCode code) {
@@ -90,5 +93,10 @@ bool PlayerInput::getLeftState() {
 
 bool PlayerInput::getEscapeState() {
     return keys[KeyCode::key_escape];
+}
+
+void PlayerInput::close(ALLEGRO_DISPLAY& display) {
+    al_clear_to_color(al_map_rgb(0,0,0));
+    al_destroy_display(&display);
 }
 
