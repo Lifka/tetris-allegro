@@ -12,13 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7084057f-f4b5-45b7-a697-6c4c0fb33da6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Model/Board.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Model/Board.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Model/Piece.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Model/Piece.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Controller/GameManager.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Controller/GameManager.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Controller/PlayerController.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Controller/PlayerController.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Controller/Subject.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Controller/Subject.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/View/Drawer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/View/Drawer.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/GameManager.cpp" afterPath="$PROJECT_DIR$/Controller/GameManager.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Board.cpp" afterPath="$PROJECT_DIR$/Model/Board.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/NotifyCode.h" afterPath="$PROJECT_DIR$/Model/NotifyCode.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/BlockDrawer.cpp" afterPath="$PROJECT_DIR$/View/BlockDrawer.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,21 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Board.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/Board.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90">
-              <caret line="54" column="83" lean-forward="true" selection-start-line="54" selection-start-column="83" selection-end-line="54" selection-end-column="83" />
+            <state relative-caret-position="385">
+              <caret line="190" column="85" lean-forward="true" selection-start-line="190" selection-start-column="85" selection-end-line="190" selection-end-column="85" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-105">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="428">
+              <caret line="121" column="72" lean-forward="false" selection-start-line="121" selection-start-column="72" selection-end-line="121" selection-end-column="72" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -99,7 +99,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>thik</find>
       <find>init</find>
       <find>debu</find>
       <find>font</find>
@@ -129,6 +128,7 @@
       <find>notifyObserversLine</find>
       <find>next_piece</find>
       <find>requestNewPiece</find>
+      <find>upda</find>
     </findStrings>
     <replaceStrings>
       <replace>Options::getInstance()-&gt;getBoard_offset().getY()</replace>
@@ -176,7 +176,6 @@
         <option value="$PROJECT_DIR$/Model/Board.h" />
         <option value="$PROJECT_DIR$/Controller/Observer.h" />
         <option value="$PROJECT_DIR$/Controller/Subject.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Controller/Subject.cpp" />
         <option value="$PROJECT_DIR$/View/Drawer.cpp" />
         <option value="$PROJECT_DIR$/Model/Piece.h" />
@@ -186,6 +185,7 @@
         <option value="$PROJECT_DIR$/Model/NotifyCode.h" />
         <option value="$PROJECT_DIR$/Controller/GameManager.cpp" />
         <option value="$PROJECT_DIR$/Model/Board.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -555,7 +555,7 @@
       <workItem from="1499352028457" duration="459000" />
       <workItem from="1499352999694" duration="48000" />
       <workItem from="1499383223069" duration="5074000" />
-      <workItem from="1499517271170" duration="4872000" />
+      <workItem from="1499517271170" duration="6754000" />
     </task>
     <task id="LOCAL-00001" summary="Model implement">
       <created>1497754984512</created>
@@ -669,11 +669,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499387542461</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Fix lateral colision">
+      <created>1499526737287</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1499526737287</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186982000" />
+    <option name="totallyTimeSpent" value="188864000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -685,7 +692,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="1" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15918803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1077,16 +1085,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/NotifyCode.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1105,9 +1103,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/Board.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="54" column="83" lean-forward="true" selection-start-line="54" selection-start-column="83" selection-end-line="54" selection-end-column="83" />
+        <state relative-caret-position="385">
+          <caret line="190" column="85" lean-forward="true" selection-start-line="190" selection-start-column="85" selection-end-line="190" selection-end-column="85" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="121" column="72" lean-forward="false" selection-start-line="121" selection-start-column="72" selection-end-line="121" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

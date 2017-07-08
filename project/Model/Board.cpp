@@ -188,7 +188,7 @@ void Board::requestNewPiece() {
 
     Board::getInstance()->debugPrintBoard();
 
-
+    /**/std::cout << "\n\n¡¡¡¡NOTIFICAR PARA QUE CAIGA UNA NUEVA PIEZA!!!\n\n\n";//*/
     notifyObserversLine(NotifyCode::prepare_next_piece);
 }
 

@@ -120,7 +120,6 @@ int main(int argc, char **argv)  {
 
     GameManager::getInstance()->addObserver(Drawer::getInstance());
     PlayerInput::getInstance()->addObserver(GameManager::getInstance());
-    Board::getInstance()->addObserver(GameManager::getInstance());
     Board::getInstance()->addObserver(Drawer::getInstance());
 
 
