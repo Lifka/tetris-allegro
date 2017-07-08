@@ -11,16 +11,29 @@
 
 Board* Board::instance = nullptr;
 
+void Board::checkLines() {
+    int index = 0;
+    for (std::vector<std::vector<int> >::iterator itx = m_board.begin() ; itx != m_board.end(); ++itx, index++){
+        bool delete_line = true;
+        for (int y = 0; y < (*itx).size() && delete_line; y++){
+            delete_line = (*itx)[y] != 0;
+        }
+        if (delete_line) {
+            /**std::cout << "[DEBUG]: (Board:checkLines) Is need to delete line --> " << index << std::endl;//*/
+            deleteLine(index);
+        }
+    }
+}
+
 void Board::deleteLine(int n_line) {
-    for(int x = n_line+1; x < m_board.size(); x++)
-        m_board[x-1] = m_board[x];
+    /**/std::cout << "[DEBUG]: (Board:deleteLine) Deleting line --> " << n_line << std::endl;//*/
+    for(int x = n_line-1; x > 0; x--) {
+        m_board[x + 1] = m_board[x];
+        m_board_colors[x + 1] = m_board_colors[x];
+    }
     // full last line except
-    m_board[m_board.size()-1] = std::vector<int>(m_board[m_board.size()-1].size(), 0);
-
-    // TODO ---
-
-
-
+    m_board[0] = std::vector<int>(m_board[0].size(), 0);
+    m_board_colors[0] = std::vector<ColorName>(m_board_colors[0].size(), ColorName::none);
 }
 
 Board* Board::getInstance() {
@@ -34,19 +47,6 @@ Board* Board::getInstance() {
 
 bool Board::isFree(Point2D p) {
     return m_board[p.getX()][p.getY()] == 0;
-}
-
-void Board::checkLines() {
-    int index = 0;
-    for (std::vector<std::vector<int> >::iterator itx = m_board.begin() ; itx != m_board.end(); ++itx, index++){
-        bool delete_line = true;
-        for (int y = 0; y < (*itx).size() && delete_line; y++){
-            int value = (*itx)[y];
-            delete_line = (value != 0);
-        }
-        if (delete_line)
-            deleteLine(index);
-    }
 }
 
 void Board::setFallingPiece(Piece falling_piece) {
@@ -186,9 +186,9 @@ void Board::requestNewPiece() {
     }
 
 
-    Board::getInstance()->debugPrintBoard();
+    debugPrintBoard();
+    checkLines();
 
-    /**/std::cout << "\n\n¡¡¡¡NOTIFICAR PARA QUE CAIGA UNA NUEVA PIEZA!!!\n\n\n";//*/
     notifyObserversLine(NotifyCode::prepare_next_piece);
 }
 

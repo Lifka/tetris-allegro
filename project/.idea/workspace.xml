@@ -12,13 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7084057f-f4b5-45b7-a697-6c4c0fb33da6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Controller/GameManager.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Controller/GameManager.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Controller/PlayerController.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Controller/PlayerController.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Controller/Subject.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Controller/Subject.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/View/Drawer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/View/Drawer.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Model/Board.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Model/Board.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/main.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Board.cpp" afterPath="$PROJECT_DIR$/Model/Board.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +31,7 @@
       <file leaf-file-name="Drawer.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/Drawer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1431">
+            <state relative-caret-position="2268">
               <caret line="126" column="31" lean-forward="false" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="31" />
               <folding>
                 <element signature="e#40#59#0" expanded="true" />
@@ -43,20 +40,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Board.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Model/Board.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="190" column="85" lean-forward="true" selection-start-line="190" selection-start-column="85" selection-end-line="190" selection-end-column="85" />
+            <state relative-caret-position="180">
+              <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
+            <state relative-caret-position="2178">
               <caret line="121" column="72" lean-forward="false" selection-start-line="121" selection-start-column="72" selection-end-line="121" selection-end-column="72" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -68,7 +65,7 @@
       <file leaf-file-name="GameManager.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/GameManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-369">
+            <state relative-caret-position="1476">
               <caret line="82" column="104" lean-forward="false" selection-start-line="82" selection-start-column="104" selection-end-line="82" selection-end-column="104" />
               <folding />
             </state>
@@ -88,8 +85,8 @@
       <file leaf-file-name="Board.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/Board.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+            <state relative-caret-position="810">
+              <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -184,8 +181,8 @@
         <option value="$PROJECT_DIR$/View/BlockDrawer.cpp" />
         <option value="$PROJECT_DIR$/Model/NotifyCode.h" />
         <option value="$PROJECT_DIR$/Controller/GameManager.cpp" />
-        <option value="$PROJECT_DIR$/Model/Board.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Model/Board.cpp" />
       </list>
     </option>
   </component>
@@ -555,7 +552,8 @@
       <workItem from="1499352028457" duration="459000" />
       <workItem from="1499352999694" duration="48000" />
       <workItem from="1499383223069" duration="5074000" />
-      <workItem from="1499517271170" duration="6754000" />
+      <workItem from="1499517271170" duration="9491000" />
+      <workItem from="1499535539437" duration="970000" />
     </task>
     <task id="LOCAL-00001" summary="Model implement">
       <created>1497754984512</created>
@@ -676,11 +674,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499526737287</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Fix the new piece is not the next piece">
+      <created>1499532319274</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1499532319274</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188864000" />
+    <option name="totallyTimeSpent" value="192571000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -695,7 +700,7 @@
     <frame x="0" y="27" width="1920" height="1053" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15918803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16079059" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.49786323" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3352018" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -736,7 +741,8 @@
     <MESSAGE value="Movement and colision fix" />
     <MESSAGE value="Fix initial position" />
     <MESSAGE value="Fix lateral colision" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix lateral colision" />
+    <MESSAGE value="Fix the new piece is not the next piece" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix the new piece is not the next piece" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1008,7 +1014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="846">
           <caret line="47" column="22" lean-forward="false" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,7 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="972">
           <caret line="54" column="64" lean-forward="false" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1031,7 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,7 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
           <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,7 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8388">
           <caret line="466" column="34" lean-forward="false" selection-start-line="466" selection-start-column="34" selection-end-line="466" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1055,7 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
           <caret line="224" column="41" lean-forward="false" selection-start-line="224" selection-start-column="41" selection-end-line="224" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,21 +1063,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-461">
           <caret line="79" column="24" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/Board.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+        <state relative-caret-position="810">
+          <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/Drawer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1431">
+        <state relative-caret-position="2268">
           <caret line="126" column="31" lean-forward="false" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="31" />
           <folding>
             <element signature="e#40#59#0" expanded="true" />
@@ -1095,27 +1094,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controller/GameManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-369">
+        <state relative-caret-position="1476">
           <caret line="82" column="104" lean-forward="false" selection-start-line="82" selection-start-column="104" selection-end-line="82" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Board.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="190" column="85" lean-forward="true" selection-start-line="190" selection-start-column="85" selection-end-line="190" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
+        <state relative-caret-position="2178">
           <caret line="121" column="72" lean-forward="false" selection-start-line="121" selection-start-column="72" selection-end-line="121" selection-end-column="72" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Board.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
