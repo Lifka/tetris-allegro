@@ -21,15 +21,13 @@ GameManager* GameManager::getInstance() {
 void GameManager::initGame() {
     /**/std::cout << "[DEBUG]: (GameManager:initGame) starting game..." << std::endl;//*/
 
-    level = 0;
+    level = 1;
     score = 0;
 
     /**/std::cout << "[DEBUG]: (GameManager:initGame) starting board..." << std::endl;//*/
 
     Board::getInstance()->initBoard();
     notifyObservers(NotifyCode::draw_screen);
-
-    scoreUp();
 
     // First piece..
     createNewPiece();
@@ -84,7 +82,6 @@ void Observer::updateLine(NotifyCode code){
     switch (code){
         case up_score:
             GameManager::getInstance()->scoreUp();
-            GameManager::getInstance()->nextPiece();
             break;
         case prepare_next_piece:
             GameManager::getInstance()->nextPiece();
@@ -95,14 +92,15 @@ void Observer::updateLine(NotifyCode code){
 }
 
 void GameManager::scoreUp(){
+    /**/std::cout << "[DEBUG]: (GameManager-scoreUp) scoreUp --> " << score << " + " <<  Options::getInstance()->getLine_score()*level << std::endl;//*/
     score += Options::getInstance()->getLine_score()*level;
 
     if (score >= Options::getInstance()->getScore_for_levelup()*level*level){
         level++;
-        notifyObservers(NotifyCode::draw_levelup, level);
+     //   notifyObservers(NotifyCode::draw_levelup, level);
     }
 
-    notifyObservers(NotifyCode::draw_scoreup, score);
+  //  notifyObservers(NotifyCode::draw_scoreup, score);
 
 }
 

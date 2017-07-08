@@ -24,12 +24,13 @@ void updateGame(){
 }
 
 void displayGame(){
+    al_clear_to_color(al_map_rgb(0,0,0));
     Drawer::getInstance()->writeFonts();
-    GameManager::getInstance()->refreshScoreAndLevel();
     GameManager::getInstance()->refreshNextPiece();
     Drawer::getInstance()->walls();
     Drawer::getInstance()->refreshBoard();
     Board::getInstance()->refreshFallingPiece();
+    GameManager::getInstance()->refreshScoreAndLevel();
     al_flip_display();
 }
 

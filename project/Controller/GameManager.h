@@ -10,7 +10,7 @@
 
 class GameManager : public Subject, public Observer{
 private:
-    int level = 0;
+    int level = 1;
     int score = 0;
     static GameManager* instance;
     GameManager(){};

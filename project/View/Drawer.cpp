@@ -154,6 +154,12 @@ void Drawer::refreshNextPiece(Piece piece) {
 
 Drawer::Drawer() {
 
+    score = al_load_ttf_font(Options::getInstance()->getFont(),
+                             Options::getInstance()->getFont_size(),0 );
+
+
+    level = al_load_ttf_font(Options::getInstance()->getFont(),
+                             Options::getInstance()->getFont_size(),0 );
 }
 
 void Drawer::writeFonts() {
@@ -197,12 +203,10 @@ void Drawer::writeScore(int i) {
     char str[10];
     sprintf(str, "%d", i);
 
-    ALLEGRO_FONT *font = al_load_ttf_font(Options::getInstance()->getFont(),
-                                          Options::getInstance()->getFont_size(),0 );
 
     Point2D offset_score = Options::getInstance()->getScore_offset_position_screen();
 
-    al_draw_text(font,
+    al_draw_text(score,
                  ColorPalette::getInstance()->getColor(Options::getInstance()->getTextColor()),
                  offset_score.getX(),
                  offset_score.getY(),
@@ -215,12 +219,10 @@ void Drawer::writeLevel(int i) {
     char str[10];
     sprintf(str, "%d", i);
 
-    ALLEGRO_FONT *font = al_load_ttf_font(Options::getInstance()->getFont(),
-                                          Options::getInstance()->getFont_size(),0 );
 
     Point2D offset_level = Options::getInstance()->getLevel_offset_position_screen();
 
-    al_draw_text(font,
+    al_draw_text(level,
                  ColorPalette::getInstance()->getColor(Options::getInstance()->getTextColor()),
                  offset_level.getX(),
                  offset_level.getY(),

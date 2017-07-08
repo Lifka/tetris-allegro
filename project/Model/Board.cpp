@@ -21,6 +21,7 @@ void Board::checkLines() {
         if (delete_line) {
             /**std::cout << "[DEBUG]: (Board:checkLines) Is need to delete line --> " << index << std::endl;//*/
             deleteLine(index);
+            notifyObserversLine(NotifyCode::up_score);
         }
     }
 }
