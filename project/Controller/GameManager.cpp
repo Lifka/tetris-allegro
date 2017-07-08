@@ -73,20 +73,20 @@ void GameManager::createNewPiece() {
 
     next_piece = factory.createPiece(type);
     /**/std::cout << "[DEBUG]: (GameManager:createNewPiece) New piece created --> Type = " <<  type << " -- Showing: " << std::endl;//*/
-    /**next_piece.debugMatrix();//*/
+    /**/next_piece.debugMatrix();//*/
 }
 
 
 
 void Observer::updateLine(NotifyCode code){
 
-    /**/std::cout << "[DEBUG]: (GameManager-update) notify recieved with code --> " << code;//*/
+    /**/std::cout << "[DEBUG]: (GameManager-updateLine) notify recieved with code --> " << code << std::endl;//*/
     switch (code){
         case up_score:
             GameManager::getInstance()->scoreUp();
             GameManager::getInstance()->nextPiece();
             break;
-        case next_piece:
+        case prepare_next_piece:
             GameManager::getInstance()->nextPiece();
             break;
 

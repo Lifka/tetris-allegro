@@ -12,15 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7084057f-f4b5-45b7-a697-6c4c0fb33da6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Controller/GameManager.cpp.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Controller/PlayerController.cpp.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Controller/Subject.cpp.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Model/Factory.cpp.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/View/Drawer.cpp.o" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Model/Board.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Model/Board.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Model/Piece.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Model/Piece.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Factory.cpp" afterPath="$PROJECT_DIR$/Model/Factory.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Piece.cpp" afterPath="$PROJECT_DIR$/Model/Piece.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Piece.h" afterPath="$PROJECT_DIR$/Model/Piece.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/GameManager.cpp" afterPath="$PROJECT_DIR$/Controller/GameManager.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Board.cpp" afterPath="$PROJECT_DIR$/Model/Board.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/NotifyCode.h" afterPath="$PROJECT_DIR$/Model/NotifyCode.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/BlockDrawer.cpp" afterPath="$PROJECT_DIR$/View/BlockDrawer.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -37,8 +34,8 @@
       <file leaf-file-name="Drawer.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/Drawer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1361">
-              <caret line="129" column="24" lean-forward="false" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
+            <state relative-caret-position="-1431">
+              <caret line="126" column="31" lean-forward="false" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="31" />
               <folding>
                 <element signature="e#40#59#0" expanded="true" />
               </folding>
@@ -46,41 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Board.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Model/Board.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="66" column="81" lean-forward="false" selection-start-line="66" selection-start-column="81" selection-end-line="66" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ColorPalette.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/ColorPalette.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="54" column="64" lean-forward="false" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Piece.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Model/Piece.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="224" column="41" lean-forward="true" selection-start-line="224" selection-start-column="41" selection-end-line="224" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Piece.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/Piece.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+            <state relative-caret-position="-90">
+              <caret line="54" column="83" lean-forward="true" selection-start-line="54" selection-start-column="83" selection-end-line="54" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -89,7 +56,7 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
+            <state relative-caret-position="-105">
               <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -98,41 +65,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlockDrawer.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/BlockDrawer.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="91" column="84" lean-forward="true" selection-start-line="91" selection-start-column="84" selection-end-line="91" selection-end-column="84" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Factory.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/Factory.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="466" column="34" lean-forward="true" selection-start-line="466" selection-start-column="34" selection-end-line="466" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GameManager.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/GameManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2358">
-              <caret line="131" column="53" lean-forward="false" selection-start-line="131" selection-start-column="53" selection-end-line="131" selection-end-column="53" />
+            <state relative-caret-position="-369">
+              <caret line="82" column="104" lean-forward="false" selection-start-line="82" selection-start-column="104" selection-end-line="82" selection-end-column="104" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ColorName.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/ColorName.h">
+      <file leaf-file-name="NotifyCode.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/NotifyCode.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="8" column="135" lean-forward="false" selection-start-line="8" selection-start-column="117" selection-end-line="8" selection-end-column="135" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Board.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/Board.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -142,17 +99,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>111</find>
-      <find>222</find>
-      <find>board</find>
-      <find>point</find>
-      <find>colo</find>
-      <find>set</find>
-      <find>debugP</find>
       <find>thik</find>
       <find>init</find>
       <find>debu</find>
-      <find>debugMatrix</find>
       <find>font</find>
       <find>unsi</find>
       <find>fallingpiece</find>
@@ -172,6 +121,14 @@
       <find>setfa</find>
       <find>setfall</find>
       <find>initial_position</find>
+      <find>create</find>
+      <find>fallin</find>
+      <find>debugMatrix</find>
+      <find>cou</find>
+      <find>nextPiece</find>
+      <find>notifyObserversLine</find>
+      <find>next_piece</find>
+      <find>requestNewPiece</find>
     </findStrings>
     <replaceStrings>
       <replace>Options::getInstance()-&gt;getBoard_offset().getY()</replace>
@@ -211,7 +168,6 @@
         <option value="$PROJECT_DIR$/Model/Options.h" />
         <option value="$PROJECT_DIR$/Model/Options.cpp" />
         <option value="$PROJECT_DIR$/Model/PlayerInput.h" />
-        <option value="$PROJECT_DIR$/Model/NotifyCode.h" />
         <option value="$PROJECT_DIR$/Model/PlayerInput.cpp" />
         <option value="$PROJECT_DIR$/Model/keycode.h" />
         <option value="$PROJECT_DIR$/Model/Direction.h" />
@@ -223,12 +179,13 @@
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Controller/Subject.cpp" />
         <option value="$PROJECT_DIR$/View/Drawer.cpp" />
-        <option value="$PROJECT_DIR$/Controller/GameManager.cpp" />
-        <option value="$PROJECT_DIR$/Model/Board.cpp" />
-        <option value="$PROJECT_DIR$/View/BlockDrawer.cpp" />
         <option value="$PROJECT_DIR$/Model/Piece.h" />
         <option value="$PROJECT_DIR$/Model/Factory.cpp" />
         <option value="$PROJECT_DIR$/Model/Piece.cpp" />
+        <option value="$PROJECT_DIR$/View/BlockDrawer.cpp" />
+        <option value="$PROJECT_DIR$/Model/NotifyCode.h" />
+        <option value="$PROJECT_DIR$/Controller/GameManager.cpp" />
+        <option value="$PROJECT_DIR$/Model/Board.cpp" />
       </list>
     </option>
   </component>
@@ -597,7 +554,8 @@
       <workItem from="1499285414643" duration="30407000" />
       <workItem from="1499352028457" duration="459000" />
       <workItem from="1499352999694" duration="48000" />
-      <workItem from="1499383223069" duration="4280000" />
+      <workItem from="1499383223069" duration="5074000" />
+      <workItem from="1499517271170" duration="4872000" />
     </task>
     <task id="LOCAL-00001" summary="Model implement">
       <created>1497754984512</created>
@@ -704,11 +662,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499353040325</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Fix initial position">
+      <created>1499387542461</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1499387542461</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181316000" />
+    <option name="totallyTimeSpent" value="186982000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -720,10 +685,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="1" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15758547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15918803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.49786323" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3352018" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -762,11 +726,13 @@
     <MESSAGE value="Game loop and piece rotation" />
     <MESSAGE value="Movement and colision" />
     <MESSAGE value="Movement and colision fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Movement and colision fix" />
+    <MESSAGE value="Fix initial position" />
+    <MESSAGE value="Fix lateral colision" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix lateral colision" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -843,17 +809,17 @@
     <entry file="file://$PROJECT_DIR$/Model/PieceType.h" />
     <entry file="file://$PROJECT_DIR$/Model/FactoryMethod.cpp" />
     <entry file="file://$PROJECT_DIR$/../README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1016,13 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Board.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/Observer.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1037,14 +996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/NotifyCode.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="74" lean-forward="false" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/Subject.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="846">
@@ -1053,28 +1004,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/c++/7.1.1/bits/stl_vector.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="797" column="0" lean-forward="false" selection-start-line="797" selection-start-column="0" selection-end-line="797" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/GameManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2358">
-          <caret line="131" column="53" lean-forward="false" selection-start-line="131" selection-start-column="53" selection-end-line="131" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1089,40 +1022,14 @@
     <entry file="file://$PROJECT_DIR$/Model/ColorName.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Drawer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1361">
-          <caret line="129" column="24" lean-forward="false" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
-          <folding>
-            <element signature="e#40#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/BlockDrawer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="91" column="84" lean-forward="true" selection-start-line="91" selection-start-column="84" selection-end-line="91" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Board.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="66" column="81" lean-forward="false" selection-start-line="66" selection-start-column="81" selection-end-line="66" selection-end-column="81" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/Piece.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="666">
           <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
           <folding />
         </state>
@@ -1130,8 +1037,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/Factory.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="466" column="34" lean-forward="true" selection-start-line="466" selection-start-column="34" selection-end-line="466" selection-end-column="34" />
+        <state relative-caret-position="8388">
+          <caret line="466" column="34" lean-forward="false" selection-start-line="466" selection-start-column="34" selection-end-line="466" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1139,7 +1046,67 @@
     <entry file="file://$PROJECT_DIR$/Model/Piece.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
-          <caret line="224" column="41" lean-forward="true" selection-start-line="224" selection-start-column="41" selection-end-line="224" selection-end-column="41" />
+          <caret line="224" column="41" lean-forward="false" selection-start-line="224" selection-start-column="41" selection-end-line="224" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/BlockDrawer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-461">
+          <caret line="79" column="24" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Board.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Drawer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1431">
+          <caret line="126" column="31" lean-forward="false" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="31" />
+          <folding>
+            <element signature="e#40#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/NotifyCode.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="135" lean-forward="false" selection-start-line="8" selection-start-column="117" selection-end-line="8" selection-end-column="135" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/GameManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-369">
+          <caret line="82" column="104" lean-forward="false" selection-start-line="82" selection-start-column="104" selection-end-line="82" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Board.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="54" column="83" lean-forward="true" selection-start-line="54" selection-start-column="83" selection-end-line="54" selection-end-column="83" />
           <folding />
         </state>
       </provider>

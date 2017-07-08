@@ -77,7 +77,7 @@ void BlockDrawer::drawBlockInBoardPosition(std::pair<int,int> board_position, Co
 
 void BlockDrawer::drawBlocksPiece(Piece piece) {
     /**/std::cout << "[DEBUG]: (BlockDrawer-drawBlocksPiece) drawing piece in position --> (" << piece.getCurrent_position_matrix().first << "," << piece.getCurrent_position_matrix().second << ") - With rotation ->" << piece.getRotation() << std::endl;//*/
-    /**/piece.debugMatrix();//*/
+    /**piece.debugMatrix();//*/
    // int count_y = 0;
 
     bool piece_paint = false;

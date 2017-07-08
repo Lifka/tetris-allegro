@@ -67,12 +67,7 @@ bool Board::isGameOver() {
 bool Board::isPossibleMoviment(std::pair <int,int> position, Rotation rotation) {
     bool possible = isPossibleMovimentX(position, rotation);
 
-    if (possible){
-        if (!isPossibleMovimentY(position, rotation) ){
-            possible = false;
-            requestNewPiece();
-        }
-    }
+    possible = possible && isPossibleMovimentY(position, rotation);
 
     return possible;
 }
@@ -175,6 +170,8 @@ void Board::moveFallingPieceToLeft() {
 void Board::moveFallingPieceDown() {
     if (isPossibleMoviment(falling_piece.nextPositionDown(), falling_piece.getRotation()))
         falling_piece.fall();
+    else
+        requestNewPiece();
 }
 
 void Board::requestNewPiece() {
@@ -182,10 +179,6 @@ void Board::requestNewPiece() {
     for(int y = 0; y < falling_piece.getPieceBlocks().size(); y++){
         for(int x = 0; x < falling_piece.getPieceBlocks()[y].size(); x++){
             if (falling_piece.getPieceBlocks()[y][x] == 1 || falling_piece.getPieceBlocks()[y][x] == 2){
-
-                std::cout << "[" <<y + falling_piece.getCurrent_position_matrix().second <<
-                          "," << x + falling_piece.getCurrent_position_matrix().first << "]" << std::endl << std::endl;
-
                 m_board[y + falling_piece.getCurrent_position_matrix().second][x + falling_piece.getCurrent_position_matrix().first] = 1;
                 m_board_colors[y + falling_piece.getCurrent_position_matrix().second][x + falling_piece.getCurrent_position_matrix().first] = falling_piece.getColor();
             }
@@ -196,6 +189,6 @@ void Board::requestNewPiece() {
     Board::getInstance()->debugPrintBoard();
 
 
-    notifyObserversLine(NotifyCode::next_piece);
+    notifyObserversLine(NotifyCode::prepare_next_piece);
 }
 
