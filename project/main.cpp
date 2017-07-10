@@ -7,8 +7,7 @@
 #include "Model/PlayerInput.h"
 #include "Model/Strings.h"
 #include <stdlib.h>
-#include <allegro5/addons/primitives/allegro5/allegro_primitives.h>
-#include <allegro5/addons/image/allegro5/allegro_image.h>
+#include <allegro5/allegro_primitives.h>
 #include <allegro5/allegro_font.h>
 #include <allegro5/allegro_ttf.h>
 
@@ -36,7 +35,6 @@ void initAllegro(){
 
     al_install_keyboard();
     al_init_primitives_addon();
-    al_init_image_addon();
     al_init_font_addon();
     al_init_ttf_addon();
 

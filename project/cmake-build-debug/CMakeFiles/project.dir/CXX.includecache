@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../allegro/include/allegro5/addons/image/allegro5/allegro_image.h
-
-../allegro/include/allegro5/addons/primitives/allegro5/allegro_primitives.h
-allegro5/allegro.h
--
-
 ../allegro/include/allegro5/alcompat.h
 
 ../allegro/include/allegro5/allegro.h
@@ -63,10 +57,6 @@ allegro5/config.h
 ../allegro/include/allegro5/allegro5/config.h
 allegro5/alcompat.h
 ../allegro/include/allegro5/allegro5/alcompat.h
-
-../allegro/include/allegro5/allegro_font.h
-allegro5/allegro.h
-../allegro/include/allegro5/allegro5/allegro.h
 
 ../allegro/include/allegro5/altime.h
 allegro5/base.h
@@ -340,97 +330,97 @@ allegro5/base.h
 allegro5/base.h
 ../allegro/include/allegro5/allegro5/base.h
 
-/home/lifka/Desktop/tetris/project/Controller/GameManager.cpp
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/GameManager.cpp
 iostream
 -
 random
 -
 GameManager.h
-/home/lifka/Desktop/tetris/project/Controller/GameManager.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/GameManager.h
 ../Model/Options.h
-/home/lifka/Desktop/tetris/project/Model/Options.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.h
 ../Model/Board.h
-/home/lifka/Desktop/tetris/project/Model/Board.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Board.h
 
-/home/lifka/Desktop/tetris/project/Controller/GameManager.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/GameManager.h
 Subject.h
-/home/lifka/Desktop/tetris/project/Controller/Subject.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.h
 ../Model/Factory.h
-/home/lifka/Desktop/tetris/project/Model/Factory.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Factory.h
 
-/home/lifka/Desktop/tetris/project/Controller/Observer.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Observer.h
 ../Model/NotifyCode.h
-/home/lifka/Desktop/tetris/project/Model/NotifyCode.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/NotifyCode.h
 ../Model/Piece.h
-/home/lifka/Desktop/tetris/project/Model/Piece.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
 ../Model/keycode.h
-/home/lifka/Desktop/tetris/project/Model/keycode.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/keycode.h
 
-/home/lifka/Desktop/tetris/project/Controller/PlayerController.cpp
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/PlayerController.cpp
 PlayerController.h
-/home/lifka/Desktop/tetris/project/Controller/PlayerController.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/PlayerController.h
 
-/home/lifka/Desktop/tetris/project/Controller/PlayerController.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/PlayerController.h
 Subject.h
-/home/lifka/Desktop/tetris/project/Controller/Subject.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.h
 
-/home/lifka/Desktop/tetris/project/Controller/Subject.cpp
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.cpp
 iostream
 -
 Observer.h
-/home/lifka/Desktop/tetris/project/Controller/Observer.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Observer.h
 Subject.h
-/home/lifka/Desktop/tetris/project/Controller/Subject.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.h
 ../Model/NotifyCode.h
-/home/lifka/Desktop/tetris/project/Model/NotifyCode.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/NotifyCode.h
 
-/home/lifka/Desktop/tetris/project/Controller/Subject.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.h
 functional
 -
 vector
 -
 Observer.h
-/home/lifka/Desktop/tetris/project/Controller/Observer.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Observer.h
 ../Model/Piece.h
-/home/lifka/Desktop/tetris/project/Model/Piece.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
 ../Model/keycode.h
-/home/lifka/Desktop/tetris/project/Model/keycode.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/keycode.h
 
-/home/lifka/Desktop/tetris/project/Model/Board.cpp
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Board.cpp
 iostream
 -
 Board.h
-/home/lifka/Desktop/tetris/project/Model/Board.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Board.h
 Options.h
-/home/lifka/Desktop/tetris/project/Model/Options.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.h
 
-/home/lifka/Desktop/tetris/project/Model/Board.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Board.h
 vector
 -
 allegro5/color.h
 -
 Point2D.h
-/home/lifka/Desktop/tetris/project/Model/Point2D.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.h
 Piece.h
-/home/lifka/Desktop/tetris/project/Model/Piece.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
 ../Controller/Subject.h
-/home/lifka/Desktop/tetris/project/Controller/Subject.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.h
 ColorName.h
-/home/lifka/Desktop/tetris/project/Model/ColorName.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h
 
-/home/lifka/Desktop/tetris/project/Model/ColorName.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h
 
-/home/lifka/Desktop/tetris/project/Model/ColorPalette.cpp
-allegro5/addons/primitives/allegro5/allegro_primitives.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.cpp
+allegro5/allegro_primitives.h
 -
 iostream
 -
 random
 -
 ColorPalette.h
-/home/lifka/Desktop/tetris/project/Model/ColorPalette.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.h
 
-/home/lifka/Desktop/tetris/project/Model/ColorPalette.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.h
 allegro5/color.h
 -
 map
@@ -438,11 +428,11 @@ map
 list
 -
 ColorName.h
-/home/lifka/Desktop/tetris/project/Model/ColorName.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h
 
-/home/lifka/Desktop/tetris/project/Model/Direction.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Direction.h
 
-/home/lifka/Desktop/tetris/project/Model/Factory.cpp
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Factory.cpp
 cstdlib
 -
 iostream
@@ -450,133 +440,133 @@ iostream
 random
 -
 Factory.h
-/home/lifka/Desktop/tetris/project/Model/Factory.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Factory.h
 ColorPalette.h
-/home/lifka/Desktop/tetris/project/Model/ColorPalette.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.h
 
-/home/lifka/Desktop/tetris/project/Model/Factory.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Factory.h
 FactoryMethod.h
-/home/lifka/Desktop/tetris/project/Model/FactoryMethod.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/FactoryMethod.h
 
-/home/lifka/Desktop/tetris/project/Model/FactoryMethod.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/FactoryMethod.h
 Piece.h
-/home/lifka/Desktop/tetris/project/Model/Piece.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
 
-/home/lifka/Desktop/tetris/project/Model/NotifyCode.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/NotifyCode.h
 
-/home/lifka/Desktop/tetris/project/Model/Options.cpp
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.cpp
 Options.h
-/home/lifka/Desktop/tetris/project/Model/Options.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.h
 ColorPalette.h
-/home/lifka/Desktop/tetris/project/Model/ColorPalette.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.h
 
-/home/lifka/Desktop/tetris/project/Model/Options.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.h
 allegro5/color.h
 -
 Point2D.h
-/home/lifka/Desktop/tetris/project/Model/Point2D.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.h
 ColorName.h
-/home/lifka/Desktop/tetris/project/Model/ColorName.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h
 
-/home/lifka/Desktop/tetris/project/Model/Piece.cpp
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.cpp
 iostream
 -
 Piece.h
-/home/lifka/Desktop/tetris/project/Model/Piece.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
 Options.h
-/home/lifka/Desktop/tetris/project/Model/Options.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.h
 
-/home/lifka/Desktop/tetris/project/Model/Piece.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
 vector
 -
 allegro5/color.h
 -
 Rotation.h
-/home/lifka/Desktop/tetris/project/Model/Rotation.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Rotation.h
 PieceType.h
-/home/lifka/Desktop/tetris/project/Model/PieceType.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PieceType.h
 ColorName.h
-/home/lifka/Desktop/tetris/project/Model/ColorName.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h
 
-/home/lifka/Desktop/tetris/project/Model/PieceType.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PieceType.h
 
-/home/lifka/Desktop/tetris/project/Model/PlayerInput.cpp
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PlayerInput.cpp
 PlayerInput.h
-/home/lifka/Desktop/tetris/project/Model/PlayerInput.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PlayerInput.h
 iostream
 -
 
-/home/lifka/Desktop/tetris/project/Model/PlayerInput.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PlayerInput.h
 keycode.h
-/home/lifka/Desktop/tetris/project/Model/keycode.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/keycode.h
 ../Controller/Subject.h
-/home/lifka/Desktop/tetris/project/Controller/Subject.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.h
 map
 -
 allegro5/allegro.h
 -
 
-/home/lifka/Desktop/tetris/project/Model/Point2D.cpp
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.cpp
 Point2D.h
-/home/lifka/Desktop/tetris/project/Model/Point2D.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.h
 
-/home/lifka/Desktop/tetris/project/Model/Point2D.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.h
 utility
 -
 
-/home/lifka/Desktop/tetris/project/Model/Rotation.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Rotation.h
 
-/home/lifka/Desktop/tetris/project/Model/Strings.cpp
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Strings.cpp
 Strings.h
-/home/lifka/Desktop/tetris/project/Model/Strings.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Strings.h
 
-/home/lifka/Desktop/tetris/project/Model/Strings.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Strings.h
 
-/home/lifka/Desktop/tetris/project/Model/keycode.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/keycode.h
 
-/home/lifka/Desktop/tetris/project/View/BlockDrawer.cpp
-allegro5/addons/primitives/allegro5/allegro_primitives.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/View/BlockDrawer.cpp
+allegro5/allegro_primitives.h
 -
 iostream
 -
 BlockDrawer.h
-/home/lifka/Desktop/tetris/project/View/BlockDrawer.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/View/BlockDrawer.h
 ../Model/ColorPalette.h
-/home/lifka/Desktop/tetris/project/Model/ColorPalette.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.h
 
-/home/lifka/Desktop/tetris/project/View/BlockDrawer.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/View/BlockDrawer.h
 allegro5/color.h
 -
 ../Model/Point2D.h
-/home/lifka/Desktop/tetris/project/Model/Point2D.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.h
 ../Model/Options.h
-/home/lifka/Desktop/tetris/project/Model/Options.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.h
 ../Model/Piece.h
-/home/lifka/Desktop/tetris/project/Model/Piece.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
 ../Model/Direction.h
-/home/lifka/Desktop/tetris/project/Model/Direction.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Direction.h
 
-/home/lifka/Desktop/tetris/project/View/Drawer.cpp
+/home/metinu/CLionProjects/TetrisAllegroC-/project/View/Drawer.cpp
 iostream
 -
-allegro5/addons/primitives/allegro5/allegro_primitives.h
+allegro5/allegro_primitives.h
 -
 Drawer.h
-/home/lifka/Desktop/tetris/project/View/Drawer.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/View/Drawer.h
 ../Model/Board.h
-/home/lifka/Desktop/tetris/project/Model/Board.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Board.h
 ../Model/Strings.h
-/home/lifka/Desktop/tetris/project/Model/Strings.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Strings.h
 BlockDrawer.h
-/home/lifka/Desktop/tetris/project/View/BlockDrawer.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/View/BlockDrawer.h
 ../Model/ColorPalette.h
-/home/lifka/Desktop/tetris/project/Model/ColorPalette.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.h
 allegro5/allegro_font.h
 -
 allegro5/allegro_ttf.h
 -
 
-/home/lifka/Desktop/tetris/project/View/Drawer.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/View/Drawer.h
 stdlib.h
 -
 allegro5/allegro.h
@@ -584,34 +574,32 @@ allegro5/allegro.h
 allegro5/allegro_font.h
 -
 ../Controller/Observer.h
-/home/lifka/Desktop/tetris/project/Controller/Observer.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Observer.h
 ../Model/Options.h
-/home/lifka/Desktop/tetris/project/Model/Options.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.h
 ../Model/Piece.h
-/home/lifka/Desktop/tetris/project/Model/Piece.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
 
-/home/lifka/Desktop/tetris/project/main.cpp
+/home/metinu/CLionProjects/TetrisAllegroC-/project/main.cpp
 iostream
 -
 Model/Options.h
-/home/lifka/Desktop/tetris/project/Model/Options.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.h
 Model/ColorPalette.h
-/home/lifka/Desktop/tetris/project/Model/ColorPalette.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.h
 Controller/GameManager.h
-/home/lifka/Desktop/tetris/project/Controller/GameManager.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/GameManager.h
 Model/Board.h
-/home/lifka/Desktop/tetris/project/Model/Board.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Board.h
 View/Drawer.h
-/home/lifka/Desktop/tetris/project/View/Drawer.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/View/Drawer.h
 Model/PlayerInput.h
-/home/lifka/Desktop/tetris/project/Model/PlayerInput.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PlayerInput.h
 Model/Strings.h
-/home/lifka/Desktop/tetris/project/Model/Strings.h
+/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Strings.h
 stdlib.h
 -
-allegro5/addons/primitives/allegro5/allegro_primitives.h
--
-allegro5/addons/image/allegro5/allegro_image.h
+allegro5/allegro_primitives.h
 -
 allegro5/allegro_font.h
 -

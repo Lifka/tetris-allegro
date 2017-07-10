@@ -2,7 +2,7 @@
 // Created by lifka on 4/07/17.
 //
 
-#include <allegro5/addons/primitives/allegro5/allegro_primitives.h>
+#include <allegro5/allegro_primitives.h>
 #include <iostream>
 #include <random>
 #include "ColorPalette.h"

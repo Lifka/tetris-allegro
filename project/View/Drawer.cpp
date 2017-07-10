@@ -3,7 +3,7 @@
 //
 
 #include <iostream>
-#include <allegro5/addons/primitives/allegro5/allegro_primitives.h>
+#include <allegro5/allegro_primitives.h>
 #include "Drawer.h"
 #include "../Model/Board.h"
 #include "../Model/Strings.h"

@@ -3,132 +3,89 @@
 
 CMakeFiles/project.dir/Controller/GameManager.cpp.o
  ../allegro/include/allegro5/color.h
- /home/lifka/Desktop/tetris/project/Controller/GameManager.cpp
- /home/lifka/Desktop/tetris/project/Controller/GameManager.h
- /home/lifka/Desktop/tetris/project/Controller/Observer.h
- /home/lifka/Desktop/tetris/project/Controller/Subject.h
- /home/lifka/Desktop/tetris/project/Model/Board.h
- /home/lifka/Desktop/tetris/project/Model/ColorName.h
- /home/lifka/Desktop/tetris/project/Model/Factory.h
- /home/lifka/Desktop/tetris/project/Model/FactoryMethod.h
- /home/lifka/Desktop/tetris/project/Model/NotifyCode.h
- /home/lifka/Desktop/tetris/project/Model/Options.h
- /home/lifka/Desktop/tetris/project/Model/Piece.h
- /home/lifka/Desktop/tetris/project/Model/PieceType.h
- /home/lifka/Desktop/tetris/project/Model/Point2D.h
- /home/lifka/Desktop/tetris/project/Model/Rotation.h
- /home/lifka/Desktop/tetris/project/Model/keycode.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/GameManager.cpp
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/GameManager.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Observer.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Board.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Factory.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/FactoryMethod.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/NotifyCode.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PieceType.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Rotation.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/keycode.h
 CMakeFiles/project.dir/Controller/PlayerController.cpp.o
  ../allegro/include/allegro5/color.h
- /home/lifka/Desktop/tetris/project/Controller/Observer.h
- /home/lifka/Desktop/tetris/project/Controller/PlayerController.cpp
- /home/lifka/Desktop/tetris/project/Controller/PlayerController.h
- /home/lifka/Desktop/tetris/project/Controller/Subject.h
- /home/lifka/Desktop/tetris/project/Model/ColorName.h
- /home/lifka/Desktop/tetris/project/Model/NotifyCode.h
- /home/lifka/Desktop/tetris/project/Model/Piece.h
- /home/lifka/Desktop/tetris/project/Model/PieceType.h
- /home/lifka/Desktop/tetris/project/Model/Rotation.h
- /home/lifka/Desktop/tetris/project/Model/keycode.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Observer.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/PlayerController.cpp
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/PlayerController.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/NotifyCode.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PieceType.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Rotation.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/keycode.h
 CMakeFiles/project.dir/Controller/Subject.cpp.o
  ../allegro/include/allegro5/color.h
- /home/lifka/Desktop/tetris/project/Controller/Observer.h
- /home/lifka/Desktop/tetris/project/Controller/Subject.cpp
- /home/lifka/Desktop/tetris/project/Controller/Subject.h
- /home/lifka/Desktop/tetris/project/Model/ColorName.h
- /home/lifka/Desktop/tetris/project/Model/NotifyCode.h
- /home/lifka/Desktop/tetris/project/Model/Piece.h
- /home/lifka/Desktop/tetris/project/Model/PieceType.h
- /home/lifka/Desktop/tetris/project/Model/Rotation.h
- /home/lifka/Desktop/tetris/project/Model/keycode.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Observer.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.cpp
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/NotifyCode.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PieceType.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Rotation.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/keycode.h
 CMakeFiles/project.dir/Model/Board.cpp.o
  ../allegro/include/allegro5/color.h
- /home/lifka/Desktop/tetris/project/Controller/Observer.h
- /home/lifka/Desktop/tetris/project/Controller/Subject.h
- /home/lifka/Desktop/tetris/project/Model/Board.cpp
- /home/lifka/Desktop/tetris/project/Model/Board.h
- /home/lifka/Desktop/tetris/project/Model/ColorName.h
- /home/lifka/Desktop/tetris/project/Model/NotifyCode.h
- /home/lifka/Desktop/tetris/project/Model/Options.h
- /home/lifka/Desktop/tetris/project/Model/Piece.h
- /home/lifka/Desktop/tetris/project/Model/PieceType.h
- /home/lifka/Desktop/tetris/project/Model/Point2D.h
- /home/lifka/Desktop/tetris/project/Model/Rotation.h
- /home/lifka/Desktop/tetris/project/Model/keycode.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Observer.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Board.cpp
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Board.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/NotifyCode.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PieceType.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Rotation.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/keycode.h
 CMakeFiles/project.dir/Model/ColorPalette.cpp.o
- ../allegro/include/allegro5/addons/primitives/allegro5/allegro_primitives.h
- ../allegro/include/allegro5/alcompat.h
- ../allegro/include/allegro5/allegro.h
- ../allegro/include/allegro5/altime.h
- ../allegro/include/allegro5/base.h
- ../allegro/include/allegro5/bitmap.h
- ../allegro/include/allegro5/bitmap_io.h
  ../allegro/include/allegro5/color.h
- ../allegro/include/allegro5/config.h
- ../allegro/include/allegro5/debug.h
- ../allegro/include/allegro5/display.h
- ../allegro/include/allegro5/error.h
- ../allegro/include/allegro5/events.h
- ../allegro/include/allegro5/file.h
- ../allegro/include/allegro5/fixed.h
- ../allegro/include/allegro5/fmaths.h
- ../allegro/include/allegro5/fshook.h
- ../allegro/include/allegro5/inline/fmaths.inl
- ../allegro/include/allegro5/internal/alconfig.h
- ../allegro/include/allegro5/joystick.h
- ../allegro/include/allegro5/keyboard.h
- ../allegro/include/allegro5/keycodes.h
- ../allegro/include/allegro5/memory.h
- ../allegro/include/allegro5/mouse.h
- ../allegro/include/allegro5/path.h
- ../allegro/include/allegro5/platform/albcc32.h
- ../allegro/include/allegro5/platform/aldmc.h
- ../allegro/include/allegro5/platform/aliphonecfg.h
- ../allegro/include/allegro5/platform/almngw32.h
- ../allegro/include/allegro5/platform/almsvc.h
- ../allegro/include/allegro5/platform/alosxcfg.h
- ../allegro/include/allegro5/platform/alplatf.h
- ../allegro/include/allegro5/platform/alucfg.h
- ../allegro/include/allegro5/platform/alunix.h
- ../allegro/include/allegro5/platform/alwatcom.h
- ../allegro/include/allegro5/platform/alwizcfg.h
- ../allegro/include/allegro5/platform/astdbool.h
- ../allegro/include/allegro5/platform/astdint.h
- ../allegro/include/allegro5/system.h
- ../allegro/include/allegro5/threads.h
- ../allegro/include/allegro5/timer.h
- ../allegro/include/allegro5/tls.h
- ../allegro/include/allegro5/transformations.h
- ../allegro/include/allegro5/utf8.h
- /home/lifka/Desktop/tetris/project/Model/ColorName.h
- /home/lifka/Desktop/tetris/project/Model/ColorPalette.cpp
- /home/lifka/Desktop/tetris/project/Model/ColorPalette.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.cpp
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.h
 CMakeFiles/project.dir/Model/Factory.cpp.o
  ../allegro/include/allegro5/color.h
- /home/lifka/Desktop/tetris/project/Model/ColorName.h
- /home/lifka/Desktop/tetris/project/Model/ColorPalette.h
- /home/lifka/Desktop/tetris/project/Model/Factory.cpp
- /home/lifka/Desktop/tetris/project/Model/Factory.h
- /home/lifka/Desktop/tetris/project/Model/FactoryMethod.h
- /home/lifka/Desktop/tetris/project/Model/Piece.h
- /home/lifka/Desktop/tetris/project/Model/PieceType.h
- /home/lifka/Desktop/tetris/project/Model/Rotation.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Factory.cpp
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Factory.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/FactoryMethod.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PieceType.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Rotation.h
 CMakeFiles/project.dir/Model/Options.cpp.o
  ../allegro/include/allegro5/color.h
- /home/lifka/Desktop/tetris/project/Model/ColorName.h
- /home/lifka/Desktop/tetris/project/Model/ColorPalette.h
- /home/lifka/Desktop/tetris/project/Model/Options.cpp
- /home/lifka/Desktop/tetris/project/Model/Options.h
- /home/lifka/Desktop/tetris/project/Model/Point2D.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.cpp
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.h
 CMakeFiles/project.dir/Model/Piece.cpp.o
  ../allegro/include/allegro5/color.h
- /home/lifka/Desktop/tetris/project/Model/ColorName.h
- /home/lifka/Desktop/tetris/project/Model/Options.h
- /home/lifka/Desktop/tetris/project/Model/Piece.cpp
- /home/lifka/Desktop/tetris/project/Model/Piece.h
- /home/lifka/Desktop/tetris/project/Model/PieceType.h
- /home/lifka/Desktop/tetris/project/Model/Point2D.h
- /home/lifka/Desktop/tetris/project/Model/Rotation.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.cpp
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PieceType.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Rotation.h
 CMakeFiles/project.dir/Model/PlayerInput.cpp.o
  ../allegro/include/allegro5/alcompat.h
  ../allegro/include/allegro5/allegro.h
@@ -173,82 +130,37 @@ CMakeFiles/project.dir/Model/PlayerInput.cpp.o
  ../allegro/include/allegro5/tls.h
  ../allegro/include/allegro5/transformations.h
  ../allegro/include/allegro5/utf8.h
- /home/lifka/Desktop/tetris/project/Controller/Observer.h
- /home/lifka/Desktop/tetris/project/Controller/Subject.h
- /home/lifka/Desktop/tetris/project/Model/ColorName.h
- /home/lifka/Desktop/tetris/project/Model/NotifyCode.h
- /home/lifka/Desktop/tetris/project/Model/Piece.h
- /home/lifka/Desktop/tetris/project/Model/PieceType.h
- /home/lifka/Desktop/tetris/project/Model/PlayerInput.cpp
- /home/lifka/Desktop/tetris/project/Model/PlayerInput.h
- /home/lifka/Desktop/tetris/project/Model/Rotation.h
- /home/lifka/Desktop/tetris/project/Model/keycode.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Observer.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/NotifyCode.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PieceType.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PlayerInput.cpp
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PlayerInput.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Rotation.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/keycode.h
 CMakeFiles/project.dir/Model/Point2D.cpp.o
- /home/lifka/Desktop/tetris/project/Model/Point2D.cpp
- /home/lifka/Desktop/tetris/project/Model/Point2D.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.cpp
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.h
 CMakeFiles/project.dir/Model/Strings.cpp.o
- /home/lifka/Desktop/tetris/project/Model/Strings.cpp
- /home/lifka/Desktop/tetris/project/Model/Strings.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Strings.cpp
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Strings.h
 CMakeFiles/project.dir/View/BlockDrawer.cpp.o
- ../allegro/include/allegro5/addons/primitives/allegro5/allegro_primitives.h
- ../allegro/include/allegro5/alcompat.h
- ../allegro/include/allegro5/allegro.h
- ../allegro/include/allegro5/altime.h
- ../allegro/include/allegro5/base.h
- ../allegro/include/allegro5/bitmap.h
- ../allegro/include/allegro5/bitmap_io.h
  ../allegro/include/allegro5/color.h
- ../allegro/include/allegro5/config.h
- ../allegro/include/allegro5/debug.h
- ../allegro/include/allegro5/display.h
- ../allegro/include/allegro5/error.h
- ../allegro/include/allegro5/events.h
- ../allegro/include/allegro5/file.h
- ../allegro/include/allegro5/fixed.h
- ../allegro/include/allegro5/fmaths.h
- ../allegro/include/allegro5/fshook.h
- ../allegro/include/allegro5/inline/fmaths.inl
- ../allegro/include/allegro5/internal/alconfig.h
- ../allegro/include/allegro5/joystick.h
- ../allegro/include/allegro5/keyboard.h
- ../allegro/include/allegro5/keycodes.h
- ../allegro/include/allegro5/memory.h
- ../allegro/include/allegro5/mouse.h
- ../allegro/include/allegro5/path.h
- ../allegro/include/allegro5/platform/albcc32.h
- ../allegro/include/allegro5/platform/aldmc.h
- ../allegro/include/allegro5/platform/aliphonecfg.h
- ../allegro/include/allegro5/platform/almngw32.h
- ../allegro/include/allegro5/platform/almsvc.h
- ../allegro/include/allegro5/platform/alosxcfg.h
- ../allegro/include/allegro5/platform/alplatf.h
- ../allegro/include/allegro5/platform/alucfg.h
- ../allegro/include/allegro5/platform/alunix.h
- ../allegro/include/allegro5/platform/alwatcom.h
- ../allegro/include/allegro5/platform/alwizcfg.h
- ../allegro/include/allegro5/platform/astdbool.h
- ../allegro/include/allegro5/platform/astdint.h
- ../allegro/include/allegro5/system.h
- ../allegro/include/allegro5/threads.h
- ../allegro/include/allegro5/timer.h
- ../allegro/include/allegro5/tls.h
- ../allegro/include/allegro5/transformations.h
- ../allegro/include/allegro5/utf8.h
- /home/lifka/Desktop/tetris/project/Model/ColorName.h
- /home/lifka/Desktop/tetris/project/Model/ColorPalette.h
- /home/lifka/Desktop/tetris/project/Model/Direction.h
- /home/lifka/Desktop/tetris/project/Model/Options.h
- /home/lifka/Desktop/tetris/project/Model/Piece.h
- /home/lifka/Desktop/tetris/project/Model/PieceType.h
- /home/lifka/Desktop/tetris/project/Model/Point2D.h
- /home/lifka/Desktop/tetris/project/Model/Rotation.h
- /home/lifka/Desktop/tetris/project/View/BlockDrawer.cpp
- /home/lifka/Desktop/tetris/project/View/BlockDrawer.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Direction.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PieceType.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Rotation.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/View/BlockDrawer.cpp
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/View/BlockDrawer.h
 CMakeFiles/project.dir/View/Drawer.cpp.o
- ../allegro/include/allegro5/addons/primitives/allegro5/allegro_primitives.h
  ../allegro/include/allegro5/alcompat.h
  ../allegro/include/allegro5/allegro.h
- ../allegro/include/allegro5/allegro_font.h
  ../allegro/include/allegro5/altime.h
  ../allegro/include/allegro5/base.h
  ../allegro/include/allegro5/bitmap.h
@@ -290,29 +202,26 @@ CMakeFiles/project.dir/View/Drawer.cpp.o
  ../allegro/include/allegro5/tls.h
  ../allegro/include/allegro5/transformations.h
  ../allegro/include/allegro5/utf8.h
- /home/lifka/Desktop/tetris/project/Controller/Observer.h
- /home/lifka/Desktop/tetris/project/Controller/Subject.h
- /home/lifka/Desktop/tetris/project/Model/Board.h
- /home/lifka/Desktop/tetris/project/Model/ColorName.h
- /home/lifka/Desktop/tetris/project/Model/ColorPalette.h
- /home/lifka/Desktop/tetris/project/Model/Direction.h
- /home/lifka/Desktop/tetris/project/Model/NotifyCode.h
- /home/lifka/Desktop/tetris/project/Model/Options.h
- /home/lifka/Desktop/tetris/project/Model/Piece.h
- /home/lifka/Desktop/tetris/project/Model/PieceType.h
- /home/lifka/Desktop/tetris/project/Model/Point2D.h
- /home/lifka/Desktop/tetris/project/Model/Rotation.h
- /home/lifka/Desktop/tetris/project/Model/Strings.h
- /home/lifka/Desktop/tetris/project/Model/keycode.h
- /home/lifka/Desktop/tetris/project/View/BlockDrawer.h
- /home/lifka/Desktop/tetris/project/View/Drawer.cpp
- /home/lifka/Desktop/tetris/project/View/Drawer.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Observer.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Board.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Direction.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/NotifyCode.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PieceType.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Rotation.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Strings.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/keycode.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/View/BlockDrawer.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/View/Drawer.cpp
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/View/Drawer.h
 CMakeFiles/project.dir/main.cpp.o
- ../allegro/include/allegro5/addons/image/allegro5/allegro_image.h
- ../allegro/include/allegro5/addons/primitives/allegro5/allegro_primitives.h
  ../allegro/include/allegro5/alcompat.h
  ../allegro/include/allegro5/allegro.h
- ../allegro/include/allegro5/allegro_font.h
  ../allegro/include/allegro5/altime.h
  ../allegro/include/allegro5/base.h
  ../allegro/include/allegro5/bitmap.h
@@ -354,22 +263,22 @@ CMakeFiles/project.dir/main.cpp.o
  ../allegro/include/allegro5/tls.h
  ../allegro/include/allegro5/transformations.h
  ../allegro/include/allegro5/utf8.h
- /home/lifka/Desktop/tetris/project/Controller/GameManager.h
- /home/lifka/Desktop/tetris/project/Controller/Observer.h
- /home/lifka/Desktop/tetris/project/Controller/Subject.h
- /home/lifka/Desktop/tetris/project/Model/Board.h
- /home/lifka/Desktop/tetris/project/Model/ColorName.h
- /home/lifka/Desktop/tetris/project/Model/ColorPalette.h
- /home/lifka/Desktop/tetris/project/Model/Factory.h
- /home/lifka/Desktop/tetris/project/Model/FactoryMethod.h
- /home/lifka/Desktop/tetris/project/Model/NotifyCode.h
- /home/lifka/Desktop/tetris/project/Model/Options.h
- /home/lifka/Desktop/tetris/project/Model/Piece.h
- /home/lifka/Desktop/tetris/project/Model/PieceType.h
- /home/lifka/Desktop/tetris/project/Model/PlayerInput.h
- /home/lifka/Desktop/tetris/project/Model/Point2D.h
- /home/lifka/Desktop/tetris/project/Model/Rotation.h
- /home/lifka/Desktop/tetris/project/Model/Strings.h
- /home/lifka/Desktop/tetris/project/Model/keycode.h
- /home/lifka/Desktop/tetris/project/View/Drawer.h
- /home/lifka/Desktop/tetris/project/main.cpp
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/GameManager.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Observer.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Board.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Factory.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/FactoryMethod.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/NotifyCode.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PieceType.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PlayerInput.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Rotation.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Strings.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/Model/keycode.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/View/Drawer.h
+ /home/metinu/CLionProjects/TetrisAllegroC-/project/main.cpp
