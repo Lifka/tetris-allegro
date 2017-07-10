@@ -368,6 +368,7 @@ CMakeFiles/project.dir/main.cpp.o: ../Model/PieceType.h
 CMakeFiles/project.dir/main.cpp.o: ../Model/PlayerInput.h
 CMakeFiles/project.dir/main.cpp.o: ../Model/Point2D.h
 CMakeFiles/project.dir/main.cpp.o: ../Model/Rotation.h
+CMakeFiles/project.dir/main.cpp.o: ../Model/Strings.h
 CMakeFiles/project.dir/main.cpp.o: ../Model/keycode.h
 CMakeFiles/project.dir/main.cpp.o: ../View/Drawer.h
 CMakeFiles/project.dir/main.cpp.o: ../main.cpp

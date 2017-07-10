@@ -61,26 +61,33 @@ void initDefaultsSettings(){
     Options::getInstance()->setBoard_color(ColorName::indigo);
     Options::getInstance()->setBackground_color(ColorName::black);
     Options::getInstance()->setTextColor(ColorName::white);
+    Options::getInstance()->setgameOverColor(ColorName::lime);
 
     Options::getInstance()->setFont_size(20);
-    Options::getInstance()->setFont__game_over_size(200);
+    Options::getInstance()->setFont__game_over_size(100);
     Options::getInstance()->setFont((char *) "../fonts/pirulen.ttf");
 
     Options::getInstance()->setBoard_offset(Point2D(0,0));
     Options::getInstance()->setNext_piece_offset_position_screen(Point2D(650,100));
     Options::getInstance()->setLevel_offset_position_screen(Point2D(650,500));
     Options::getInstance()->setScore_offset_position_screen(Point2D(650,700));
+    Options::getInstance()->setGameOver_offset_position_screen(Point2D(300,500));
 }
 
 bool updateGame(){
 
    // Board::getInstance()->moveFallingPieceDown();
-    bool result;
-    bool need_restart;
+    bool result = true;
+    bool need_restart = false;
 
     ALLEGRO_EVENT ev;
     al_wait_for_event(event_queue, &ev);
-    result = PlayerInput::getInstance()->updateInput(ev, *display, need_restart);
+
+    if (!GameManager::getInstance()->isGameOver())
+        result = PlayerInput::getInstance()->updateInput(ev, *display, need_restart);
+    else
+        PlayerInput::getInstance()->updateLimitedInput(ev, *display, need_restart);
+
 
     if (need_restart){
         startGame();
@@ -91,12 +98,18 @@ bool updateGame(){
 
 void displayGame(){
     al_clear_to_color(al_map_rgb(0,0,0));
+
     Drawer::getInstance()->writeFonts();
     GameManager::getInstance()->refreshNextPiece();
     Drawer::getInstance()->walls();
     Drawer::getInstance()->refreshBoard();
     Board::getInstance()->refreshFallingPiece();
     GameManager::getInstance()->refreshScoreAndLevel();
+
+    if (GameManager::getInstance()->isGameOver()){
+        Drawer::getInstance()->writeGameOver();
+    }
+
     al_flip_display();
 }
 

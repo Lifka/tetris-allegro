@@ -27,3 +27,7 @@ const char *Strings::getNext_piece() const {
 const char *Strings::getTitle() const {
     return title;
 }
+
+const char *Strings::getGameOver() const {
+    return gameover;
+}

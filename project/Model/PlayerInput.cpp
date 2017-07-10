@@ -118,3 +118,15 @@ void PlayerInput::close(ALLEGRO_DISPLAY& display) {
     al_destroy_display(&display);
 }
 
+void PlayerInput::updateLimitedInput(ALLEGRO_EVENT& ev, ALLEGRO_DISPLAY& display, bool& need_restart) {
+    if(ev.type == ALLEGRO_EVENT_KEY_DOWN) {
+        switch(ev.keyboard.keycode) {
+
+            case ALLEGRO_KEY_R:
+                keys[KeyCode::key_r] = true;
+                need_restart = true;
+                break;
+        }
+    }
+}
+

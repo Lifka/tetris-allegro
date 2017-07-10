@@ -186,3 +186,23 @@ int Options::getFont__game_over_size() const {
 void Options::setFont__game_over_size(int font__game_over_size) {
     Options::font__game_over_size = font__game_over_size;
 }
+
+ColorName Options::getgameOverColor() {
+    return text_game_over_color;
+}
+
+void Options::setgameOverColor(ColorName color) {
+    if (Options::text_game_over_color != ColorName::none){
+        ColorPalette::getInstance()->removeSystemColor(Options::text_game_over_color);
+    }
+    ColorPalette::getInstance()->setSystemColor(color);
+    Options::text_game_over_color = color;
+}
+
+const Point2D &Options::getGameOver_offset_position_screen() const {
+    return Options::game_over_offset_position_screen;
+}
+
+void Options::setGameOver_offset_position_screen(const Point2D &GameOver_position_screen) {
+    Options::game_over_offset_position_screen = GameOver_position_screen;
+}

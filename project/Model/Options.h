@@ -15,11 +15,13 @@ private:
     Point2D next_piece_offset_position_screen;
     Point2D score_offset_position_screen;
     Point2D level_offset_position_screen;
+    Point2D game_over_offset_position_screen;
 
     ColorName background_color = ColorName::none;
     ColorName board_color = ColorName::none;
     ColorName walls_color = ColorName::none;
     ColorName text_color = ColorName::none;
+    ColorName text_game_over_color = ColorName::none;
 
     char* font;
     int font_size = 20;
@@ -63,6 +65,8 @@ public:
     void setWalls_color(ColorName walls_color);
     ColorName getTextColor();
     void setTextColor(ColorName color);
+    ColorName getgameOverColor();
+    void setgameOverColor(ColorName color);
 
     //Board position
     Point2D &getBoard_offset();
@@ -77,17 +81,16 @@ public:
     void setScore_offset_position_screen(const Point2D &score_position_screen);
     const Point2D &getLevel_offset_position_screen() const;
     void setLevel_offset_position_screen(const Point2D &level_position_screen);
+    const Point2D &getGameOver_offset_position_screen() const;
+    void setGameOver_offset_position_screen(const Point2D &GameOver_position_screen);
 
     int getFont_size() const;
-
     void setFont_size(int font_size);
 
     char *getFont() const;
-
     void setFont(char *font);
 
     int getFont__game_over_size() const;
-
     void setFont__game_over_size(int font__game_over_size);
 };
 #endif //PROJECT_OPTIONS_H

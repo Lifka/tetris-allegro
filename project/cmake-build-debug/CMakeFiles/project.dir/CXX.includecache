@@ -605,6 +605,8 @@ View/Drawer.h
 /home/lifka/Desktop/tetris/project/View/Drawer.h
 Model/PlayerInput.h
 /home/lifka/Desktop/tetris/project/Model/PlayerInput.h
+Model/Strings.h
+/home/lifka/Desktop/tetris/project/Model/Strings.h
 stdlib.h
 -
 allegro5/addons/primitives/allegro5/allegro_primitives.h

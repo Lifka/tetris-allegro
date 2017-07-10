@@ -131,6 +131,10 @@ void GameManager::refreshScoreAndLevel() {
     notifyObservers(NotifyCode::draw_scoreup, score);
 }
 
+bool GameManager::isGameOver() {
+    return Board::getInstance()->isGameOver();
+}
+
 
 void Observer::update(NotifyCode code, KeyCode key) {
 

@@ -27,6 +27,7 @@ public:
     void newFallingPiece();
     void refreshNextPiece();
     void refreshScoreAndLevel();
+    bool isGameOver();
 };
 
 #endif //PROJECT_GAMEMANAGER_H
