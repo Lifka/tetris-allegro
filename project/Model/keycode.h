@@ -6,7 +6,7 @@
 #define PROJECT_KEYCODE_H
 
 
-enum KeyCode{key_up, key_down, key_left, key_right, key_escape};
+enum KeyCode{key_up, key_down, key_left, key_right, key_escape, key_r};
 
 
 

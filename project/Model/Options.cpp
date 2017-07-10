@@ -178,3 +178,11 @@ char *Options::getFont() const {
 void Options::setFont(char *font) {
     Options::font = font;
 }
+
+int Options::getFont__game_over_size() const {
+    return font__game_over_size;
+}
+
+void Options::setFont__game_over_size(int font__game_over_size) {
+    Options::font__game_over_size = font__game_over_size;
+}

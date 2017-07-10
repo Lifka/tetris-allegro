@@ -50,7 +50,7 @@ Rotation Piece::getRotation() {
     return current_rotation;
 }
 
-const std::vector<std::vector<int>> &Piece::getPieceBlocks() const{
+std::vector<std::vector<int>> &Piece::getPieceBlocks(){
     switch (current_rotation){
         case degrees0:
             return rotation0;
@@ -224,6 +224,9 @@ std::vector<std::vector<int> > Piece::getRotation(Rotation rotation) {
 
 void Piece::calculateInitialPositions() {
 
+    // first x
+    // second y
+
     // Piece is spawned at row 0 of the board in the middle column (round to minor)
     this->initial_position_rotation0.first = (int)(Options::getInstance()->getBoard_blocks_width() / 2 -2);
     this->initial_position_rotation90.first = (int)(Options::getInstance()->getBoard_blocks_width() / 2 -2);
@@ -306,4 +309,43 @@ void Piece::calculateInitialPositions() {
 
     // --------
 
+}
+
+int Piece::getSizeX() {
+
+    int size = 0;
+    int size_tmp = 0;
+
+    for (std::vector<std::vector<int> >::iterator itx = getPieceBlocks().begin() ; itx != getPieceBlocks().end(); ++itx){
+        for (int y = 0;y < (*itx).size(); y++){
+            if ((*itx)[y] != 0){
+                size_tmp++;
+            }
+        }
+        if (size_tmp > size){
+            size = size_tmp;
+        }
+    }
+
+    return size;
+}
+
+int Piece::getSizeY() {
+
+    int size = 0;
+    bool block = false;
+
+    for (std::vector<std::vector<int> >::iterator itx = getPieceBlocks().begin() ; itx != getPieceBlocks().end(); ++itx){
+        for (int y = 0;y < (*itx).size(); y++){
+            if ((*itx)[y] != 0){
+                block = true;
+            }
+        }
+        if (block){
+            size++;
+            block = false;
+        }
+    }
+
+    return size;
 }

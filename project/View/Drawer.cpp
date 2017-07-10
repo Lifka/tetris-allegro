@@ -230,3 +230,24 @@ void Drawer::writeLevel(int i) {
                  str);
 }
 
+void Drawer::writeGameOver() {
+
+    ALLEGRO_FONT *font = al_load_ttf_font(Options::getInstance()->getFont(),
+                                          Options::getInstance()->getFont_size(),0 );
+
+    Point2D offset_next_piece = Options::getInstance()->getNext_piece_offset_position_screen();
+    int adjust_y = 50;
+
+    al_draw_text(font,
+                 ColorPalette::getInstance()->getColor(Options::getInstance()->getTextColor()),
+                 offset_next_piece.getX(),
+                 offset_next_piece.getY()-adjust_y,
+                 ALLEGRO_ALIGN_LEFT,
+                 Strings::getInstance()->getNext_piece());
+
+
+    Point2D offset_level = Options::getInstance()->getLevel_offset_position_screen();
+;
+}
+
+

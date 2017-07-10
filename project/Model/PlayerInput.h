@@ -24,13 +24,14 @@ private:
 
 public:
     static PlayerInput* getInstance();
-    bool updateInput(ALLEGRO_EVENT&, ALLEGRO_DISPLAY&);
+    bool updateInput(ALLEGRO_EVENT&, ALLEGRO_DISPLAY&, bool&);
     bool getKeyState(KeyCode);
     bool getUpState();
     bool getDownState();
     bool getRightState();
     bool getLeftState();
     bool getEscapeState();
+    bool getRState();
 
 };
 

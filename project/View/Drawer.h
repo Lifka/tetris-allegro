@@ -41,6 +41,7 @@ public:
     void writeLevel(int i);
     void writeScore(int i);
     void writeFonts();
+    void writeGameOver();
 };
 
 #endif //PROJECT_DRAWER_H

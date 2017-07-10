@@ -23,3 +23,7 @@ const char *Strings::getLevel() const {
 const char *Strings::getNext_piece() const {
     return next_piece;
 }
+
+const char *Strings::getTitle() const {
+    return title;
+}

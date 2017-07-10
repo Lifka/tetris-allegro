@@ -5,6 +5,7 @@
 #include "Model/Board.h"
 #include "View/Drawer.h"
 #include "Model/PlayerInput.h"
+#include "Model/Strings.h"
 #include <stdlib.h>
 #include <allegro5/addons/primitives/allegro5/allegro_primitives.h>
 #include <allegro5/addons/image/allegro5/allegro_image.h>
@@ -15,13 +16,77 @@
 ALLEGRO_DISPLAY *display = NULL;
 ALLEGRO_EVENT_QUEUE *event_queue = NULL;
 
+void prepareGame(){
+    GameManager::getInstance()->addObserver(Drawer::getInstance());
+    PlayerInput::getInstance()->addObserver(GameManager::getInstance());
+    Board::getInstance()->addObserver(Drawer::getInstance());
+}
+
+void startGame(){
+    GameManager::getInstance()->initGame();
+    GameManager::getInstance()->refreshNextPiece();
+    Board::getInstance()->refreshFallingPiece();
+}
+
+void initAllegro(){
+
+    al_set_window_title(display, Strings::getInstance()->getTitle());
+
+    al_clear_to_color(ColorPalette::getInstance()->getColor(Options::getInstance()->getBackground_color()));
+
+    al_install_keyboard();
+    al_init_primitives_addon();
+    al_init_image_addon();
+    al_init_font_addon();
+    al_init_ttf_addon();
+
+    event_queue = al_create_event_queue();
+    al_register_event_source(event_queue, al_get_display_event_source(display));
+    al_register_event_source(event_queue, al_get_keyboard_event_source());
+}
+
+void initDefaultsSettings(){
+
+    Options::getInstance()->setBoard_blocks_height(20); // blocks
+    Options::getInstance()->setBoard_blocks_width(11); // blocks
+
+    Options::getInstance()->setWalls_width(14);
+
+    Options::getInstance()->setBlock_size(46); // pixels block
+
+    Options::getInstance()->setScreen_height(945); // pixels
+    Options::getInstance()->setScreen_width(900); // pixels
+
+    Options::getInstance()->setWalls_color(ColorName::purple);
+    Options::getInstance()->setBoard_color(ColorName::indigo);
+    Options::getInstance()->setBackground_color(ColorName::black);
+    Options::getInstance()->setTextColor(ColorName::white);
+
+    Options::getInstance()->setFont_size(20);
+    Options::getInstance()->setFont__game_over_size(200);
+    Options::getInstance()->setFont((char *) "../fonts/pirulen.ttf");
+
+    Options::getInstance()->setBoard_offset(Point2D(0,0));
+    Options::getInstance()->setNext_piece_offset_position_screen(Point2D(650,100));
+    Options::getInstance()->setLevel_offset_position_screen(Point2D(650,500));
+    Options::getInstance()->setScore_offset_position_screen(Point2D(650,700));
+}
+
 bool updateGame(){
 
    // Board::getInstance()->moveFallingPieceDown();
+    bool result;
+    bool need_restart;
 
     ALLEGRO_EVENT ev;
     al_wait_for_event(event_queue, &ev);
-    return PlayerInput::getInstance()->updateInput(ev, *display);
+    result = PlayerInput::getInstance()->updateInput(ev, *display, need_restart);
+
+    if (need_restart){
+        startGame();
+    }
+
+    return result;
 }
 
 void displayGame(){
@@ -72,30 +137,7 @@ int main(int argc, char **argv)  {
     }
 
     // ********* SETTINGS
-
-    Options::getInstance()->setBoard_blocks_height(20); // blocks
-    Options::getInstance()->setBoard_blocks_width(11); // blocks
-
-    Options::getInstance()->setWalls_width(14);
-
-    Options::getInstance()->setBlock_size(46); // pixels block
-
-    Options::getInstance()->setScreen_height(945); // pixels
-    Options::getInstance()->setScreen_width(900); // pixels
-
-    Options::getInstance()->setWalls_color(ColorName::purple);
-    Options::getInstance()->setBoard_color(ColorName::indigo);
-    Options::getInstance()->setBackground_color(ColorName::black);
-    Options::getInstance()->setTextColor(ColorName::white);
-
-    Options::getInstance()->setFont_size(20);
-    Options::getInstance()->setFont((char *) "../fonts/pirulen.ttf");
-
-    Options::getInstance()->setBoard_offset(Point2D(0,0));
-    Options::getInstance()->setNext_piece_offset_position_screen(Point2D(650,100));
-    Options::getInstance()->setLevel_offset_position_screen(Point2D(650,500));
-    Options::getInstance()->setScore_offset_position_screen(Point2D(650,700));
-
+    initDefaultsSettings();
     // ********* /SETTINGS
 
 
@@ -106,27 +148,11 @@ int main(int argc, char **argv)  {
         return -1;
     }
 
-    al_set_window_title(display, "Tetris");
+    initAllegro();
 
-    al_clear_to_color(ColorPalette::getInstance()->getColor(Options::getInstance()->getBackground_color()));
+    prepareGame();
+    startGame();
 
-    al_install_keyboard();
-    al_init_primitives_addon();
-    al_init_image_addon();
-    al_init_font_addon();
-    al_init_ttf_addon();
-
-    event_queue = al_create_event_queue();
-    al_register_event_source(event_queue, al_get_display_event_source(display));
-    al_register_event_source(event_queue, al_get_keyboard_event_source());
-
-    GameManager::getInstance()->addObserver(Drawer::getInstance());
-    PlayerInput::getInstance()->addObserver(GameManager::getInstance());
-    Board::getInstance()->addObserver(Drawer::getInstance());
-
-    GameManager::getInstance()->initGame();
-    GameManager::getInstance()->refreshNextPiece();
-    Board::getInstance()->refreshFallingPiece();
     al_flip_display();
 
     game_loop();

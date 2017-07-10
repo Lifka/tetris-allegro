@@ -44,7 +44,7 @@ public:
     std::vector <std::vector<int> > getRotation(Rotation rotation);
 
     // Returns the map matrix of the current rotation of the piece
-    const std::vector<std::vector<int>> &getPieceBlocks() const;
+    std::vector<std::vector<int>> &getPieceBlocks();
 
     // Returns the board position of the piece in board coordinates ( x,y integers)
     std::pair <int,int> &getCurrent_position_matrix();
@@ -66,6 +66,9 @@ public:
     void moveToLeft();
     std::pair <int,int> nextPositionDown();
     void fall();
+
+    int getSizeX();
+    int getSizeY();
 };
 
 

@@ -62,7 +62,24 @@ void Board::initBoard() {
 }
 
 bool Board::isGameOver() {
-    return false; // TODO
+    bool is_game_over = false;
+
+    int falling_piece_size_y = falling_piece.getSizeY();
+    int falling_piece_size_x = falling_piece.getSizeX();
+    int falling_piece_start_x_position = falling_piece.getInitialPosition().first;
+    int falling_piece_start_y_position = falling_piece.getInitialPosition().second;
+
+    int need_blocks_y = falling_piece_start_y_position + falling_piece_size_y;
+
+    for (int y = need_blocks_y; !is_game_over && y >= 0; y--){
+        for (int x = falling_piece_start_x_position; !is_game_over && x <= falling_piece_size_x; x++){
+            if (m_board[y][x] != 0){
+                is_game_over = true;
+            }
+        }
+    }
+
+    return is_game_over;
 }
 
 bool Board::isPossibleMoviment(std::pair <int,int> position, Rotation rotation) {
@@ -114,11 +131,13 @@ Board::Board() {
 }
 
 void Board::fillBoard() {
-    m_board = std::vector<std::vector<int> >(Options::getInstance()->getBoard_blocks_height(),
-                                             std::vector<int>(Options::getInstance()->getBoard_blocks_width(),0));
+    m_board = std::vector<std::vector<int> >((unsigned long) Options::getInstance()->getBoard_blocks_height(),
+                                             std::vector<int>(
+                                                     (unsigned long) Options::getInstance()->getBoard_blocks_width(), 0));
 
-    m_board_colors = std::vector<std::vector<ColorName> >(Options::getInstance()->getBoard_blocks_height(),
-                                             std::vector<ColorName >(Options::getInstance()->getBoard_blocks_width(),ColorName::none));
+    m_board_colors = std::vector<std::vector<ColorName> >(
+            (unsigned long) Options::getInstance()->getBoard_blocks_height(),
+            std::vector<ColorName >((unsigned long) Options::getInstance()->getBoard_blocks_width(), ColorName::none));
 
     /**/std::cout << "[DEBUG]: (Board:fillBoard) Board created --> size = " <<  m_board.size() << " x " << m_board[0].size() << std::endl;//*/
     /**/debugPrintBoard();//*/

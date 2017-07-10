@@ -23,6 +23,7 @@ private:
 
     char* font;
     int font_size = 20;
+    int font__game_over_size = 200;
     int line_score = 10;
     int score_for_levelup = 100;
     int walls_width;
@@ -84,5 +85,9 @@ public:
     char *getFont() const;
 
     void setFont(char *font);
+
+    int getFont__game_over_size() const;
+
+    void setFont__game_over_size(int font__game_over_size);
 };
 #endif //PROJECT_OPTIONS_H

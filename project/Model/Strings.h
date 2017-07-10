@@ -18,10 +18,12 @@ private:
     const char* score = "Score";
     const char* level = "Level";
     const char* next_piece = "Next piece";
+    const char* title = "Tetris";
 public:
     const char *getScore() const;
     const char *getLevel() const;
     const char *getNext_piece() const;
+    const char *getTitle() const;
 
     static Strings* getInstance();
 };

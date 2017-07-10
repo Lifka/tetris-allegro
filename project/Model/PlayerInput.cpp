@@ -13,7 +13,7 @@ PlayerInput* PlayerInput::getInstance() {
     return instance;
 }
 
-bool PlayerInput::updateInput(ALLEGRO_EVENT& ev, ALLEGRO_DISPLAY& display) {
+bool PlayerInput::updateInput(ALLEGRO_EVENT& ev, ALLEGRO_DISPLAY& display, bool& need_restart) {
 
     bool result = true;
 
@@ -44,6 +44,11 @@ bool PlayerInput::updateInput(ALLEGRO_EVENT& ev, ALLEGRO_DISPLAY& display) {
                 result = false;
                 close(display);
                 break;
+
+            case ALLEGRO_KEY_R:
+                keys[KeyCode::key_r] = true;
+                need_restart = true;
+                break;
         }
     }
     else if(ev.type == ALLEGRO_EVENT_KEY_UP) {
@@ -66,6 +71,10 @@ bool PlayerInput::updateInput(ALLEGRO_EVENT& ev, ALLEGRO_DISPLAY& display) {
 
             case ALLEGRO_KEY_ESCAPE:
                 keys[KeyCode::key_escape] = false;
+                break;
+
+            case ALLEGRO_KEY_R:
+                keys[KeyCode::key_r] = false;
                 break;
         }
     } else if(ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE) {
@@ -97,6 +106,10 @@ bool PlayerInput::getLeftState() {
 }
 
 bool PlayerInput::getEscapeState() {
+    return keys[KeyCode::key_escape];
+}
+
+bool PlayerInput::getRState() {
     return keys[KeyCode::key_escape];
 }
 
