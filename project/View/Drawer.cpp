@@ -233,7 +233,7 @@ void Drawer::writeLevel(int i) {
 void Drawer::writeGameOver() {
 
     ALLEGRO_FONT *font = al_load_ttf_font(Options::getInstance()->getFont(),
-                                          Options::getInstance()->getFont__game_over_size(),0 );
+                                          Options::getInstance()->getFont_game_over_size(),0 );
 
     Point2D offset_game_over = Options::getInstance()->getGameOver_offset_position_screen();
 
@@ -243,6 +243,20 @@ void Drawer::writeGameOver() {
                  offset_game_over.getY(),
                  ALLEGRO_ALIGN_CENTRE,
                  Strings::getInstance()->getGameOver());
+
+    // -------------------
+
+    ALLEGRO_FONT *font_2 = al_load_ttf_font(Options::getInstance()->getFont(),
+                                          Options::getInstance()->getFont_press_to_restart_size(),0 );
+
+    Point2D offset_press_to_restart = Options::getInstance()->getPressToRestartOffsetPositionScreen();
+
+    al_draw_text(font_2,
+                 ColorPalette::getInstance()->getColor(Options::getInstance()->getgameOverColor()),
+                 offset_press_to_restart.getX(),
+                 offset_press_to_restart.getY(),
+                 ALLEGRO_ALIGN_CENTRE,
+                 Strings::getInstance()->getPressToRestart());
 
 }
 

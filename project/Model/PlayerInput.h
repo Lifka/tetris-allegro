@@ -25,7 +25,7 @@ private:
 public:
     static PlayerInput* getInstance();
     bool updateInput(ALLEGRO_EVENT&, ALLEGRO_DISPLAY&, bool&);
-    void updateLimitedInput(ALLEGRO_EVENT&, ALLEGRO_DISPLAY&, bool&);
+    bool updateLimitedInput(ALLEGRO_EVENT&, ALLEGRO_DISPLAY&, bool&);
     bool getKeyState(KeyCode);
     bool getUpState();
     bool getDownState();

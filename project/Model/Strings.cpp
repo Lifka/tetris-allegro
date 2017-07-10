@@ -31,3 +31,7 @@ const char *Strings::getTitle() const {
 const char *Strings::getGameOver() const {
     return gameover;
 }
+
+const char *Strings::getPressToRestart() const {
+    return pressToRestart;
+}

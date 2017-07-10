@@ -66,13 +66,15 @@ bool Board::isGameOver() {
 
     int falling_piece_size_y = falling_piece.getSizeY();
     int falling_piece_size_x = falling_piece.getSizeX();
-    int falling_piece_start_x_position = falling_piece.getInitialPosition().first;
-    int falling_piece_start_y_position = falling_piece.getInitialPosition().second;
 
-    int need_blocks_y = falling_piece_start_y_position + falling_piece_size_y;
+    int falling_piece_start_x_position = falling_piece.getInitialPosition().first;
+
+    /**/std::cout << "\n****[DEBUG]: (Board:isGameOver) falling_piece_start_x_position " << falling_piece_start_x_position << std::endl;//*/
+
+    int need_blocks_y = falling_piece_size_y;
 
     for (int y = need_blocks_y; !is_game_over && y >= 0; y--){
-        for (int x = falling_piece_start_x_position; !is_game_over && x <= falling_piece_size_x; x++){
+        for (int x = falling_piece_start_x_position; !is_game_over && x <= falling_piece_start_x_position+falling_piece_size_x; x++){
             if (m_board[y][x] != 0){
                 is_game_over = true;
             }

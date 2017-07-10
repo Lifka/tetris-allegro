@@ -20,12 +20,14 @@ private:
     const char* next_piece = "Next piece";
     const char* title = "Tetris";
     const char* gameover = "GAME OVER";
+    const char* pressToRestart = "Press R to restart";
 public:
     const char *getScore() const;
     const char *getLevel() const;
     const char *getNext_piece() const;
     const char *getTitle() const;
     const char *getGameOver() const;
+    const char *getPressToRestart() const;
 
     static Strings* getInstance();
 };

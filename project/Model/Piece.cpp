@@ -324,6 +324,7 @@ int Piece::getSizeX() {
         }
         if (size_tmp > size){
             size = size_tmp;
+            size_tmp = 0;
         }
     }
 

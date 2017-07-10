@@ -16,6 +16,7 @@ private:
     Point2D score_offset_position_screen;
     Point2D level_offset_position_screen;
     Point2D game_over_offset_position_screen;
+    Point2D press_to_restart_offset_position_screen;
 
     ColorName background_color = ColorName::none;
     ColorName board_color = ColorName::none;
@@ -25,7 +26,8 @@ private:
 
     char* font;
     int font_size = 20;
-    int font__game_over_size = 200;
+    int font_game_over_size = 200;
+    int font_press_to_restart_size = 200;
     int line_score = 10;
     int score_for_levelup = 100;
     int walls_width;
@@ -90,7 +92,13 @@ public:
     char *getFont() const;
     void setFont(char *font);
 
-    int getFont__game_over_size() const;
-    void setFont__game_over_size(int font__game_over_size);
+    int getFont_game_over_size() const;
+    void setFont_game_over_size(int font__game_over_size);
+
+    int getFont_press_to_restart_size() const;
+    void setFont_press_to_restart_size(int font_press_to_restart_size);
+
+    const Point2D &getPressToRestartOffsetPositionScreen() const;
+    void setPressToRestartOffsetPositionScreen(const Point2D &game_over_offset_position_screen);
 };
 #endif //PROJECT_OPTIONS_H

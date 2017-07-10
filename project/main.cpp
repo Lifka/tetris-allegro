@@ -64,14 +64,16 @@ void initDefaultsSettings(){
     Options::getInstance()->setgameOverColor(ColorName::lime);
 
     Options::getInstance()->setFont_size(20);
-    Options::getInstance()->setFont__game_over_size(100);
+    Options::getInstance()->setFont_game_over_size(100);
+    Options::getInstance()->setFont_press_to_restart_size(30);
     Options::getInstance()->setFont((char *) "../fonts/pirulen.ttf");
 
     Options::getInstance()->setBoard_offset(Point2D(0,0));
     Options::getInstance()->setNext_piece_offset_position_screen(Point2D(650,100));
     Options::getInstance()->setLevel_offset_position_screen(Point2D(650,500));
     Options::getInstance()->setScore_offset_position_screen(Point2D(650,700));
-    Options::getInstance()->setGameOver_offset_position_screen(Point2D(300,500));
+    Options::getInstance()->setGameOver_offset_position_screen(Point2D(Options::getInstance()->getScreen_height()/2,Options::getInstance()->getScreen_width()/2 - 150));
+    Options::getInstance()->setPressToRestartOffsetPositionScreen(Point2D(Options::getInstance()->getScreen_height()/2,Options::getInstance()->getScreen_width()/2 - 50));
 }
 
 bool updateGame(){
@@ -86,7 +88,7 @@ bool updateGame(){
     if (!GameManager::getInstance()->isGameOver())
         result = PlayerInput::getInstance()->updateInput(ev, *display, need_restart);
     else
-        PlayerInput::getInstance()->updateLimitedInput(ev, *display, need_restart);
+        result = PlayerInput::getInstance()->updateLimitedInput(ev, *display, need_restart);
 
 
     if (need_restart){

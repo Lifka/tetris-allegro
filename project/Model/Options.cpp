@@ -179,12 +179,12 @@ void Options::setFont(char *font) {
     Options::font = font;
 }
 
-int Options::getFont__game_over_size() const {
-    return font__game_over_size;
+int Options::getFont_game_over_size() const {
+    return font_game_over_size;
 }
 
-void Options::setFont__game_over_size(int font__game_over_size) {
-    Options::font__game_over_size = font__game_over_size;
+void Options::setFont_game_over_size(int font__game_over_size) {
+    Options::font_game_over_size = font__game_over_size;
 }
 
 ColorName Options::getgameOverColor() {
@@ -205,4 +205,20 @@ const Point2D &Options::getGameOver_offset_position_screen() const {
 
 void Options::setGameOver_offset_position_screen(const Point2D &GameOver_position_screen) {
     Options::game_over_offset_position_screen = GameOver_position_screen;
+}
+
+int Options::getFont_press_to_restart_size() const {
+    return font_press_to_restart_size;
+}
+
+void Options::setFont_press_to_restart_size(int font_press_to_restart_size) {
+    Options::font_press_to_restart_size = font_press_to_restart_size;
+}
+
+const Point2D &Options::getPressToRestartOffsetPositionScreen() const {
+    return press_to_restart_offset_position_screen;
+}
+
+void Options::setPressToRestartOffsetPositionScreen(const Point2D &game_over_offset_position_screen) {
+    Options::press_to_restart_offset_position_screen = game_over_offset_position_screen;
 }
