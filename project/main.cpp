@@ -15,13 +15,13 @@
 ALLEGRO_DISPLAY *display = NULL;
 ALLEGRO_EVENT_QUEUE *event_queue = NULL;
 
-void updateGame(){
+bool updateGame(){
+
+   // Board::getInstance()->moveFallingPieceDown();
 
     ALLEGRO_EVENT ev;
     al_wait_for_event(event_queue, &ev);
-    PlayerInput::getInstance()->updateInput(ev, *display);
-
-
+    return PlayerInput::getInstance()->updateInput(ev, *display);
 }
 
 void displayGame(){
@@ -47,7 +47,7 @@ void game_loop() {
 
 
     while(game_is_running) {
-        updateGame();
+        game_is_running = updateGame();
         displayGame();
 
         next_game_tick += SKIP_TICKS; // Next time to update in s
