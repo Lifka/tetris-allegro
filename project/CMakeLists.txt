@@ -16,14 +16,14 @@ add_executable(project ${SOURCE_FILES})
 
 TARGET_INCLUDE_DIRECTORIES(project PUBLIC ${ALLEGRO_ROOT})
 TARGET_LINK_LIBRARIES(project allegro
-        allegro_acodec
-        allegro_audio
+        #allegro_acodec
+        #allegro_audio
         allegro_color
-        allegro_dialog
-        allegro_image
+        #allegro_dialog
+        #allegro_image
         allegro_main
-        allegro_memfile
-        allegro_physfs
+        #allegro_memfile
+        #allegro_physfs
         allegro_primitives
         allegro_ttf
         allegro_font)
