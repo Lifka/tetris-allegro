@@ -38,7 +38,7 @@ void music(){
     main_track = al_load_sample( "../music/main.ogg" );
     gameover_track = al_load_sample( "../music/gameover.ogg" );
 }
-
+//
 void initAllegro(){
 
     al_set_window_title(display, Strings::getInstance()->getTitle());
