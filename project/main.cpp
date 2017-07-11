@@ -6,20 +6,14 @@
 #include "View/Drawer.h"
 #include "Model/PlayerInput.h"
 #include "Model/Strings.h"
+#include <stdlib.h>
 #include <allegro5/allegro_primitives.h>
+#include <allegro5/allegro_font.h>
 #include <allegro5/allegro_ttf.h>
-#include <allegro5/allegro_audio.h>
-#include <allegro5/allegro_acodec.h>
-
-
+#include <cmath>
 
 ALLEGRO_DISPLAY *display = NULL;
 ALLEGRO_EVENT_QUEUE *event_queue = NULL;
-ALLEGRO_SAMPLE *main_track=NULL;
-ALLEGRO_SAMPLE *gameover_track=NULL;
-ALLEGRO_SAMPLE_ID *id_main_track = NULL;
-ALLEGRO_SAMPLE_ID *id_gameover_track = NULL;
-bool game_over_souned = false;
 
 void prepareGame(){
     GameManager::getInstance()->addObserver(Drawer::getInstance());
@@ -31,14 +25,8 @@ void startGame(){
     GameManager::getInstance()->initGame();
     GameManager::getInstance()->refreshNextPiece();
     Board::getInstance()->refreshFallingPiece();
-    al_play_sample(main_track, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_LOOP,id_main_track);
 }
 
-void music(){
-    main_track = al_load_sample( "../music/main.ogg" );
-    gameover_track = al_load_sample( "../music/gameover.ogg" );
-}
-//
 void initAllegro(){
 
     al_set_window_title(display, Strings::getInstance()->getTitle());
@@ -49,13 +37,67 @@ void initAllegro(){
     al_init_primitives_addon();
     al_init_font_addon();
     al_init_ttf_addon();
-    al_install_audio();
-    al_init_acodec_addon();
-    al_reserve_samples(50);
 
     event_queue = al_create_event_queue();
     al_register_event_source(event_queue, al_get_display_event_source(display));
     al_register_event_source(event_queue, al_get_keyboard_event_source());
+}
+
+void initResolutionsResponsive(){
+
+    // Lifka Screen 1920 x 1080
+    double height_factor = 945.0 / 1080.0;
+    double width_factor = 900.0 / 1920.0;
+
+    // Recovering screen info of this monitor
+    ALLEGRO_MONITOR_INFO info;
+
+    al_get_monitor_info(0, &info);
+    double w = (double) (info.x2 - info.x1);
+    double h = (double) (info.y2 - info.y1);
+
+    //std::cout << "Resolution of screen = " << w << " x " << h << std::endl;
+
+    double screen_height = h * height_factor;
+    double screen_width = w * width_factor;
+    Options::getInstance()->setScreen_height(std::round(screen_height)); // pixels
+    Options::getInstance()->setScreen_width(std::round(screen_width)); // pixels
+
+    int walls_width = 14;
+    Options::getInstance()->setWalls_width( walls_width );
+
+    double block_size = (screen_height - walls_width * 2.0) / Options::getInstance()->getBoard_blocks_height();
+    Options::getInstance()->setBlock_size(std::round(block_size)); // pixels block
+
+    // Basing on screen width... Lifka font_size = 20
+    double font_size = 20;
+    double font_factor = w / 1920.0;
+    font_size *= font_factor;
+
+    Options::getInstance()->setFont_size(std::round(font_size)); // 20
+    Options::getInstance()->setFont_game_over_size(std::round(font_size * 5.0)); // 100
+    Options::getInstance()->setFont_press_to_restart_size(std::round(font_size * 1.5)); // 30
+
+    std::cout << "std::round(font_size) = " << std::round(font_size) << " !!!!!" << std::endl;
+    std::cout << "std::round(font_size * 5.0) = " << std::round(font_size * 5.0) << " !!!!!" << std::endl;
+    std::cout << "std::round(font_size * 1.5) = " << std::round(font_size * 1.5) << " !!!!!" << std::endl;
+/*
+    Options::getInstance()->setFont_size(12); // 20
+    Options::getInstance()->setFont_game_over_size(12); // 100
+    Options::getInstance()->setFont_press_to_restart_size(12); // 30*/
+
+    Options::getInstance()->setBoard_offset(Point2D(0,0)); // Don't change without adjust width and height factor!
+
+    // Lifka previous window size: 900x945
+
+    width_factor = 650.0 / 900.0;
+    height_factor = 100.0 / 945.0;
+
+    Options::getInstance()->setNext_piece_offset_position_screen(Point2D(std::round(screen_width * width_factor),std::round(screen_height * height_factor)));
+    Options::getInstance()->setLevel_offset_position_screen(Point2D(std::round(screen_width * width_factor),std::round(screen_height * height_factor) * 5));
+    Options::getInstance()->setScore_offset_position_screen(Point2D(std::round(screen_width * width_factor),std::round(screen_height * height_factor) * 7));
+    Options::getInstance()->setGameOver_offset_position_screen(Point2D(Options::getInstance()->getScreen_height()/2,Options::getInstance()->getScreen_width()/2 - std::round(screen_height * height_factor * 1.5)));
+    Options::getInstance()->setPressToRestartOffsetPositionScreen(Point2D(Options::getInstance()->getScreen_height()/2,Options::getInstance()->getScreen_width()/2 - std::round(screen_height * height_factor * 0.5)));
 }
 
 void initDefaultsSettings(){
@@ -63,12 +105,7 @@ void initDefaultsSettings(){
     Options::getInstance()->setBoard_blocks_height(20); // blocks
     Options::getInstance()->setBoard_blocks_width(11); // blocks
 
-    Options::getInstance()->setWalls_width(14);
-
-    Options::getInstance()->setBlock_size(46); // pixels block
-
-    Options::getInstance()->setScreen_height(945); // pixels
-    Options::getInstance()->setScreen_width(900); // pixels
+    initResolutionsResponsive();
 
     Options::getInstance()->setWalls_color(ColorName::purple);
     Options::getInstance()->setBoard_color(ColorName::indigo);
@@ -76,17 +113,7 @@ void initDefaultsSettings(){
     Options::getInstance()->setTextColor(ColorName::white);
     Options::getInstance()->setgameOverColor(ColorName::lime);
 
-    Options::getInstance()->setFont_size(20);
-    Options::getInstance()->setFont_game_over_size(100);
-    Options::getInstance()->setFont_press_to_restart_size(30);
     Options::getInstance()->setFont((char *) "../fonts/pirulen.ttf");
-
-    Options::getInstance()->setBoard_offset(Point2D(0,0));
-    Options::getInstance()->setNext_piece_offset_position_screen(Point2D(650,100));
-    Options::getInstance()->setLevel_offset_position_screen(Point2D(650,500));
-    Options::getInstance()->setScore_offset_position_screen(Point2D(650,700));
-    Options::getInstance()->setGameOver_offset_position_screen(Point2D(Options::getInstance()->getScreen_height()/2,Options::getInstance()->getScreen_width()/2 - 150));
-    Options::getInstance()->setPressToRestartOffsetPositionScreen(Point2D(Options::getInstance()->getScreen_height()/2,Options::getInstance()->getScreen_width()/2 - 50));
 }
 
 bool updateGame(){
@@ -98,23 +125,13 @@ bool updateGame(){
     ALLEGRO_EVENT ev;
     al_wait_for_event(event_queue, &ev);
 
-    if (!GameManager::getInstance()->isGameOver()) {
-        game_over_souned = false;
+    if (!GameManager::getInstance()->isGameOver())
         result = PlayerInput::getInstance()->updateInput(ev, *display, need_restart);
-    } else {
+    else
         result = PlayerInput::getInstance()->updateLimitedInput(ev, *display, need_restart);
-
-        if (!game_over_souned){
-            al_stop_samples();
-            al_play_sample(gameover_track, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,id_gameover_track);
-            game_over_souned = true;
-        }
-
-    }
 
 
     if (need_restart){
-        al_stop_samples();
         startGame();
     }
 
@@ -174,22 +191,6 @@ int main(int argc, char **argv)  {
         return -1;
     }
 
-    if(!al_install_audio()){
-        fprintf(stderr, "failed to initialize audio!\n");
-        return -1;
-    }
-
-    if(!al_init_acodec_addon()){
-        fprintf(stderr, "failed to initialize audio codecs!\n");
-        return -1;
-    }
-
-    if (!al_reserve_samples(1)){
-        fprintf(stderr, "failed to reserve samples!\n");
-        return -1;
-    }
-
-
     // ********* SETTINGS
     initDefaultsSettings();
     // ********* /SETTINGS
@@ -204,13 +205,6 @@ int main(int argc, char **argv)  {
 
     initAllegro();
 
-    music();
-
-    if (!main_track || !gameover_track){
-        printf( "Audio clip sample not loaded!\n" );
-        return -1;
-    }
-
     prepareGame();
     startGame();
 
@@ -218,9 +212,6 @@ int main(int argc, char **argv)  {
 
     game_loop();
 
-    al_stop_samples();
-    al_destroy_sample(main_track);
-    al_destroy_sample(gameover_track);
     al_destroy_display(display);
 
     return 0;
