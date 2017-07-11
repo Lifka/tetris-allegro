@@ -11,17 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7084057f-f4b5-45b7-a697-6c4c0fb33da6" name="Default" comment="Clear">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Controller/GameManager.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Controller/GameManager.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Model/Options.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Model/Options.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/main.cpp.o" />
+    <list default="true" id="7084057f-f4b5-45b7-a697-6c4c0fb33da6" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sprites/wall.bmp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/GameManager.cpp" afterPath="$PROJECT_DIR$/Controller/GameManager.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/GameManager.h" afterPath="$PROJECT_DIR$/Controller/GameManager.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Options.cpp" afterPath="$PROJECT_DIR$/Model/Options.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Options.h" afterPath="$PROJECT_DIR$/Model/Options.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/PlayerInput.cpp" afterPath="$PROJECT_DIR$/Model/PlayerInput.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,8 +49,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="201" column="26" lean-forward="true" selection-start-line="201" selection-start-column="26" selection-end-line="201" selection-end-column="26" />
+            <state relative-caret-position="483">
+              <caret line="212" column="117" lean-forward="true" selection-start-line="212" selection-start-column="117" selection-end-line="212" selection-end-column="117" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -142,9 +134,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>upda</find>
-      <find>fonts</find>
-      <find>drawer()</find>
       <find>init</find>
       <find>first</find>
       <find>get</find>
@@ -172,6 +161,9 @@
       <find>al_create_time</find>
       <find>level_cache</find>
       <find>stop</find>
+      <find>allegro_samp</find>
+      <find>allegro_</find>
+      <find>main</find>
     </findStrings>
     <replaceStrings>
       <replace>Options::getInstance()-&gt;getBoard_offset().getY()</replace>
@@ -285,20 +277,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sprites" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -961,11 +939,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499743433242</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Piece falling timer">
+      <created>1499748688971</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1499748688971</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226114000" />
+    <option name="totallyTimeSpent" value="227054000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -978,9 +963,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16559829" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16559829" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.49786323" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3352018" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1044,7 +1028,8 @@
     <MESSAGE value="Music" />
     <MESSAGE value="OK" />
     <MESSAGE value="Clear" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clear" />
+    <MESSAGE value="Piece falling timer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Piece falling timer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1418,8 +1403,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="201" column="26" lean-forward="true" selection-start-line="201" selection-start-column="26" selection-end-line="201" selection-end-column="26" />
+        <state relative-caret-position="483">
+          <caret line="212" column="117" lean-forward="true" selection-start-line="212" selection-start-column="117" selection-end-line="212" selection-end-column="117" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
