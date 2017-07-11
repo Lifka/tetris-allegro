@@ -4,6 +4,7 @@
 
 #include "PlayerInput.h"
 #include <iostream>
+#include <allegro5/allegro_audio.h>
 
 PlayerInput* PlayerInput::instance = nullptr;
 
@@ -116,6 +117,7 @@ bool PlayerInput::getRState() {
 void PlayerInput::close(ALLEGRO_DISPLAY& display) {
     al_clear_to_color(al_map_rgb(0,0,0));
     al_destroy_display(&display);
+    al_stop_samples();
 }
 
 bool PlayerInput::updateLimitedInput(ALLEGRO_EVENT& ev, ALLEGRO_DISPLAY& display, bool& need_restart) {

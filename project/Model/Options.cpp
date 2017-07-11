@@ -139,6 +139,10 @@ int Options::getScore_for_levelup() const {
     return score_for_levelup;
 }
 
+int Options::getPieceScore() const {
+    return piece_score;
+}
+
 const Point2D &Options::getNext_piece_offset_position_screen() const {
     return next_piece_offset_position_screen;
 }

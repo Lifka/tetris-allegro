@@ -132,6 +132,7 @@ CMakeFiles/project.dir/Model/Piece.cpp.o
 CMakeFiles/project.dir/Model/PlayerInput.cpp.o
  ../allegro/include/allegro5/alcompat.h
  ../allegro/include/allegro5/allegro.h
+ ../allegro/include/allegro5/allegro_audio.h
  ../allegro/include/allegro5/altime.h
  ../allegro/include/allegro5/base.h
  ../allegro/include/allegro5/bitmap.h
@@ -308,11 +309,11 @@ CMakeFiles/project.dir/View/Drawer.cpp.o
  /home/lifka/Desktop/tetris/project/View/Drawer.cpp
  /home/lifka/Desktop/tetris/project/View/Drawer.h
 CMakeFiles/project.dir/main.cpp.o
- ../allegro/include/allegro5/addons/image/allegro5/allegro_image.h
- ../allegro/include/allegro5/addons/primitives/allegro5/allegro_primitives.h
  ../allegro/include/allegro5/alcompat.h
  ../allegro/include/allegro5/allegro.h
+ ../allegro/include/allegro5/allegro_audio.h
  ../allegro/include/allegro5/allegro_font.h
+ ../allegro/include/allegro5/allegro_primitives.h
  ../allegro/include/allegro5/altime.h
  ../allegro/include/allegro5/base.h
  ../allegro/include/allegro5/bitmap.h

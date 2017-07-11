@@ -6,15 +6,20 @@
 #include "View/Drawer.h"
 #include "Model/PlayerInput.h"
 #include "Model/Strings.h"
-#include <stdlib.h>
-#include <allegro5/addons/primitives/allegro5/allegro_primitives.h>
-#include <allegro5/addons/image/allegro5/allegro_image.h>
-#include <allegro5/allegro_font.h>
+#include <allegro5/allegro_primitives.h>
 #include <allegro5/allegro_ttf.h>
+#include <allegro5/allegro_audio.h>
+#include <allegro5/allegro_acodec.h>
+
 
 
 ALLEGRO_DISPLAY *display = NULL;
 ALLEGRO_EVENT_QUEUE *event_queue = NULL;
+ALLEGRO_SAMPLE *main_track=NULL;
+ALLEGRO_SAMPLE *gameover_track=NULL;
+ALLEGRO_SAMPLE_ID *id_main_track = NULL;
+ALLEGRO_SAMPLE_ID *id_gameover_track = NULL;
+bool game_over_souned = false;
 
 void prepareGame(){
     GameManager::getInstance()->addObserver(Drawer::getInstance());
@@ -26,6 +31,12 @@ void startGame(){
     GameManager::getInstance()->initGame();
     GameManager::getInstance()->refreshNextPiece();
     Board::getInstance()->refreshFallingPiece();
+    al_play_sample(main_track, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_LOOP,id_main_track);
+}
+
+void music(){
+    main_track = al_load_sample( "../music/main.ogg" );
+    gameover_track = al_load_sample( "../music/gameover.ogg" );
 }
 
 void initAllegro(){
@@ -36,9 +47,11 @@ void initAllegro(){
 
     al_install_keyboard();
     al_init_primitives_addon();
-    al_init_image_addon();
     al_init_font_addon();
     al_init_ttf_addon();
+    al_install_audio();
+    al_init_acodec_addon();
+    al_reserve_samples(50);
 
     event_queue = al_create_event_queue();
     al_register_event_source(event_queue, al_get_display_event_source(display));
@@ -85,13 +98,23 @@ bool updateGame(){
     ALLEGRO_EVENT ev;
     al_wait_for_event(event_queue, &ev);
 
-    if (!GameManager::getInstance()->isGameOver())
+    if (!GameManager::getInstance()->isGameOver()) {
+        game_over_souned = false;
         result = PlayerInput::getInstance()->updateInput(ev, *display, need_restart);
-    else
+    } else {
         result = PlayerInput::getInstance()->updateLimitedInput(ev, *display, need_restart);
+
+        if (!game_over_souned){
+            al_stop_samples();
+            al_play_sample(gameover_track, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,id_gameover_track);
+            game_over_souned = true;
+        }
+
+    }
 
 
     if (need_restart){
+        al_stop_samples();
         startGame();
     }
 
@@ -151,6 +174,22 @@ int main(int argc, char **argv)  {
         return -1;
     }
 
+    if(!al_install_audio()){
+        fprintf(stderr, "failed to initialize audio!\n");
+        return -1;
+    }
+
+    if(!al_init_acodec_addon()){
+        fprintf(stderr, "failed to initialize audio codecs!\n");
+        return -1;
+    }
+
+    if (!al_reserve_samples(1)){
+        fprintf(stderr, "failed to reserve samples!\n");
+        return -1;
+    }
+
+
     // ********* SETTINGS
     initDefaultsSettings();
     // ********* /SETTINGS
@@ -165,6 +204,13 @@ int main(int argc, char **argv)  {
 
     initAllegro();
 
+    music();
+
+    if (!main_track || !gameover_track){
+        printf( "Audio clip sample not loaded!\n" );
+        return -1;
+    }
+
     prepareGame();
     startGame();
 
@@ -172,6 +218,9 @@ int main(int argc, char **argv)  {
 
     game_loop();
 
+    al_stop_samples();
+    al_destroy_sample(main_track);
+    al_destroy_sample(gameover_track);
     al_destroy_display(display);
 
     return 0;

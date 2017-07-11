@@ -86,7 +86,20 @@ void Observer::updateLine(NotifyCode code){
         case prepare_next_piece:
             GameManager::getInstance()->nextPiece();
             break;
+        case up_score_piece:
+            GameManager::getInstance()->scoreUpPiece();
+            break;
 
+    }
+
+}
+
+void GameManager::scoreUpPiece(){
+    /**/std::cout << "[DEBUG]: (GameManager-scoreUp) scoreUp --> " << score << " + " <<  Options::getInstance()->getLine_score()*level << std::endl;//*/
+    score += Options::getInstance()->getPieceScore()*level;
+
+    if (score >= Options::getInstance()->getScore_for_levelup()*level*level){
+        level++;
     }
 
 }

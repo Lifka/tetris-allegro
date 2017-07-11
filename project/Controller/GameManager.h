@@ -23,6 +23,7 @@ public:
     void initGame();
     void createNewPiece();
     void scoreUp();
+    void scoreUpPiece();
     void nextPiece();
     void newFallingPiece();
     void refreshNextPiece();

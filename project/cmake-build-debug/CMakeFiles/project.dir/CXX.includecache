@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../allegro/include/allegro5/addons/image/allegro5/allegro_image.h
-
 ../allegro/include/allegro5/addons/primitives/allegro5/allegro_primitives.h
 allegro5/allegro.h
 -
@@ -64,9 +62,17 @@ allegro5/config.h
 allegro5/alcompat.h
 ../allegro/include/allegro5/allegro5/alcompat.h
 
+../allegro/include/allegro5/allegro_audio.h
+allegro5/allegro.h
+../allegro/include/allegro5/allegro5/allegro.h
+
 ../allegro/include/allegro5/allegro_font.h
 allegro5/allegro.h
 ../allegro/include/allegro5/allegro5/allegro.h
+
+../allegro/include/allegro5/allegro_primitives.h
+allegro5/allegro.h
+-
 
 ../allegro/include/allegro5/altime.h
 allegro5/base.h
@@ -505,6 +511,8 @@ PlayerInput.h
 /home/lifka/Desktop/tetris/project/Model/PlayerInput.h
 iostream
 -
+allegro5/allegro_audio.h
+-
 
 /home/lifka/Desktop/tetris/project/Model/PlayerInput.h
 keycode.h
@@ -607,14 +615,12 @@ Model/PlayerInput.h
 /home/lifka/Desktop/tetris/project/Model/PlayerInput.h
 Model/Strings.h
 /home/lifka/Desktop/tetris/project/Model/Strings.h
-stdlib.h
--
-allegro5/addons/primitives/allegro5/allegro_primitives.h
--
-allegro5/addons/image/allegro5/allegro_image.h
--
-allegro5/allegro_font.h
+allegro5/allegro_primitives.h
 -
 allegro5/allegro_ttf.h
+-
+allegro5/allegro_audio.h
+-
+allegro5/allegro_acodec.h
 -
 

@@ -29,6 +29,7 @@ private:
     int font_game_over_size = 200;
     int font_press_to_restart_size = 200;
     int line_score = 10;
+    int piece_score = 1;
     int score_for_levelup = 100;
     int walls_width;
     int block_size;
@@ -75,6 +76,7 @@ public:
     void setBoard_offset(const Point2D &board_offset);
 
     int getLine_score() const;
+    int getPieceScore() const;
     int getScore_for_levelup() const;
 
     const Point2D &getNext_piece_offset_position_screen() const;

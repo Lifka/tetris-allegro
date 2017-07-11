@@ -131,6 +131,7 @@ CMakeFiles/project.dir/Model/Piece.cpp.o: ../Model/Rotation.h
 
 CMakeFiles/project.dir/Model/PlayerInput.cpp.o: ../allegro/include/allegro5/alcompat.h
 CMakeFiles/project.dir/Model/PlayerInput.cpp.o: ../allegro/include/allegro5/allegro.h
+CMakeFiles/project.dir/Model/PlayerInput.cpp.o: ../allegro/include/allegro5/allegro_audio.h
 CMakeFiles/project.dir/Model/PlayerInput.cpp.o: ../allegro/include/allegro5/altime.h
 CMakeFiles/project.dir/Model/PlayerInput.cpp.o: ../allegro/include/allegro5/base.h
 CMakeFiles/project.dir/Model/PlayerInput.cpp.o: ../allegro/include/allegro5/bitmap.h
@@ -307,11 +308,11 @@ CMakeFiles/project.dir/View/Drawer.cpp.o: ../View/BlockDrawer.h
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../View/Drawer.cpp
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../View/Drawer.h
 
-CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/addons/image/allegro5/allegro_image.h
-CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/addons/primitives/allegro5/allegro_primitives.h
 CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/alcompat.h
 CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/allegro.h
+CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/allegro_audio.h
 CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/allegro_font.h
+CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/allegro_primitives.h
 CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/altime.h
 CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/base.h
 CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/bitmap.h
