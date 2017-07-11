@@ -75,23 +75,23 @@ void initResolutionsResponsive(){
 
     double screen_height = h * height_factor;
     double screen_width = w * width_factor;
-    Options::getInstance()->setScreen_height(std::round(screen_height)); // pixels
-    Options::getInstance()->setScreen_width(std::round(screen_width)); // pixels
+    Options::getInstance()->setScreen_height((int) std::round(screen_height)); // pixels
+    Options::getInstance()->setScreen_width((int) std::round(screen_width)); // pixels
 
     int walls_width = 14;
     Options::getInstance()->setWalls_width( walls_width );
 
     double block_size = (screen_height - walls_width * 2.0) / Options::getInstance()->getBoard_blocks_height();
-    Options::getInstance()->setBlock_size(std::round(block_size)); // pixels block
+    Options::getInstance()->setBlock_size((int) std::round(block_size)); // pixels block
 
     // Basing on screen width... Lifka font_size = 20
     double font_size = 20;
     double font_factor = w / 1920.0;
     font_size *= font_factor;
 
-    Options::getInstance()->setFont_size(std::round(font_size)); // 20
-    Options::getInstance()->setFont_game_over_size(std::round(font_size * 5.0)); // 100
-    Options::getInstance()->setFont_press_to_restart_size(std::round(font_size * 1.5)); // 30
+    Options::getInstance()->setFont_size((int) std::round(font_size)); // 20
+    Options::getInstance()->setFont_game_over_size((int) std::round(font_size * 5.0)); // 100
+    Options::getInstance()->setFont_press_to_restart_size((int) std::round(font_size * 1.5)); // 30
 
     std::cout << "std::round(font_size) = " << std::round(font_size) << " !!!!!" << std::endl;
     std::cout << "std::round(font_size * 5.0) = " << std::round(font_size * 5.0) << " !!!!!" << std::endl;
@@ -108,11 +108,16 @@ void initResolutionsResponsive(){
     width_factor = 650.0 / 900.0;
     height_factor = 100.0 / 945.0;
 
-    Options::getInstance()->setNext_piece_offset_position_screen(Point2D(std::round(screen_width * width_factor),std::round(screen_height * height_factor)));
-    Options::getInstance()->setLevel_offset_position_screen(Point2D(std::round(screen_width * width_factor),std::round(screen_height * height_factor) * 5));
-    Options::getInstance()->setScore_offset_position_screen(Point2D(std::round(screen_width * width_factor),std::round(screen_height * height_factor) * 7));
-    Options::getInstance()->setGameOver_offset_position_screen(Point2D(Options::getInstance()->getScreen_height()/2,Options::getInstance()->getScreen_width()/2 - std::round(screen_height * height_factor * 1.5)));
-    Options::getInstance()->setPressToRestartOffsetPositionScreen(Point2D(Options::getInstance()->getScreen_height()/2,Options::getInstance()->getScreen_width()/2 - std::round(screen_height * height_factor * 0.5)));
+    Options::getInstance()->setNext_piece_offset_position_screen(Point2D((int) std::round(screen_width * width_factor),
+                                                                         (int) std::round(screen_height * height_factor)));
+    Options::getInstance()->setLevel_offset_position_screen(Point2D((int) std::round(screen_width * width_factor),
+                                                                    (int) (std::round(screen_height * height_factor) * 5)));
+    Options::getInstance()->setScore_offset_position_screen(Point2D((int) std::round(screen_width * width_factor),
+                                                                    (int) (std::round(screen_height * height_factor) * 7)));
+    Options::getInstance()->setGameOver_offset_position_screen(Point2D(Options::getInstance()->getScreen_height()/2,
+                                                                       (int) (Options::getInstance()->getScreen_width() / 2 - std::round(screen_height * height_factor * 1.5))));
+    Options::getInstance()->setPressToRestartOffsetPositionScreen(Point2D(Options::getInstance()->getScreen_height()/2,
+                                                                          (int) (Options::getInstance()->getScreen_width() / 2 - std::round(screen_height * height_factor * 0.5))));
 }
 
 void initDefaultsSettings(){
@@ -134,7 +139,7 @@ void initDefaultsSettings(){
 bool updateGame(){
 
    // Board::getInstance()->moveFallingPieceDown();
-    bool result = true;
+    bool result;
     bool need_restart = false;
 
     ALLEGRO_EVENT ev;
