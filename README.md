@@ -5,7 +5,7 @@
 ![alt text](https://raw.githubusercontent.com/Lifka/TetrisAllegroC-/master/screenshots/screenshot1.png "Game")
 
 ### Notes
-* Developed with CLion
+* Developed with CLion using C++ with Allegro 5 library
 * Project for Università degli Studi di Firenze - UniFI
 
 
