@@ -19,7 +19,10 @@ ALLEGRO_SAMPLE *main_track=NULL;
 ALLEGRO_SAMPLE *gameover_track=NULL;
 ALLEGRO_SAMPLE_ID *id_main_track = NULL;
 ALLEGRO_SAMPLE_ID *id_gameover_track = NULL;
-bool game_over_souned = false;
+ALLEGRO_TIMER *timer_falling_piece = NULL;
+const double FRAMES_PER_SECOND = 25;
+bool is_game_over = false;
+int level_cache = 0;
 
 void prepareGame(){
     GameManager::getInstance()->addObserver(Drawer::getInstance());
@@ -32,6 +35,9 @@ void startGame(){
     GameManager::getInstance()->refreshNextPiece();
     Board::getInstance()->refreshFallingPiece();
     al_play_sample(main_track, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_LOOP,id_main_track);
+    timer_falling_piece = al_create_timer(Options::getInstance()->getFallingTimeFactorScale());
+    al_register_event_source(event_queue, al_get_timer_event_source(timer_falling_piece));
+    al_start_timer(timer_falling_piece);
 }
 
 void music(){
@@ -49,9 +55,6 @@ void initAllegro(){
     al_init_primitives_addon();
     al_init_font_addon();
     al_init_ttf_addon();
-    al_install_audio();
-    al_init_acodec_addon();
-    al_reserve_samples(50);
 
     event_queue = al_create_event_queue();
     al_register_event_source(event_queue, al_get_display_event_source(display));
@@ -92,11 +95,7 @@ void initResolutionsResponsive(){
     Options::getInstance()->setFont_size((int) std::round(font_size)); // 20
     Options::getInstance()->setFont_game_over_size((int) std::round(font_size * 5.0)); // 100
     Options::getInstance()->setFont_press_to_restart_size((int) std::round(font_size * 1.5)); // 30
-
-    std::cout << "std::round(font_size) = " << std::round(font_size) << " !!!!!" << std::endl;
-    std::cout << "std::round(font_size * 5.0) = " << std::round(font_size * 5.0) << " !!!!!" << std::endl;
-    std::cout << "std::round(font_size * 1.5) = " << std::round(font_size * 1.5) << " !!!!!" << std::endl;
-/*
+    /*
     Options::getInstance()->setFont_size(12); // 20
     Options::getInstance()->setFont_game_over_size(12); // 100
     Options::getInstance()->setFont_press_to_restart_size(12); // 30*/
@@ -134,6 +133,8 @@ void initDefaultsSettings(){
     Options::getInstance()->setgameOverColor(ColorName::lime);
 
     Options::getInstance()->setFont((char *) "../fonts/pirulen.ttf");
+
+    Options::getInstance()->setFallingTimeFactorScale(0.6); // blocks
 }
 
 bool updateGame(){
@@ -142,19 +143,26 @@ bool updateGame(){
     bool result;
     bool need_restart = false;
 
+
     ALLEGRO_EVENT ev;
     al_wait_for_event(event_queue, &ev);
 
+    if(ev.type == ALLEGRO_EVENT_TIMER) {
+        Board::getInstance()->moveFallingPieceDown();
+    }
+
     if (!GameManager::getInstance()->isGameOver()) {
-        game_over_souned = false;
+        is_game_over = false;
         result = PlayerInput::getInstance()->updateInput(ev, *display, need_restart);
     } else {
         result = PlayerInput::getInstance()->updateLimitedInput(ev, *display, need_restart);
 
-        if (!game_over_souned){
+        if (!is_game_over){
+            /**/std::cout << " \n\n\n ******* STOP ***** " << "\n\n";
+            al_stop_timer(timer_falling_piece);
             al_stop_samples();
             al_play_sample(gameover_track, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,id_gameover_track);
-            game_over_souned = true;
+            is_game_over = true;
         }
 
     }
@@ -187,7 +195,6 @@ void displayGame(){
 
 void game_loop() {
 
-    const double FRAMES_PER_SECOND = 25;
     const double SKIP_TICKS =  1 / FRAMES_PER_SECOND; // s to update game
 
     double next_game_tick = al_get_time();
@@ -197,7 +204,16 @@ void game_loop() {
 
 
     while(game_is_running) {
+
         game_is_running = updateGame();
+
+        if (level_cache != GameManager::getInstance()->getLevel()) {
+            /**/std::cout << " \n\n\n ******* LEVEL UP MAIN ***** " << level_cache << "\n\n";
+            level_cache = GameManager::getInstance()->getLevel();
+            al_set_timer_speed(timer_falling_piece, Options::getInstance()->getFallingTimeFactorScale()/level_cache);
+
+        }
+
         displayGame();
 
         next_game_tick += SKIP_TICKS; // Next time to update in s
@@ -231,10 +247,11 @@ int main(int argc, char **argv)  {
         return -1;
     }
 
-    if (!al_reserve_samples(1)){
+    if (!al_reserve_samples(2)){
         fprintf(stderr, "failed to reserve samples!\n");
         return -1;
     }
+
 
 
     // ********* SETTINGS
@@ -263,8 +280,10 @@ int main(int argc, char **argv)  {
 
     al_flip_display();
 
+
     game_loop();
 
+    al_destroy_timer(timer_falling_piece);
     al_stop_samples();
     al_destroy_sample(main_track);
     al_destroy_sample(gameover_track);

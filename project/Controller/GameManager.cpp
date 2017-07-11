@@ -148,6 +148,10 @@ bool GameManager::isGameOver() {
     return Board::getInstance()->isGameOver();
 }
 
+int GameManager::getLevel() {
+    return level;
+}
+
 
 void Observer::update(NotifyCode code, KeyCode key) {
 

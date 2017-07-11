@@ -29,6 +29,7 @@ public:
     void refreshNextPiece();
     void refreshScoreAndLevel();
     bool isGameOver();
+    int getLevel();
 };
 
 #endif //PROJECT_GAMEMANAGER_H

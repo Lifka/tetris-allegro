@@ -24,6 +24,7 @@ private:
     ColorName text_color = ColorName::none;
     ColorName text_game_over_color = ColorName::none;
 
+    double fallingTimeFactorScale = 1;
     char* font;
     int font_size = 20;
     int font_game_over_size = 200;
@@ -102,5 +103,8 @@ public:
 
     const Point2D &getPressToRestartOffsetPositionScreen() const;
     void setPressToRestartOffsetPositionScreen(const Point2D &game_over_offset_position_screen);
+
+    void setFallingTimeFactorScale(const double&);
+    const double &getFallingTimeFactorScale() const;
 };
 #endif //PROJECT_OPTIONS_H

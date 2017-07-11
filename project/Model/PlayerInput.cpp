@@ -115,7 +115,6 @@ bool PlayerInput::getRState() {
 }
 
 void PlayerInput::close(ALLEGRO_DISPLAY& display) {
-    al_clear_to_color(al_map_rgb(0,0,0));
     al_destroy_display(&display);
     al_stop_samples();
 }

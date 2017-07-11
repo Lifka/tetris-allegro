@@ -226,3 +226,11 @@ const Point2D &Options::getPressToRestartOffsetPositionScreen() const {
 void Options::setPressToRestartOffsetPositionScreen(const Point2D &game_over_offset_position_screen) {
     Options::press_to_restart_offset_position_screen = game_over_offset_position_screen;
 }
+
+void Options::setFallingTimeFactorScale(const double& n) {
+    fallingTimeFactorScale = n;
+}
+
+const double &Options::getFallingTimeFactorScale() const {
+    return fallingTimeFactorScale;
+}
