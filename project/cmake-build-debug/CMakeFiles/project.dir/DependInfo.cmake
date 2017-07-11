@@ -4,20 +4,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/GameManager.cpp" "/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/CMakeFiles/project.dir/Controller/GameManager.cpp.o"
-  "/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/PlayerController.cpp" "/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/CMakeFiles/project.dir/Controller/PlayerController.cpp.o"
-  "/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.cpp" "/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/CMakeFiles/project.dir/Controller/Subject.cpp.o"
-  "/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Board.cpp" "/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/CMakeFiles/project.dir/Model/Board.cpp.o"
-  "/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.cpp" "/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/CMakeFiles/project.dir/Model/ColorPalette.cpp.o"
-  "/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Factory.cpp" "/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/CMakeFiles/project.dir/Model/Factory.cpp.o"
-  "/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.cpp" "/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/CMakeFiles/project.dir/Model/Options.cpp.o"
-  "/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.cpp" "/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/CMakeFiles/project.dir/Model/Piece.cpp.o"
-  "/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PlayerInput.cpp" "/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/CMakeFiles/project.dir/Model/PlayerInput.cpp.o"
-  "/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.cpp" "/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/CMakeFiles/project.dir/Model/Point2D.cpp.o"
-  "/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Strings.cpp" "/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/CMakeFiles/project.dir/Model/Strings.cpp.o"
-  "/home/metinu/CLionProjects/TetrisAllegroC-/project/View/BlockDrawer.cpp" "/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/CMakeFiles/project.dir/View/BlockDrawer.cpp.o"
-  "/home/metinu/CLionProjects/TetrisAllegroC-/project/View/Drawer.cpp" "/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/CMakeFiles/project.dir/View/Drawer.cpp.o"
-  "/home/metinu/CLionProjects/TetrisAllegroC-/project/main.cpp" "/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/CMakeFiles/project.dir/main.cpp.o"
+  "/home/lifka/Desktop/tetris/project/Controller/GameManager.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Controller/GameManager.cpp.o"
+  "/home/lifka/Desktop/tetris/project/Controller/PlayerController.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Controller/PlayerController.cpp.o"
+  "/home/lifka/Desktop/tetris/project/Controller/Subject.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Controller/Subject.cpp.o"
+  "/home/lifka/Desktop/tetris/project/Model/Board.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/Board.cpp.o"
+  "/home/lifka/Desktop/tetris/project/Model/ColorPalette.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/ColorPalette.cpp.o"
+  "/home/lifka/Desktop/tetris/project/Model/Factory.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/Factory.cpp.o"
+  "/home/lifka/Desktop/tetris/project/Model/Options.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/Options.cpp.o"
+  "/home/lifka/Desktop/tetris/project/Model/Piece.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/Piece.cpp.o"
+  "/home/lifka/Desktop/tetris/project/Model/PlayerInput.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/PlayerInput.cpp.o"
+  "/home/lifka/Desktop/tetris/project/Model/Point2D.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/Point2D.cpp.o"
+  "/home/lifka/Desktop/tetris/project/Model/Strings.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/Model/Strings.cpp.o"
+  "/home/lifka/Desktop/tetris/project/View/BlockDrawer.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/View/BlockDrawer.cpp.o"
+  "/home/lifka/Desktop/tetris/project/View/Drawer.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/View/Drawer.cpp.o"
+  "/home/lifka/Desktop/tetris/project/main.cpp" "/home/lifka/Desktop/tetris/project/cmake-build-debug/CMakeFiles/project.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

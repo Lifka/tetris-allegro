@@ -139,5 +139,7 @@ bool PlayerInput::updateLimitedInput(ALLEGRO_EVENT& ev, ALLEGRO_DISPLAY& display
         result = false;
         close(display);
     }
+
+    return result;
 }
 

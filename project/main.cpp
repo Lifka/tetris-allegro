@@ -12,7 +12,6 @@
 #include <allegro5/allegro_acodec.h>
 
 
-
 ALLEGRO_DISPLAY *display = NULL;
 ALLEGRO_EVENT_QUEUE *event_queue = NULL;
 ALLEGRO_SAMPLE *main_track=NULL;
@@ -38,7 +37,7 @@ void music(){
     main_track = al_load_sample( "../music/main.ogg" );
     gameover_track = al_load_sample( "../music/gameover.ogg" );
 }
-//
+
 void initAllegro(){
 
     al_set_window_title(display, Strings::getInstance()->getTitle());

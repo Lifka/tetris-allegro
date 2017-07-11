@@ -8,192 +8,190 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug"/>
+				<Option working_dir="/home/lifka/Desktop/tetris/project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug"/>
+				<Option working_dir="/home/lifka/Desktop/tetris/project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug"/>
+				<Option working_dir="/home/lifka/Desktop/tetris/project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="project">
-				<Option output="/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/project" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug"/>
+				<Option output="/home/lifka/Desktop/tetris/project/cmake-build-debug/project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lifka/Desktop/tetris/project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/metinu/CLionProjects/TetrisAllegroC-/project/allegro/include"/>
-					<Add directory="/home/metinu/CLionProjects/TetrisAllegroC-/project/allegro"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/home/lifka/Desktop/tetris/project/allegro/include"/>
+					<Add directory="/home/lifka/Desktop/tetris/project/allegro"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 project"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 project"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="project/fast">
-				<Option output="/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/project" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug"/>
+				<Option output="/home/lifka/Desktop/tetris/project/cmake-build-debug/project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lifka/Desktop/tetris/project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/metinu/CLionProjects/TetrisAllegroC-/project/allegro/include"/>
-					<Add directory="/home/metinu/CLionProjects/TetrisAllegroC-/project/allegro"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/home/lifka/Desktop/tetris/project/allegro/include"/>
+					<Add directory="/home/lifka/Desktop/tetris/project/allegro"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 project/fast"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/metinu/CLionProjects/TetrisAllegroC-/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 project/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lifka/Desktop/tetris/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/GameManager.cpp">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Controller/GameManager.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/GameManager.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Controller/GameManager.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Observer.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Controller/Observer.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/PlayerController.cpp">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Controller/PlayerController.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/PlayerController.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Controller/PlayerController.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.cpp">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Controller/Subject.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Controller/Subject.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Controller/Subject.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Board.cpp">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Board.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Board.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Board.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorName.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/ColorName.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.cpp">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/ColorPalette.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/ColorPalette.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/ColorPalette.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Direction.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Direction.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Factory.cpp">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Factory.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Factory.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Factory.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/FactoryMethod.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/FactoryMethod.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/NotifyCode.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/NotifyCode.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.cpp">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Options.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Options.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Options.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.cpp">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Piece.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Piece.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Piece.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PieceType.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/PieceType.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PlayerInput.cpp">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/PlayerInput.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/PlayerInput.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/PlayerInput.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.cpp">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Point2D.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Point2D.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Point2D.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Rotation.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Rotation.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Strings.cpp">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Strings.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/Strings.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/Strings.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/Model/keycode.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/Model/keycode.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/View/BlockDrawer.cpp">
+		<Unit filename="/home/lifka/Desktop/tetris/project/View/BlockDrawer.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/View/BlockDrawer.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/View/BlockDrawer.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/View/Drawer.cpp">
+		<Unit filename="/home/lifka/Desktop/tetris/project/View/Drawer.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/View/Drawer.h">
+		<Unit filename="/home/lifka/Desktop/tetris/project/View/Drawer.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/main.cpp">
+		<Unit filename="/home/lifka/Desktop/tetris/project/main.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="/home/metinu/CLionProjects/TetrisAllegroC-/project/CMakeLists.txt">
+		<Unit filename="/home/lifka/Desktop/tetris/project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

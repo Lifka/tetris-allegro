@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/metinu/CLionProjects/TetrisAllegroC-/project/allegro/include -I/home/metinu/CLionProjects/TetrisAllegroC-/project/allegro 
+CXX_INCLUDES = -I/home/lifka/Desktop/tetris/project/allegro/include -I/home/lifka/Desktop/tetris/project/allegro 
 
