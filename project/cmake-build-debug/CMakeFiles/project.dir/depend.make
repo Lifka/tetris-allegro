@@ -51,7 +51,6 @@ CMakeFiles/project.dir/Model/Board.cpp.o: ../Model/Point2D.h
 CMakeFiles/project.dir/Model/Board.cpp.o: ../Model/Rotation.h
 CMakeFiles/project.dir/Model/Board.cpp.o: ../Model/keycode.h
 
-CMakeFiles/project.dir/Model/ColorPalette.cpp.o: ../allegro/include/allegro5/allegro_primitives.h
 CMakeFiles/project.dir/Model/ColorPalette.cpp.o: ../Model/ColorName.h
 CMakeFiles/project.dir/Model/ColorPalette.cpp.o: ../Model/ColorPalette.cpp
 CMakeFiles/project.dir/Model/ColorPalette.cpp.o: ../Model/ColorPalette.h
@@ -79,7 +78,6 @@ CMakeFiles/project.dir/Model/Piece.cpp.o: ../Model/PieceType.h
 CMakeFiles/project.dir/Model/Piece.cpp.o: ../Model/Point2D.h
 CMakeFiles/project.dir/Model/Piece.cpp.o: ../Model/Rotation.h
 
-CMakeFiles/project.dir/Model/PlayerInput.cpp.o: ../allegro/include/allegro5/allegro_audio.h
 CMakeFiles/project.dir/Model/PlayerInput.cpp.o: ../Controller/Observer.h
 CMakeFiles/project.dir/Model/PlayerInput.cpp.o: ../Controller/Subject.h
 CMakeFiles/project.dir/Model/PlayerInput.cpp.o: ../Model/ColorName.h
@@ -97,7 +95,6 @@ CMakeFiles/project.dir/Model/Point2D.cpp.o: ../Model/Point2D.h
 CMakeFiles/project.dir/Model/Strings.cpp.o: ../Model/Strings.cpp
 CMakeFiles/project.dir/Model/Strings.cpp.o: ../Model/Strings.h
 
-CMakeFiles/project.dir/View/BlockDrawer.cpp.o: ../allegro/include/allegro5/allegro_primitives.h
 CMakeFiles/project.dir/View/BlockDrawer.cpp.o: ../Model/ColorName.h
 CMakeFiles/project.dir/View/BlockDrawer.cpp.o: ../Model/ColorPalette.h
 CMakeFiles/project.dir/View/BlockDrawer.cpp.o: ../Model/Direction.h
@@ -109,8 +106,6 @@ CMakeFiles/project.dir/View/BlockDrawer.cpp.o: ../Model/Rotation.h
 CMakeFiles/project.dir/View/BlockDrawer.cpp.o: ../View/BlockDrawer.cpp
 CMakeFiles/project.dir/View/BlockDrawer.cpp.o: ../View/BlockDrawer.h
 
-CMakeFiles/project.dir/View/Drawer.cpp.o: ../allegro/include/allegro5/allegro_font.h
-CMakeFiles/project.dir/View/Drawer.cpp.o: ../allegro/include/allegro5/allegro_primitives.h
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../Controller/Observer.h
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../Controller/Subject.h
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../Model/Board.h
@@ -129,9 +124,6 @@ CMakeFiles/project.dir/View/Drawer.cpp.o: ../View/BlockDrawer.h
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../View/Drawer.cpp
 CMakeFiles/project.dir/View/Drawer.cpp.o: ../View/Drawer.h
 
-CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/allegro_audio.h
-CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/allegro_font.h
-CMakeFiles/project.dir/main.cpp.o: ../allegro/include/allegro5/allegro_primitives.h
 CMakeFiles/project.dir/main.cpp.o: ../Controller/GameManager.h
 CMakeFiles/project.dir/main.cpp.o: ../Controller/Observer.h
 CMakeFiles/project.dir/main.cpp.o: ../Controller/Subject.h

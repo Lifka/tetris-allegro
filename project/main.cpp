@@ -8,17 +8,17 @@
 #include "Model/Strings.h"
 #include <allegro5/allegro_primitives.h>
 #include <allegro5/allegro_ttf.h>
-#include <allegro5/allegro_audio.h>
-#include <allegro5/allegro_acodec.h>
+//#include <allegro5/allegro_audio.h>
+//#include <allegro5/allegro_acodec.h>
 #include <cmath>
 
 
 ALLEGRO_DISPLAY *display = NULL;
 ALLEGRO_EVENT_QUEUE *event_queue = NULL;
-ALLEGRO_SAMPLE *main_track=NULL;
-ALLEGRO_SAMPLE *gameover_track=NULL;
-ALLEGRO_SAMPLE_ID *id_main_track = NULL;
-ALLEGRO_SAMPLE_ID *id_gameover_track = NULL;
+//ALLEGRO_SAMPLE *main_track=NULL;
+//ALLEGRO_SAMPLE *gameover_track=NULL;
+//ALLEGRO_SAMPLE_ID *id_main_track = NULL;
+//ALLEGRO_SAMPLE_ID *id_gameover_track = NULL;
 ALLEGRO_TIMER *timer_falling_piece = NULL;
 const double FRAMES_PER_SECOND = 25;
 bool is_game_over = false;
@@ -34,16 +34,16 @@ void startGame(){
     GameManager::getInstance()->initGame();
     GameManager::getInstance()->refreshNextPiece();
     Board::getInstance()->refreshFallingPiece();
-    al_play_sample(main_track, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_LOOP,id_main_track);
+    //al_play_sample(main_track, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_LOOP,id_main_track);
     timer_falling_piece = al_create_timer(Options::getInstance()->getFallingTimeFactorScale());
     al_register_event_source(event_queue, al_get_timer_event_source(timer_falling_piece));
     al_start_timer(timer_falling_piece);
 }
 
-void music(){
-    main_track = al_load_sample( "../music/main.ogg" );
-    gameover_track = al_load_sample( "../music/gameover.ogg" );
-}
+//void music(){
+//    main_track = al_load_sample( "../music/main.ogg" );
+//    gameover_track = al_load_sample( "../music/gameover.ogg" );
+//}
 
 void initAllegro(){
 
@@ -160,8 +160,8 @@ bool updateGame(){
         if (!is_game_over){
             /**/std::cout << " \n\n\n ******* STOP ***** " << "\n\n";
             al_stop_timer(timer_falling_piece);
-            al_stop_samples();
-            al_play_sample(gameover_track, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,id_gameover_track);
+            //al_stop_samples();
+            //al_play_sample(gameover_track, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,id_gameover_track);
             is_game_over = true;
         }
 
@@ -169,7 +169,7 @@ bool updateGame(){
 
 
     if (need_restart){
-        al_stop_samples();
+        //al_stop_samples();
         startGame();
     }
 
@@ -237,11 +237,12 @@ int main(int argc, char **argv)  {
         return -1;
     }
 
-    if(!al_install_audio()){
-        fprintf(stderr, "failed to initialize audio!\n");
-        return -1;
-    }
+    //if(!al_install_audio()){
+    //    fprintf(stderr, "failed to initialize audio!\n");
+    //    return -1;
+    //}
 
+    /*
     if(!al_init_acodec_addon()){
         fprintf(stderr, "failed to initialize audio codecs!\n");
         return -1;
@@ -251,6 +252,7 @@ int main(int argc, char **argv)  {
         fprintf(stderr, "failed to reserve samples!\n");
         return -1;
     }
+    */
 
 
 
@@ -268,12 +270,12 @@ int main(int argc, char **argv)  {
 
     initAllegro();
 
-    music();
+    //music();
 
-    if (!main_track || !gameover_track){
-        printf( "Audio clip sample not loaded!\n" );
-        return -1;
-    }
+    //if (!main_track || !gameover_track){
+    //    printf( "Audio clip sample not loaded!\n" );
+    //    return -1;
+    //}
 
     prepareGame();
     startGame();
@@ -284,9 +286,9 @@ int main(int argc, char **argv)  {
     game_loop();
 
     al_destroy_timer(timer_falling_piece);
-    al_stop_samples();
-    al_destroy_sample(main_track);
-    al_destroy_sample(gameover_track);
+    //al_stop_samples();
+    //al_destroy_sample(main_track);
+    //al_destroy_sample(gameover_track);
     al_destroy_display(display);
 
     return 0;
