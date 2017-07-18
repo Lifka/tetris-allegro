@@ -21,7 +21,7 @@ Piece::Piece(std::vector<std::vector<int> > rotation0, std::vector<std::vector<i
     this->current_position_matrix.second = getInitialPosition().second;
 
 
-    /**///std::cout << "[DEBUG]: (Piece-Piece) piece created in position (" << current_position_matrix.first << "," << current_position_matrix.second << ")" << std::endl;
+    /**/////std::cout << "[DEBUG]: (Piece-Piece) piece created in position (" << current_position_matrix.first << "," << current_position_matrix.second << ")" << std::endl;
 
 }
 
@@ -112,15 +112,15 @@ void Piece::setColor(ColorName color) {
 }
 
 void Piece::debugMatrix() {
-    /**/std::cout << "[DEBUG]: (Piece:debugMatrix) Showing piece type " << type << std::endl;
-    /**/std::cout << std::endl << "-------------------------------------------" << std::endl;
+    /**///std::cout << "[DEBUG]: (Piece:debugMatrix) Showing piece type " << type << std::endl;
+    /**///std::cout << std::endl << "-------------------------------------------" << std::endl;
     for (int i = 0; i < getPieceBlocks().size(); i++){
         for (int j = 0; j < getPieceBlocks()[i].size(); j++){
             std::cout << getPieceBlocks()[i][j] << " ";
         }
         std::cout << std::endl;
     }
-    /**/std::cout << "-------------------------------------------" << std::endl << std::endl;
+    /**///std::cout << "-------------------------------------------" << std::endl << std::endl;
 }
 
 std::pair<int, int> Piece::getCenterPiece() {

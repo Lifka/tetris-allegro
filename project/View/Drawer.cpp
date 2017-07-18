@@ -26,7 +26,7 @@ Drawer *Drawer::getInstance() {
 
 void Drawer::refreshBoard() {
 
-    /**/std::cout << "[DEBUG]: (Drawer:refreshBoard) refreshing..." << std::endl;//*/
+    /**///std::cout << "[DEBUG]: (Drawer:refreshBoard) refreshing..." << std::endl;//*/
 
     Board::getInstance()->debugPrintBoard();
 
@@ -57,7 +57,7 @@ void Drawer::refreshBoard() {
 
 void Drawer::initBoard() {
 
-    /**/std::cout << "[DEBUG]: (Drawer:initBoard) initBoard..." << std::endl;//*/
+    /**///std::cout << "[DEBUG]: (Drawer:initBoard) initBoard..." << std::endl;//*/
 
     int x_init = Options::getInstance()->getBoard_offset().getX() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
     int y_init = Options::getInstance()->getBoard_offset().getY() + Options::getInstance()->getBlock_size()/2 + Options::getInstance()->getWalls_width();
@@ -109,7 +109,7 @@ void Drawer::walls() {
 }
 
 void Observer::update(NotifyCode code){
-    /**/std::cout << "[DEBUG]: (Drawer-update) notify recieved with code --> " << code << std::endl;
+    /**///std::cout << "[DEBUG]: (Drawer-update) notify recieved with code --> " << code << std::endl;
     switch (code){
         case draw_screen:
             Drawer::getInstance()->walls();
@@ -120,8 +120,8 @@ void Observer::update(NotifyCode code){
 }
 
 void Observer::update(NotifyCode code,  Piece piece){
-    /**/std::cout << "[DEBUG]: (Drawer-update) notify recieved with code --> " << code; //*/
-    /**/std::cout << " with piece in position (" << piece.getCurrent_position_matrix().first << "," << piece.getCurrent_position_matrix().second << ")" << std::endl;
+    /**///std::cout << "[DEBUG]: (Drawer-update) notify recieved with code --> " << code; //*/
+    /**///std::cout << " with piece in position (" << piece.getCurrent_position_matrix().first << "," << piece.getCurrent_position_matrix().second << ")" << std::endl;
     switch (code){
         case falling_piece_changed:
             /*piece.debugMatrix();//*/
@@ -135,7 +135,7 @@ void Observer::update(NotifyCode code,  Piece piece){
 }
 
 void Observer::update(NotifyCode code,  int n){
-    /**/std::cout << "[DEBUG]: (Drawer-update) notify recieved with code --> " << code << std::endl;//*/
+    /**///std::cout << "[DEBUG]: (Drawer-update) notify recieved with code --> " << code << std::endl;//*/
    switch (code){
         case draw_scoreup:
             Drawer::getInstance()->writeScore(n);

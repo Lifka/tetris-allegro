@@ -19,12 +19,12 @@ GameManager* GameManager::getInstance() {
 }
 
 void GameManager::initGame() {
-    /**/std::cout << "[DEBUG]: (GameManager:initGame) starting game..." << std::endl;//*/
+    /**///std::cout << "[DEBUG]: (GameManager:initGame) starting game..." << std::endl;//*/
 
     level = 1;
     score = 0;
 
-    /**/std::cout << "[DEBUG]: (GameManager:initGame) starting board..." << std::endl;//*/
+    /**///std::cout << "[DEBUG]: (GameManager:initGame) starting board..." << std::endl;//*/
 
     Board::getInstance()->initBoard();
     notifyObservers(NotifyCode::draw_screen);
@@ -70,15 +70,15 @@ void GameManager::createNewPiece() {
 
 
     next_piece = factory.createPiece(type);
-    /**/std::cout << "[DEBUG]: (GameManager:createNewPiece) New piece created --> Type = " <<  type << " -- Showing: " << std::endl;//*/
-    /**/next_piece.debugMatrix();//*/
+    /**///std::cout << "[DEBUG]: (GameManager:createNewPiece) New piece created --> Type = " <<  type << " -- Showing: " << std::endl;//*/
+    /**///next_piece.debugMatrix();//*/
 }
 
 
 
 void Observer::updateLine(NotifyCode code){
 
-    /**/std::cout << "[DEBUG]: (GameManager-updateLine) notify recieved with code --> " << code << std::endl;//*/
+    /**///std::cout << "[DEBUG]: (GameManager-updateLine) notify recieved with code --> " << code << std::endl;//*/
     switch (code){
         case up_score:
             GameManager::getInstance()->scoreUp();
@@ -95,7 +95,7 @@ void Observer::updateLine(NotifyCode code){
 }
 
 void GameManager::scoreUpPiece(){
-    /**/std::cout << "[DEBUG]: (GameManager-scoreUp) scoreUp --> " << score << " + " <<  Options::getInstance()->getLine_score()*level << std::endl;//*/
+    /**///std::cout << "[DEBUG]: (GameManager-scoreUp) scoreUp --> " << score << " + " <<  Options::getInstance()->getLine_score()*level << std::endl;//*/
     score += Options::getInstance()->getPieceScore()*level;
 
     if (score >= Options::getInstance()->getScore_for_levelup()*level*level){
@@ -105,7 +105,7 @@ void GameManager::scoreUpPiece(){
 }
 
 void GameManager::scoreUp(){
-    /**/std::cout << "[DEBUG]: (GameManager-scoreUp) scoreUp --> " << score << " + " <<  Options::getInstance()->getLine_score()*level << std::endl;//*/
+    /**///std::cout << "[DEBUG]: (GameManager-scoreUp) scoreUp --> " << score << " + " <<  Options::getInstance()->getLine_score()*level << std::endl;//*/
     score += Options::getInstance()->getLine_score()*level;
 
     if (score >= Options::getInstance()->getScore_for_levelup()*level*level){
@@ -118,7 +118,7 @@ void GameManager::scoreUp(){
 }
 
 void GameManager::nextPiece() {
-    /**/std::cout << "[DEBUG]: (GameManager:nextPiece) " << std::endl;//*/
+    /**///std::cout << "[DEBUG]: (GameManager:nextPiece) " << std::endl;//*/
 
     // Set falling piece:
     newFallingPiece();
@@ -130,7 +130,7 @@ void GameManager::nextPiece() {
 }
 
 void GameManager::newFallingPiece() {
-    /**/std::cout << "[DEBUG]: (GameManager:newFallingPiece) " << std::endl;//*/
+    /**///std::cout << "[DEBUG]: (GameManager:newFallingPiece) " << std::endl;//*/
     Board::getInstance()->setFallingPiece(next_piece);
 
 }
@@ -155,7 +155,7 @@ int GameManager::getLevel() {
 
 void Observer::update(NotifyCode code, KeyCode key) {
 
-    /**/std::cout << "[DEBUG]: (GameManager-update) notify recieved with code --> " << code << std::endl;//*/
+    /**///std::cout << "[DEBUG]: (GameManager-update) notify recieved with code --> " << code << std::endl;//*/
     if (code == NotifyCode::key_pressed){
 
         switch(key){

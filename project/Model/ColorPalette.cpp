@@ -29,7 +29,7 @@ ColorName ColorPalette::getRandomColor() {
 
     std::advance(begin, k);
 
-    /**///std::cout << "[DEBUG]: (ColorPalette:getRandomColor) Color generated --> " << *begin << " --- k: " << k << std::endl;
+    /**/////std::cout << "[DEBUG]: (ColorPalette:getRandomColor) Color generated --> " << *begin << " --- k: " << k << std::endl;
 
     return (*begin);
 }

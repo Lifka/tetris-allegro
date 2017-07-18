@@ -27,7 +27,7 @@ void Board::checkLines() {
 }
 
 void Board::deleteLine(int n_line) {
-    /**/std::cout << "[DEBUG]: (Board:deleteLine) Deleting line --> " << n_line << std::endl;//*/
+    /**///std::cout << "[DEBUG]: (Board:deleteLine) Deleting line --> " << n_line << std::endl;//*/
     for(int x = n_line-1; x > 0; x--) {
         m_board[x + 1] = m_board[x];
         m_board_colors[x + 1] = m_board_colors[x];
@@ -53,11 +53,11 @@ bool Board::isFree(Point2D p) {
 void Board::setFallingPiece(Piece falling_piece) {
     this->falling_piece = falling_piece;
     //notifyObservers(NotifyCode::falling_piece_changed, falling_piece);
-    /**/std::cout << "[DEBUG]: (Board:setFallingPiece) New falling piece setted --> Type = " << falling_piece.getPieceType() << std::endl;//*/
+    /**///std::cout << "[DEBUG]: (Board:setFallingPiece) New falling piece setted --> Type = " << falling_piece.getPieceType() << std::endl;//*/
 }
 
 void Board::initBoard() {
-    /**/std::cout << "[DEBUG]: (Board:initBoard) Starting board..." << std::endl;//*/
+    /**///std::cout << "[DEBUG]: (Board:initBoard) Starting board..." << std::endl;//*/
     fillBoard();
 }
 
@@ -139,20 +139,20 @@ void Board::fillBoard() {
             (unsigned long) Options::getInstance()->getBoard_blocks_height(),
             std::vector<ColorName >((unsigned long) Options::getInstance()->getBoard_blocks_width(), ColorName::none));
 
-    /**/std::cout << "[DEBUG]: (Board:fillBoard) Board created --> size = " <<  m_board.size() << " x " << m_board[0].size() << std::endl;//*/
-    /**/debugPrintBoard();//*/
+    /**///std::cout << "[DEBUG]: (Board:fillBoard) Board created --> size = " <<  m_board.size() << " x " << m_board[0].size() << std::endl;//*/
+    /**///debugPrintBoard();//*/
 }
 
 void Board::debugPrintBoard(){
-    /**/std::cout << "[DEBUG]: (Board:debugPrintBoard) Showing board:" << std::endl;//*/
-    /**/std::cout << std::endl << "-------------------------------------------" << std::endl;//*/
+    /**///std::cout << "[DEBUG]: (Board:debugPrintBoard) Showing board:" << std::endl;//*/
+    /**///std::cout << std::endl << "-------------------------------------------" << std::endl;//*/
     for (int i = 0; i < m_board.size(); i++){
         for (int j = 0; j < m_board[i].size(); j++){
-            std::cout << m_board[i][j] << " ";
+            //std::cout << m_board[i][j] << " ";
         }
         std::cout << std::endl;
     }
-    /**/std::cout << "-------------------------------------------" << std::endl << std::endl;//*/
+    /**///std::cout << "-------------------------------------------" << std::endl << std::endl;//*/
 }
 
 int Board::getBoardPosition(int x, int y) const {

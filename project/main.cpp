@@ -158,7 +158,7 @@ bool updateGame(){
         result = PlayerInput::getInstance()->updateLimitedInput(ev, *display, need_restart);
 
         if (!is_game_over){
-            /**/std::cout << " \n\n\n ******* STOP ***** " << "\n\n";
+            /**///std::cout << " \n\n\n ******* STOP ***** " << "\n\n";
             al_stop_timer(timer_falling_piece);
             //al_stop_samples();
             //al_play_sample(gameover_track, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,id_gameover_track);
@@ -208,7 +208,7 @@ void game_loop() {
         game_is_running = updateGame();
 
         if (level_cache != GameManager::getInstance()->getLevel()) {
-            /**/std::cout << " \n\n\n ******* LEVEL UP MAIN ***** " << level_cache << "\n\n";
+            /**///std::cout << " \n\n\n ******* LEVEL UP MAIN ***** " << level_cache << "\n\n";
             level_cache = GameManager::getInstance()->getLevel();
             al_set_timer_speed(timer_falling_piece, Options::getInstance()->getFallingTimeFactorScale()/level_cache);
 
