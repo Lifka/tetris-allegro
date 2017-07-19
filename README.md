@@ -8,6 +8,9 @@
 * Developed with CLion using C++ with Allegro 5 library
 * Project for Università degli Studi di Firenze - UniFI
 
+### CLion project configuration
+The folder "cmake-build-debug" has been ignored by .gitignore. To generate a new one, right click on the project folder and "Reload CMake Project". 
+
 
 ### Initial Class Diagram
 ![alt text](https://raw.githubusercontent.com/Lifka/TetrisAllegroC-/master/Class%20Diagram1.jpg "Class diagram")
