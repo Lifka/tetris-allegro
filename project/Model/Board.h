@@ -43,7 +43,9 @@ public:
     void moveFallingPieceToRight();
     void moveFallingPieceToLeft();
     void moveFallingPieceDown();
-    void requestNewPiece();
+
+    // Turns the falling piece into board blocks
+    void storeFallingPiece();
 
     /**/ void debugPrintBoard();//*/
     /**/ const Piece &getFalling_piece() const;//*/

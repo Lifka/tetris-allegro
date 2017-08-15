@@ -191,10 +191,10 @@ void Board::moveFallingPieceDown() {
     if (isPossibleMoviment(falling_piece.nextPositionDown(), falling_piece.getRotation()))
         falling_piece.fall();
     else
-        requestNewPiece();
+        storeFallingPiece();
 }
 
-void Board::requestNewPiece() {
+void Board::storeFallingPiece() {
 
     for(int y = 0; y < falling_piece.getPieceBlocks().size(); y++){
         for(int x = 0; x < falling_piece.getPieceBlocks()[y].size(); x++){

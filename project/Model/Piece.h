@@ -40,13 +40,17 @@ public:
     std::pair <int,int> getInitialPosition();
     PieceType getPieceType();
     void setRotation(Rotation rotation);
+
     Rotation getRotation();
+    Rotation getRotation() const;
+
     std::vector <std::vector<int> > getRotation(Rotation rotation);
 
     // Returns the map matrix of the current rotation of the piece
     std::vector<std::vector<int>> &getPieceBlocks();
 
     // Returns the board position of the piece in board coordinates ( x,y integers)
+    std::pair <int,int> &getCurrent_position_matrix() const;
     std::pair <int,int> &getCurrent_position_matrix();
 
     void setCurrent_position_matrix(const std::pair <int,int> &current_position);
@@ -61,14 +65,19 @@ public:
     Rotation nextRotationRight();
     void rotateRight();
     std::pair <int,int> nextPositionRight();
+    std::pair <int,int> nextPositionRight() const;
     void moveToRight();
     std::pair <int,int> nextPositionLeft();
+    std::pair <int,int> nextPositionLeft() const;
     void moveToLeft();
     std::pair <int,int> nextPositionDown();
+    std::pair <int,int> nextPositionDown() const;
     void fall();
 
     int getSizeX();
     int getSizeY();
+
+    bool operator==(const Piece& rPiece);
 };
 
 

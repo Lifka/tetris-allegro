@@ -50,6 +50,11 @@ Rotation Piece::getRotation() {
     return current_rotation;
 }
 
+Rotation Piece::getRotation() const{
+    return current_rotation;
+}
+
+
 std::vector<std::vector<int>> &Piece::getPieceBlocks(){
     switch (current_rotation){
         case degrees0:
@@ -94,7 +99,11 @@ Piece::Piece(const Piece &p2){
 
 }
 
-std::pair <int,int> &Piece::getCurrent_position_matrix() {
+std::pair <int,int> &Piece::getCurrent_position_matrix() const{
+    return const_cast<std::pair <int,int> &>(current_position_matrix);
+}
+
+std::pair <int,int> &Piece::getCurrent_position_matrix(){
     return current_position_matrix;
 }
 
@@ -205,6 +214,36 @@ std::pair<int, int> Piece::nextPositionDown() {
     next_position.second = getCurrent_position_matrix().second;
 
     next_position.second++;
+
+    return next_position;
+}
+
+std::pair<int, int> Piece::nextPositionDown() const{
+    std::pair <int,int> next_position;
+    next_position.first = getCurrent_position_matrix().first;
+    next_position.second = getCurrent_position_matrix().second;
+
+    next_position.second++;
+
+    return next_position;
+}
+
+std::pair<int, int> Piece::nextPositionLeft() const{
+    std::pair <int,int> next_position;
+    next_position.first = getCurrent_position_matrix().first;
+    next_position.second = getCurrent_position_matrix().second;
+
+    next_position.first--;
+
+    return next_position;
+}
+
+std::pair<int, int> Piece::nextPositionRight() const{
+    std::pair <int,int> next_position;
+    next_position.first = getCurrent_position_matrix().first;
+    next_position.second = getCurrent_position_matrix().second;
+
+    next_position.first++;
 
     return next_position;
 }
@@ -349,4 +388,27 @@ int Piece::getSizeY() {
     }
 
     return size;
+}
+
+bool Piece::operator==(const Piece& rPiece)
+{
+    bool equals = true;
+
+    equals = rotation0 == rPiece.rotation0;
+    equals = rotation90 == rPiece.rotation90;
+    equals = rotation180 == rPiece.rotation180;
+    equals = rotation270 == rPiece.rotation270;
+
+    equals = initial_position_rotation0 == rPiece.initial_position_rotation0;
+    equals = initial_position_rotation0 == rPiece.initial_position_rotation0;
+    equals = initial_position_rotation0 == rPiece.initial_position_rotation0;
+    equals = initial_position_rotation0 == rPiece.initial_position_rotation0;
+
+    equals = current_rotation == rPiece.current_rotation;
+    equals = current_position_matrix == rPiece.current_position_matrix;
+    equals = type == rPiece.type;
+    equals = color == rPiece.color;
+
+    return equals;
+
 }

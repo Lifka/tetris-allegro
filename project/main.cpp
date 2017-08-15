@@ -15,10 +15,6 @@
 
 ALLEGRO_DISPLAY *display = NULL;
 ALLEGRO_EVENT_QUEUE *event_queue = NULL;
-//ALLEGRO_SAMPLE *main_track=NULL;
-//ALLEGRO_SAMPLE *gameover_track=NULL;
-//ALLEGRO_SAMPLE_ID *id_main_track = NULL;
-//ALLEGRO_SAMPLE_ID *id_gameover_track = NULL;
 ALLEGRO_TIMER *timer_falling_piece = NULL;
 const double FRAMES_PER_SECOND = 25;
 bool is_game_over = false;
