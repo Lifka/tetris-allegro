@@ -18,14 +18,17 @@ private:
     std::vector<std::vector<ColorName> > m_board_colors;
     Piece falling_piece;
 
-    Board();
 
     static Board* instance;
     Board& operator=(Board const&){};
-    Board(Board const&){};
+
 
     void deleteLine(int line);
     void fillBoard();
+
+protected:
+    Board(Board const&){};
+    Board();
 public:
     static Board* getInstance();
     bool isFree(Point2D);

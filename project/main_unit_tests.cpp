@@ -1,5 +1,4 @@
 #include <gtest/gtest.h>
-#include <gmock/gmock.h>
 #include "Model/Options.h"
 #include "Model/ColorPalette.h"
 #include "View/Drawer.h"
@@ -86,7 +85,6 @@ void initDefaultsSettings(){
 }
 
 int main(int argc, char *argv[]) {
-    std::cout << "estoy ejecutando otro main" << std::endl;
 
     initDefaultsSettings();
 
@@ -95,6 +93,5 @@ int main(int argc, char *argv[]) {
     Board::getInstance()->refreshFallingPiece();
 
     testing::InitGoogleTest(&argc, argv);
-    RUN_ALL_TESTS();
-    return 0;
+    return RUN_ALL_TESTS();
 }

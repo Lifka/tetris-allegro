@@ -3,7 +3,6 @@
 //
 
 #include <gtest/gtest.h>
-#include <gmock/gmock.h>
 #include "../Controller/GameManager.h"
 #include "../Model/Board.h"
 
@@ -14,9 +13,10 @@ namespace {
         Board* board = Board::getInstance();
         GameManagerTest(){
             obj;
-            }
+        }
     };
 }
+
 
 TEST_F(GameManagerTest, getInstance){
     GameManager* one_instance = GameManager::getInstance();
@@ -28,47 +28,63 @@ TEST_F(GameManagerTest, getInstance){
 
 TEST_F(GameManagerTest, initGame){
     obj->initGame();
-
     int actual_value = obj->getLevel();
     int expected_value = 1;
 
     ASSERT_EQ(actual_value, expected_value);
     ASSERT_FALSE(obj->isGameOver());
 }
-/*
-TEST_F(GameManagerTest, createNewPiece){
-
-}
 
 TEST_F(GameManagerTest, scoreUp){
+    for (int i = 0; i < 999; i++)
+        obj->scoreUp();
 
+    ASSERT_TRUE(obj->getLevel() > 1);
 }
 
 TEST_F(GameManagerTest, scoreUpPiece){
+    for (int i = 0; i < 999; i++)
+        obj->scoreUp();
 
+    ASSERT_TRUE(obj->getLevel() > 1);
 }
 
 TEST_F(GameManagerTest, nextPiece){
+    Piece piece_1 = board->getFalling_piece();
+    obj->nextPiece();
+    Piece piece_2 = board->getFalling_piece();
+    obj->nextPiece();
+    Piece piece_3 = board->getFalling_piece();
+    obj->nextPiece();
+    Piece piece_4 = board->getFalling_piece();
 
+    ASSERT_FALSE((piece_1 == piece_2) && (piece_3 == piece_4));
 }
+
 
 TEST_F(GameManagerTest, newFallingPiece){
+    Piece piece_1 = board->getFalling_piece();
+    obj->nextPiece();
+    Piece piece_2 = board->getFalling_piece();
+    obj->nextPiece();
+    Piece piece_3 = board->getFalling_piece();
+    obj->nextPiece();
+    Piece piece_4 = board->getFalling_piece();
 
+    ASSERT_FALSE((piece_1 == piece_2) && (piece_3 == piece_4));
 }
 
-TEST_F(GameManagerTest, refreshNextPiece){
 
-}
-
-TEST_F(GameManagerTest, refreshScoreAndLevel){
-
-}
 
 TEST_F(GameManagerTest, isGameOver){
-
+    ASSERT_EQ(obj->isGameOver(), board->isGameOver());
 }
+
+
 
 TEST_F(GameManagerTest, getLevel){
+    for (int i = 0; i < 999; i++)
+        obj->scoreUp();
 
+    ASSERT_TRUE(obj->getLevel() > 1);
 }
- */

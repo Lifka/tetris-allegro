@@ -3,7 +3,6 @@
 //
 
 #include <gtest/gtest.h>
-#include <gmock/gmock.h>
 #include "../Model/Board.h"
 #include "../Model/Options.h"
 
@@ -86,20 +85,6 @@ TEST_F(BoardTest, isGameOver){
     ASSERT_EQ(actual_value, expected_value);
 }
 
-
-TEST_F(BoardTest, initBoard){
-    obj->initBoard();
-
-    int used_blocks = 0;
-
-    for (int i = 0; i < Options::getInstance()->getBoard_blocks_width(); i++)
-        for (int j = 0; j < Options::getInstance()->getBoard_blocks_height(); j++)
-            if(obj->getBoardPosition(i,j) == 1)
-                used_blocks++;
-
-    ASSERT_EQ(used_blocks,0);
-}
-
 TEST_F(BoardTest, setFallingPiece){
     Piece piece_before_call = obj->getFalling_piece();
     obj->setFallingPiece(Piece());
@@ -123,26 +108,14 @@ TEST_F(BoardTest, getColorPosition){
 }
 
 TEST_F(BoardTest, rotateFallingPiece){
-    Rotation before_calling_rotation = obj->getFalling_piece().getRotation();
+    Board::getInstance()->initBoard();
+    Rotation before_calling_rotation = Board::getInstance()->getFalling_piece().getRotation();
 
-    obj->rotateFallingPiece();
+    Board::getInstance()->rotateFallingPiece();
 
-    Rotation after_calling_rotation = obj->getFalling_piece().getRotation();
+    Rotation after_calling_rotation = Board::getInstance()->getFalling_piece().getRotation();
 
-    switch (before_calling_rotation){
-        case degrees0:
-            ASSERT_EQ(degrees270, after_calling_rotation);
-            break;
-        case degrees90:
-            ASSERT_EQ(degrees0, after_calling_rotation);
-            break;
-        case degrees180:
-            ASSERT_EQ(degrees90, after_calling_rotation);
-            break;
-        case degrees270:
-            ASSERT_EQ(degrees180, after_calling_rotation);
-            break;
-    }
+    ASSERT_NE(before_calling_rotation, after_calling_rotation);
 }
 
 TEST_F(BoardTest, moveFallingPieceToRight){
@@ -165,6 +138,20 @@ TEST_F(BoardTest, moveFallingPieceToRight){
         ASSERT_EQ(before_calling_position, after_calling_position);
         ASSERT_NE(obj->getFalling_piece().nextPositionLeft(), before_calling_position);
     }
+}
+
+TEST_F(BoardTest, initBoard) {
+    obj->initBoard();
+    int used_blocks = 0;
+
+    // Check if last line is empty
+    for (int i = 0; i < Options::getInstance()->getBoard_blocks_width(); i++) {
+        int j = Options::getInstance()->getBoard_blocks_height() - 1;
+        if (obj->getBoardPosition(i, j) == 1)
+            used_blocks++;
+    }
+
+    ASSERT_EQ(used_blocks,0);
 }
 
 

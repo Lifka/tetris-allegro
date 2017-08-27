@@ -78,6 +78,7 @@ public:
     int getSizeY();
 
     bool operator==(const Piece& rPiece);
+    bool operator!=(const Piece& rPiece);
 };
 
 

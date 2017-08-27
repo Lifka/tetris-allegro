@@ -5,6 +5,7 @@
 #ifndef PROJECT_GAMEMANAGER_H
 #define PROJECT_GAMEMANAGER_H
 
+#include <gtest/gtest.h>
 #include "Subject.h"
 #include "../Model/Factory.h"
 
@@ -30,6 +31,7 @@ public:
     void refreshScoreAndLevel();
     bool isGameOver();
     int getLevel();
+
 };
 
 #endif //PROJECT_GAMEMANAGER_H

@@ -392,6 +392,9 @@ int Piece::getSizeY() {
 
 bool Piece::operator==(const Piece& rPiece)
 {
+    if (this == &rPiece)
+        return true;
+
     bool equals = true;
 
     equals = rotation0 == rPiece.rotation0;
@@ -410,5 +413,31 @@ bool Piece::operator==(const Piece& rPiece)
     equals = color == rPiece.color;
 
     return equals;
+
+}
+
+bool Piece::operator!=(const Piece& rPiece)
+{
+    if (this == &rPiece)
+        return true;
+
+    bool equals = true;
+
+    equals = rotation0 == rPiece.rotation0;
+    equals = rotation90 == rPiece.rotation90;
+    equals = rotation180 == rPiece.rotation180;
+    equals = rotation270 == rPiece.rotation270;
+
+    equals = initial_position_rotation0 == rPiece.initial_position_rotation0;
+    equals = initial_position_rotation0 == rPiece.initial_position_rotation0;
+    equals = initial_position_rotation0 == rPiece.initial_position_rotation0;
+    equals = initial_position_rotation0 == rPiece.initial_position_rotation0;
+
+    equals = current_rotation == rPiece.current_rotation;
+    equals = current_position_matrix == rPiece.current_position_matrix;
+    equals = type == rPiece.type;
+    equals = color == rPiece.color;
+
+    return !equals;
 
 }
