@@ -7,7 +7,7 @@
 
 
 #include <allegro5/color.h>
-#include "../Model/Point2D.h"
+#include "../Model/Point2DTest.h"
 #include "../Model/Options.h"
 #include "../Model/Piece.h"
 #include "../Model/Direction.h"

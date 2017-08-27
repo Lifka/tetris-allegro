@@ -19,7 +19,7 @@ namespace {
     };
 }
 
-TEST_F(BoardTest, getInstance){
+TEST_F(BoardTest, singleton){
     Board* one_instance = Board::getInstance();
     Board* another_instance = Board::getInstance();
 

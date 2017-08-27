@@ -7,7 +7,7 @@
 
 #include <vector>
 #include <allegro5/color.h>
-#include "Point2D.h"
+#include "Point2DTest.h"
 #include "Piece.h"
 #include "../Controller/Subject.h"
 #include "ColorName.h"

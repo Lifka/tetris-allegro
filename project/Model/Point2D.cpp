@@ -2,7 +2,7 @@
 // Created by lifka on 18/06/17.
 //
 
-#include "Point2D.h"
+#include "Point2DTest.h"
 
 Point2D::Point2D(int x, int y){
     this->x = x;
@@ -26,6 +26,10 @@ void Point2D::setY(int y) {
 }
 
 std::pair<int,int> Point2D::getPosition() {
+    return std::make_pair(x,y);
+}
+
+const std::pair<int,int> Point2D::getPosition() const{
     return std::make_pair(x,y);
 }
 

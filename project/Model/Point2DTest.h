@@ -19,6 +19,7 @@ public:
     void setX(int);
     void setY(int);
     std::pair<int, int> getPosition();
+    const std::pair<int, int> getPosition() const;
 };
 
 #endif //PROJECT_POINT2D_H

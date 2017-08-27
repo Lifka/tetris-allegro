@@ -15,13 +15,17 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7084057f-f4b5-45b7-a697-6c4c0fb33da6" name="Default" comment="Still remains to be done: Options, Point2D and String. The rest are done.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/FactoryTest.cpp" />
+    <list default="true" id="7084057f-f4b5-45b7-a697-6c4c0fb33da6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/OptionsTest.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/Point2DTest.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Model/Point2D.h" afterPath="$PROJECT_DIR$/Model/Point2DTest.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Board.h" afterPath="$PROJECT_DIR$/Model/Board.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Options.h" afterPath="$PROJECT_DIR$/Model/Options.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Point2D.cpp" afterPath="$PROJECT_DIR$/Model/Point2D.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/BoardTest.cpp" afterPath="$PROJECT_DIR$/Tests/BoardTest.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/GameManagerTest.cpp" afterPath="$PROJECT_DIR$/Tests/GameManagerTest.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/PieceTest.cpp" afterPath="$PROJECT_DIR$/Tests/PieceTest.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/BlockDrawer.h" afterPath="$PROJECT_DIR$/View/BlockDrawer.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,11 +37,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BoardTest.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/BoardTest.cpp">
+      <file leaf-file-name="Options.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/Options.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="188" column="0" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+            <state relative-caret-position="737">
+              <caret line="106" column="34" lean-forward="false" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Point2DTest.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tests/Point2DTest.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
               <folding>
                 <element signature="e#41#65#0" expanded="true" />
               </folding>
@@ -45,14 +59,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PieceTest.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tests/PieceTest.cpp">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding>
-                <element signature="e#41#65#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="7" column="741" lean-forward="false" selection-start-line="7" selection-start-column="741" selection-end-line="7" selection-end-column="741" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Options.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/Options.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="205" column="5" lean-forward="false" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,9 +83,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getR</find>
-      <find>getRotati</find>
-      <find>cast</find>
       <find>getRotatio</find>
       <find>m_board_colors</find>
       <find>refresh</find>
@@ -91,6 +110,9 @@
       <find>fall</find>
       <find>getFallingPiece)</find>
       <find>setFa</find>
+      <find>setLine</find>
+      <find>const</find>
+      <find>getLine</find>
     </findStrings>
     <replaceStrings>
       <replace>Options::getInstance()-&gt;getBoard_offset().getY()</replace>
@@ -103,8 +125,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="Maximetinu &lt;maximetinu@gmail.com&gt;" />
         <option value="maximetinu &lt;maximetinu@gmail.com&gt;" />
+        <option value="Maximetinu &lt;maximetinu@gmail.com&gt;" />
         <option value="Lifka &lt;javier@izquierdovera.com&gt;" />
       </list>
     </option>
@@ -128,8 +150,6 @@
         <option value="$PROJECT_DIR$/Controller/PlayerController.cpp" />
         <option value="$PROJECT_DIR$/Model/direction.h" />
         <option value="$PROJECT_DIR$/Model/ColorPalette.h" />
-        <option value="$PROJECT_DIR$/Model/Point2D.cpp" />
-        <option value="$PROJECT_DIR$/Model/Point2D.h" />
         <option value="$PROJECT_DIR$/View/BlockDrawer.h" />
         <option value="$PROJECT_DIR$/Model/ColorName.h" />
         <option value="$PROJECT_DIR$/Model/Direction.h" />
@@ -144,8 +164,6 @@
         <option value="$PROJECT_DIR$/Model/PlayerInput.h" />
         <option value="$PROJECT_DIR$/Model/NotifyCode.h" />
         <option value="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-        <option value="$PROJECT_DIR$/Model/Options.h" />
-        <option value="$PROJECT_DIR$/Model/Options.cpp" />
         <option value="$PROJECT_DIR$/Model/PlayerInput.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
         <option value="$PROJECT_DIR$/Model/ColorPalette.cpp" />
@@ -161,11 +179,18 @@
         <option value="$PROJECT_DIR$/Model/Piece.h" />
         <option value="$PROJECT_DIR$/Model/Piece.cpp" />
         <option value="$PROJECT_DIR$/Tests/GameManagerTest.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Tests/FactoryTest.cpp" />
         <option value="$PROJECT_DIR$/Controller/PlayerController.h" />
-        <option value="$PROJECT_DIR$/Tests/BoardTest.cpp" />
         <option value="$PROJECT_DIR$/Tests/PieceTest.cpp" />
+        <option value="$PROJECT_DIR$/Tests/Options.cpp" />
+        <option value="$PROJECT_DIR$/Tests/BoardTest.cpp" />
+        <option value="$PROJECT_DIR$/Model/Options.cpp" />
+        <option value="$PROJECT_DIR$/Model/Options.h" />
+        <option value="$PROJECT_DIR$/Model/Point2D.h" />
+        <option value="$PROJECT_DIR$/Model/Point2D.cpp" />
+        <option value="$PROJECT_DIR$/Tests/OptionsTest.cpp" />
+        <option value="$PROJECT_DIR$/Tests/Point2D.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -680,14 +705,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1312" y="-4" width="2497" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15310621" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10460922" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5245399" sideWeight="0.488125" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20552148" sideWeight="0.488125" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33435583" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281471" sideWeight="0.511875" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2208589" sideWeight="0.4975" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27198365" sideWeight="0.495" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27198365" sideWeight="0.495" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956153" sideWeight="0.495" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -738,19 +764,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/include/c++/7.1.1/bits/stl_vector.h" />
-    <entry file="file://$PROJECT_DIR$/View/Drawer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/allegro-5.0/addons/audio/kcm_sample.c" />
     <entry file="file://$PROJECT_DIR$/allegro/include/allegro5/addons/acodec/Makefile" />
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/Makefile">
@@ -798,6 +816,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -859,14 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Options.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="229" column="36" lean-forward="false" selection-start-line="229" selection-start-column="36" selection-end-line="229" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/PieceTest.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -923,26 +934,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Options.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/Factory.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="592">
           <caret line="466" column="34" lean-forward="false" selection-start-line="466" selection-start-column="34" selection-end-line="466" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="701" lean-forward="false" selection-start-line="7" selection-start-column="701" selection-end-line="7" selection-end-column="701" />
           <folding />
         </state>
       </provider>
@@ -952,7 +947,7 @@
         <state relative-caret-position="126">
           <caret line="7" column="58" lean-forward="false" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
           <folding>
-            <element signature="e#41#65#0" expanded="true" />
+            <element signature="e#41#65#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -966,14 +961,6 @@
             <element signature="e#172#3416#0" expanded="false" />
             <element signature="e#3418#4123#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Point2D.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1054,7 +1041,7 @@
         <state relative-caret-position="558">
           <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
           <folding>
-            <element signature="e#41#65#0" expanded="true" />
+            <element signature="e#41#65#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1085,14 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Point2D.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/Strings.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1101,20 +1080,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/BoardTest.cpp">
+    <entry file="file://$PROJECT_DIR$/Tests/PieceTest.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="188" column="0" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+        <state relative-caret-position="325">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <element signature="e#41#65#0" expanded="true" />
+            <element signature="e#41#65#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/PieceTest.cpp">
+    <entry file="file://$PROJECT_DIR$/Tests/BoardTest.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="42" />
+          <folding>
+            <element signature="e#41#65#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Options.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="205" column="5" lean-forward="false" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Point2DTest.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Point2D.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/OptionsTest.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1114">
+          <caret line="132" column="58" lean-forward="false" selection-start-line="132" selection-start-column="58" selection-end-line="132" selection-end-column="58" />
+          <folding>
+            <element signature="e#41#65#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Options.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="737">
+          <caret line="106" column="34" lean-forward="false" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="741" lean-forward="false" selection-start-line="7" selection-start-column="741" selection-end-line="7" selection-end-column="741" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Point2DTest.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding>
             <element signature="e#41#65#0" expanded="true" />
           </folding>

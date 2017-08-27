@@ -6,7 +6,7 @@
 #define PROJECT_OPTIONS_H
 
 #include <allegro5/color.h>
-#include "Point2D.h"
+#include "Point2DTest.h"
 #include "ColorName.h"
 
 class Options{
