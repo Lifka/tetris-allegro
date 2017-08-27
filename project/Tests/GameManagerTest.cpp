@@ -35,21 +35,14 @@ TEST_F(GameManagerTest, initGame){
     ASSERT_FALSE(obj->isGameOver());
 }
 
-TEST_F(GameManagerTest, scoreUp){
+TEST_F(GameManagerTest, scoreUpAndLevels){
     for (int i = 0; i < 999; i++)
         obj->scoreUp();
 
     ASSERT_TRUE(obj->getLevel() > 1);
 }
 
-TEST_F(GameManagerTest, scoreUpPiece){
-    for (int i = 0; i < 999; i++)
-        obj->scoreUp();
-
-    ASSERT_TRUE(obj->getLevel() > 1);
-}
-
-TEST_F(GameManagerTest, nextPiece){
+TEST_F(GameManagerTest, pieceGeneration){
     Piece piece_1 = board->getFalling_piece();
     obj->nextPiece();
     Piece piece_2 = board->getFalling_piece();
@@ -60,21 +53,6 @@ TEST_F(GameManagerTest, nextPiece){
 
     ASSERT_FALSE((piece_1 == piece_2) && (piece_3 == piece_4));
 }
-
-
-TEST_F(GameManagerTest, newFallingPiece){
-    Piece piece_1 = board->getFalling_piece();
-    obj->nextPiece();
-    Piece piece_2 = board->getFalling_piece();
-    obj->nextPiece();
-    Piece piece_3 = board->getFalling_piece();
-    obj->nextPiece();
-    Piece piece_4 = board->getFalling_piece();
-
-    ASSERT_FALSE((piece_1 == piece_2) && (piece_3 == piece_4));
-}
-
-
 
 TEST_F(GameManagerTest, isGameOver){
     ASSERT_EQ(obj->isGameOver(), board->isGameOver());

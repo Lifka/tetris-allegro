@@ -9,9 +9,7 @@
 namespace {
     class PieceTest : public testing::Test{
     public:
-        Piece obj;
         PieceTest(){
-            obj = Piece();
         }
     };
 }
@@ -82,4 +80,93 @@ TEST_F(PieceTest, getInitialPosition){
 
     ASSERT_EQ(expected_initial_position_r0, actual_initial_position_r0);
 
+}
+
+TEST_F(PieceTest, getPieceType){
+    Piece p1 = Piece();
+    Factory f = Factory();
+    Piece p2 = f.createPiece(p1.getPieceType());
+
+    ASSERT_TRUE(p1.getPieceType() == p2.getPieceType());
+}
+
+TEST_F(PieceTest, getSetRotation){
+    Rotation r = Rotation::degrees0;
+    Piece p = Piece();
+    p.setRotation(r);
+
+    ASSERT_EQ(r, p.getRotation());
+}
+
+TEST_F(PieceTest, getPieceRotationBlocks){
+    Rotation r = Rotation::degrees0;
+    Piece p = Piece();
+    p.setRotation(r);
+
+    ASSERT_EQ(p.getRotation(r), p.getPieceBlocks());
+}
+
+TEST_F(PieceTest, getSetCurrentPositionMatrix){
+    std::pair <int,int> position = std::make_pair(1,2);
+    Piece p = Piece();
+    p.setCurrent_position_matrix(position);
+    ASSERT_EQ(position, p.getCurrent_position_matrix());
+}
+
+TEST_F(PieceTest, getSetColor){
+    ColorName c = ColorName::blue;
+    Piece p = Piece();
+    p.setColor(c);
+    ASSERT_EQ(c, p.getColor());
+}
+
+
+TEST_F(PieceTest, nextRotationRightRotateRight){
+    Piece p = Piece();
+    Rotation next = p.nextRotationRight();
+    p.rotateRight();
+    Rotation rotated = p.getRotation();
+    ASSERT_EQ(next, rotated);
+}
+
+TEST_F(PieceTest, nextPositionRight){
+    Piece p = Piece();
+    std::pair <int,int> & pos = p.getCurrent_position_matrix();
+    std::pair <int,int> pos2 = p.nextPositionRight();
+    pos.first++;
+
+    ASSERT_EQ(pos2.second, pos.second);
+    ASSERT_EQ(pos2.first, pos.first);
+}
+
+TEST_F(PieceTest, nextPositionLeft){
+    Piece p = Piece();
+    std::pair <int,int> & pos = p.getCurrent_position_matrix();
+    std::pair <int,int> pos2 = p.nextPositionLeft();
+    pos.first--;
+
+    ASSERT_EQ(pos2.second, pos.second);
+    ASSERT_EQ(pos2.first, pos.first);
+}
+
+TEST_F(PieceTest, nextPositionDown){
+    Piece p = Piece();
+    std::pair <int,int> & pos = p.getCurrent_position_matrix();
+    std::pair <int,int> pos2 = p.nextPositionDown();
+    pos.second++;
+
+    ASSERT_EQ(pos2.second, pos.second);
+    ASSERT_EQ(pos2.first, pos.first);
+}
+
+TEST_F(PieceTest, fall){
+    Piece p = Piece();
+    std::pair <int,int> & pos = p.getCurrent_position_matrix();
+    p.fall();
+    std::pair <int,int> & pos2 = p.getCurrent_position_matrix();
+
+    pos.second++;
+
+    ASSERT_EQ(pos2.second, pos.second);
+    ASSERT_EQ(pos2.first, pos.first);
 }

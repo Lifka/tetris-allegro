@@ -42,28 +42,6 @@ TEST_F(BoardTest, isPossibleMovement){
     ASSERT_EQ(expected_value,actual_value);
 }
 
-TEST_F(BoardTest, isPossibleMovementX){
-    bool expected_value = true;
-
-    std::pair<int,int> test_position = board_center;
-    Rotation test_rotation = Rotation::degrees0;
-
-    bool actual_value = obj->isPossibleMovimentX(test_position, test_rotation);
-
-    ASSERT_EQ(expected_value,actual_value);
-}
-
-TEST_F(BoardTest, isPossibleMovementY){
-    bool expected_value = true;
-
-    std::pair<int,int> test_position = board_center;
-    Rotation test_rotation = Rotation::degrees0;
-
-    bool actual_value = obj->isPossibleMovimentY(test_position, test_rotation);
-
-    ASSERT_EQ(expected_value,actual_value);
-}
-
 // checkLines delete full filled lines, so after calling it the last line can't be full
 TEST_F(BoardTest, checkLines){
     obj->checkLines();
@@ -85,7 +63,7 @@ TEST_F(BoardTest, isGameOver){
     ASSERT_EQ(actual_value, expected_value);
 }
 
-TEST_F(BoardTest, setFallingPiece){
+TEST_F(BoardTest, setGetFallingPiece){
     Piece piece_before_call = obj->getFalling_piece();
     obj->setFallingPiece(Piece());
     Piece piece_after_call = obj->getFalling_piece();
@@ -207,10 +185,4 @@ TEST_F(BoardTest, storeFallingPiece){
                 used_blocks++;
 
     ASSERT_NE(used_blocks,0);
-}
-
-TEST_F(BoardTest, getFallingPiece){
-    Piece piece_before_call = obj->getFalling_piece();
-    obj->setFallingPiece(Piece());
-    ASSERT_FALSE(piece_before_call == obj->getFalling_piece());
 }
