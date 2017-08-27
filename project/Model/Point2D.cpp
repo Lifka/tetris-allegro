@@ -2,7 +2,7 @@
 // Created by lifka on 18/06/17.
 //
 
-#include "Point2DTest.h"
+#include "Point2D.h"
 
 Point2D::Point2D(int x, int y){
     this->x = x;

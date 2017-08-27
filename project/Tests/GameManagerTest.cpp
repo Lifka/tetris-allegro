@@ -18,7 +18,7 @@ namespace {
 }
 
 
-TEST_F(GameManagerTest, getInstance){
+TEST_F(GameManagerTest, singleton){
     GameManager* one_instance = GameManager::getInstance();
     GameManager* another_instance = GameManager::getInstance();
 
